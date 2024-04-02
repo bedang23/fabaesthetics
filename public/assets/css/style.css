@@ -17563,6 +17563,8 @@ body:not(.is-expanded-menu):not(.primary-menu-open) .semi-transparent.transparen
 }
 #logo a .logo-default {
   display: flex;
+  width: auto;
+  max-height: 35px;
 }
 #logo img {
   display: block;
@@ -33559,3 +33561,47 @@ body.dark {
   background-color: rgba(0, 0, 0, 0.2);
 }
 /*# sourceMappingURL=style.css.map */
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  z-index: 999;
+  border: 1px solid #F1C77A;
+  background-color: rgba(0, 0, 0, 0.5);
+  list-style-type: none;
+  padding: 0;
+  white-space: nowrap; /* Prevent submenu items from wrapping */
+  width: auto; /* Set width to auto */
+}
+
+.submenu li {
+  padding: 10px;
+  border-bottom: 1px solid #F1C77A;
+}
+
+.submenu li:last-child {
+  border-bottom: none;
+}
+
+.submenu li a {
+  color: #F1C77A;
+  display: block;
+}
+
+.submenu li:hover a {
+  color: white;
+}
+
+.submenu li:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+
+

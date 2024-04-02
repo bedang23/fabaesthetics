@@ -8,8 +8,8 @@
 						<!-- Logo
 						============================================= -->
 						<div id="logo" class="me-lg-4 pe-lg-4">
-							<a href="index.html">
-								<img class="logo-default" srcset="assets/images/logo.png, assets/images/logo@2x.png 2x" src="assets/images/logo@2x.png" alt="Canvas Logo">
+							<a href="{{ '/' }}">
+								<img class="logo-default" src="assets/images/logo.png"  alt="Canvas Logo">
 							</a>
 						</div><!-- #logo end -->
 
@@ -20,7 +20,7 @@
 						</div>
 
 						<div class="header-misc ms-lg-auto">
-							<a href="#" class="fw-medium font-primary" data-scrollto="#section-appointment" data-easing="easeInOutExpo" data-speed="1250" data-offset="140">Book Now</a>
+							<a href="#" class="fw-medium font-primary" data-scrollto="#section-appointment"a>
 						</div>
 
 						<!-- Primary Navigation
@@ -28,13 +28,67 @@
 						<nav class="primary-menu">
 
 							<ul class="menu-container style-2 one-page-menu">
-								<li class="menu-item border-light current"><a class="menu-link" href="#" data-easing="easeInOutExpo" data-speed="1250" data-offset="0" data-href="#slider"><div class="overflow-hidden"><div data-animate="fadeInDownSmall">Home</div></div></a></li>
-								<li class="menu-item border-light"><a class="menu-link" href="#" data-easing="easeInOutExpo" data-speed="1250" data-offset="130" data-href="#section-about"><div class="overflow-hidden"><div data-animate="fadeInDownSmall" data-delay="200">About</div></div></a></li>
-								<li class="menu-item border-light"><a class="menu-link" href="#" data-easing="easeInOutExpo" data-speed="1250" data-offset="130" data-href="#section-services"><div class="overflow-hidden"><div data-animate="fadeInDownSmall" data-delay="200">Services</div></div></a></li>
-								<li class="menu-item border-light"><a class="menu-link" href="#" data-easing="easeInOutExpo" data-speed="1250" data-offset="0" data-href="#section-price"><div class="overflow-hidden"><div data-animate="fadeInDownSmall" data-delay="400">Price</div></div></a></li>
-								<li class="menu-item border-light"><a class="menu-link" href="#" data-easing="easeInOutExpo" data-speed="1250" data-offset="130" data-href="#section-testimonials"><div class="overflow-hidden"><div data-animate="fadeInDownSmall" data-delay="600">Testimonials</div></div></a></li>
-								<li class="menu-item border-light"><a class="menu-link" href="#" data-easing="easeInOutExpo" data-speed="1250" data-offset="130" data-href="#section-shop"><div class="overflow-hidden"><div data-animate="fadeInDownSmall" data-delay="800">Shop</div></div></a></li>
-							</ul>
+								<li class="menu-item border-light {{ request()->is('/') ? ' current' : '' }}">
+									 <a class="menu-link" href="{{ '/' }}">
+										  <div class="overflow-hidden">
+												<div data-animate="fadeInDownSmall">Home</div>
+										  </div>
+									 </a>
+								</li>
+								<li class="menu-item border-light {{ request()->is('about') ? ' current' : '' }}">
+									 <a class="menu-link" href="{{ '/about' }}">
+										  <div class="overflow-hidden">
+												<div data-animate="fadeInDownSmall" data-delay="200">About</div>
+										  </div>
+									 </a>
+								</li>
+								<li class="menu-item border-light">
+									<a class="menu-link" href="#" id="skin-treatment-dropdown-toggle">
+										 <div class="overflow-hidden">
+											  <div data-animate="fadeInDownSmall" data-delay="200">Skin Treatment</div>
+										 </div>
+									</a>
+									<!-- Dropdown menu -->
+									<ul class="submenu" id="skin-treatment-dropdown">
+										 <li><a href="#">Acne Treatment</a></li>
+										 <li><a href="#">Acne Scars</a></li>
+										 <li><a href="#">Pigmentation Treatment</a></li>
+										 <li><a href="#">Skin Whitening Treatment</a></li>
+										 <!-- Add more service items as needed -->
+									</ul>
+							  </li>
+							  <li class="menu-item border-light">
+									<a class="menu-link" href="#" id="hair-treatment-dropdown-toggle">
+										 <div class="overflow-hidden">
+											  <div data-animate="fadeInDownSmall" data-delay="200">Hair Treatment</div>
+										 </div>
+									</a>
+									<!-- Dropdown menu -->
+									<ul class="submenu" id="hair-treatment-dropdown">
+										 <li><a href="#">Hair fall Treatment</a></li>
+										 <li><a href="#">Dandruff Treatment</a></li>
+										 <li><a href="#">Hair Regrowth Treatment</a></li>
+										 <li><a href="#">GFC Hair Treatment</a></li>
+										 <li><a href="#">Hair Transplant</a></li>
+										 <!-- Add more service items as needed -->
+									</ul>
+							  </li>
+
+								<li class="menu-item border-light">
+									 <a class="menu-link" href="#">
+										  <div class="overflow-hidden">
+												<div data-animate="fadeInDownSmall" data-delay="400">Price</div>
+										  </div>
+									 </a>
+								</li>
+								<li class="menu-item border-light {{ request()->is('contact') ? ' current' : '' }}">
+									 <a class="menu-link" href="{{ '/contact' }}">
+										  <div class="overflow-hidden">
+												<div data-animate="fadeInDownSmall" data-delay="800">Contact</div>
+										  </div>
+									 </a>
+								</li>
+						  </ul>
 
 						</nav>
 
