@@ -3428,7 +3428,7 @@ textarea.form-control-lg {
 .dropdown-toggle::after {
   display: inline-block;
   margin-left: 0.255em;
-  vertical-align: 0.255em;
+  vertical-align: 0.100em;
   content: "";
   border-top: 0.3em solid;
   border-right: 0.3em solid transparent;
@@ -3682,8 +3682,8 @@ textarea.form-control-lg {
   border-radius: var(--bs-dropdown-item-border-radius, 0);
 }
 .dropdown-item:hover, .dropdown-item:focus {
-  color: var(--bs-dropdown-link-hover-color);
-  background-color: var(--bs-dropdown-link-hover-bg);
+  color: #fff;
+  background-color: #80cb2c;
 }
 .dropdown-item.active, .dropdown-item:active {
   color: var(--bs-dropdown-link-active-color);
@@ -17563,8 +17563,6 @@ body:not(.is-expanded-menu):not(.primary-menu-open) .semi-transparent.transparen
 }
 #logo a .logo-default {
   display: flex;
-  width: auto;
-  max-height: 35px;
 }
 #logo img {
   display: block;
@@ -17573,6 +17571,7 @@ body:not(.is-expanded-menu):not(.primary-menu-open) .semi-transparent.transparen
   margin-left: auto;
   margin-right: auto;
   transition: height 0.4s ease, padding 0.4s ease, margin 0.4s ease, opacity 0.3s ease;
+  background-color: #f3fbfa;
 }
 @media (prefers-reduced-motion: reduce) {
   #logo img {
@@ -17772,7 +17771,7 @@ body:not(.top-search-open) .top-search-parent .primary-menu-trigger {
   border-top: 0;
 }
 .menu-item:hover > .menu-link {
-  color: var(--cnvs-primary-menu-hover-color);
+  color: #80cb28;
 }
 .menu-item.current > .menu-link {
   color: var(--cnvs-primary-menu-active-color);
@@ -33561,47 +33560,3 @@ body.dark {
   background-color: rgba(0, 0, 0, 0.2);
 }
 /*# sourceMappingURL=style.css.map */
-
-.submenu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  display: none;
-  z-index: 999;
-  border: 1px solid #F1C77A;
-  background-color: rgba(0, 0, 0, 0.5);
-  list-style-type: none;
-  padding: 0;
-  white-space: nowrap; /* Prevent submenu items from wrapping */
-  width: auto; /* Set width to auto */
-}
-
-.submenu li {
-  padding: 10px;
-  border-bottom: 1px solid #F1C77A;
-}
-
-.submenu li:last-child {
-  border-bottom: none;
-}
-
-.submenu li a {
-  color: #F1C77A;
-  display: block;
-}
-
-.submenu li:hover a {
-  color: white;
-}
-
-.submenu li:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-
-
-
-
-
-
-

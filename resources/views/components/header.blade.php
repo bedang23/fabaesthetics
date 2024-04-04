@@ -1,100 +1,129 @@
-		<!-- Header
+<!-- Header
 		============================================= -->
-		<header id="header" class="transparent-header floating-header dark custom-header-size" data-sticky-shrink="false">
-			<div id="header-wrap" class="border-bottom-0">
-				<div class="container pe-md-0">
-					<div class="header-row">
+		<header id="header" class="header-size-md dark transparent-header floating-header" data-sticky-shrink="false" data-responsive-class="not-dark">
+			<div id="header-wrap" class="border-0">
+				 <div class="container rounded">
+					  <div class="header-row justify-content-lg-between">
 
-						<!-- Logo
-						============================================= -->
-						<div id="logo" class="me-lg-4 pe-lg-4">
-							<a href="{{ '/' }}">
-								<img class="logo-default" src="assets/images/logo.png"  alt="Canvas Logo">
-							</a>
-						</div><!-- #logo end -->
+							<!-- Logo -->
+							<div id="logo" class="me-lg-0 col-lg-2 col-6">
+								 <a href="index.html">
+									  <img class="logo-default ms-0" src="assets/images/logo.png" alt="Fabaesthetics Logo">
+									  <img class="logo-dark" src="assets/images/logo.png" alt="Fabaesthetics Logo">
+								 </a>
+							</div><!-- #logo end -->
 
-						<div class="primary-menu-trigger">
-							<button class="cnvs-hamburger" type="button" title="Open Mobile Menu">
-								<span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span>
-							</button>
-						</div>
+							<div class="header-misc col-lg-2 justify-content-lg-end ms-0">
 
-						<div class="header-misc ms-lg-auto">
-							<a href="#" class="fw-medium font-primary" data-scrollto="#section-appointment"a>
-						</div>
+								 <a href="#" class="button rounded button-border border-contrast-900 text-contrast-900 h-border-transparent h-text-contrast-100 h-bg-contrast-900"><i class="fa-solid fa-phone-volume d-block d-xl-none m-0"></i><span class="d-none d-xl-block">+01 4424 579</span></a>
 
-						<!-- Primary Navigation
-						============================================= -->
-						<nav class="primary-menu">
+							</div>
 
-							<ul class="menu-container style-2 one-page-menu">
-								<li class="menu-item border-light {{ request()->is('/') ? ' current' : '' }}">
-									 <a class="menu-link" href="{{ '/' }}">
-										  <div class="overflow-hidden">
-												<div data-animate="fadeInDownSmall">Home</div>
-										  </div>
-									 </a>
-								</li>
-								<li class="menu-item border-light {{ request()->is('about') ? ' current' : '' }}">
-									 <a class="menu-link" href="{{ '/about' }}">
-										  <div class="overflow-hidden">
-												<div data-animate="fadeInDownSmall" data-delay="200">About</div>
-										  </div>
-									 </a>
-								</li>
-								<li class="menu-item border-light">
-									<a class="menu-link" href="#" id="skin-treatment-dropdown-toggle">
-										 <div class="overflow-hidden">
-											  <div data-animate="fadeInDownSmall" data-delay="200">Skin Treatment</div>
-										 </div>
-									</a>
-									<!-- Dropdown menu -->
-									<ul class="submenu" id="skin-treatment-dropdown">
-										 <li><a href="#">Acne Treatment</a></li>
-										 <li><a href="#">Acne Scars</a></li>
-										 <li><a href="#">Pigmentation Treatment</a></li>
-										 <li><a href="#">Skin Whitening Treatment</a></li>
-										 <!-- Add more service items as needed -->
-									</ul>
-							  </li>
-							  <li class="menu-item border-light">
-									<a class="menu-link" href="#" id="hair-treatment-dropdown-toggle">
-										 <div class="overflow-hidden">
-											  <div data-animate="fadeInDownSmall" data-delay="200">Hair Treatment</div>
-										 </div>
-									</a>
-									<!-- Dropdown menu -->
-									<ul class="submenu" id="hair-treatment-dropdown">
-										 <li><a href="#">Hair fall Treatment</a></li>
-										 <li><a href="#">Dandruff Treatment</a></li>
-										 <li><a href="#">Hair Regrowth Treatment</a></li>
-										 <li><a href="#">GFC Hair Treatment</a></li>
-										 <li><a href="#">Hair Transplant</a></li>
-										 <!-- Add more service items as needed -->
-									</ul>
-							  </li>
+							<div class="primary-menu-trigger">
+								 <button class="cnvs-hamburger" type="button" title="Open Mobile Menu">
+									  <span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span>
+								 </button>
+							</div>
 
-								<li class="menu-item border-light">
-									 <a class="menu-link" href="#">
-										  <div class="overflow-hidden">
-												<div data-animate="fadeInDownSmall" data-delay="400">Price</div>
-										  </div>
-									 </a>
-								</li>
-								<li class="menu-item border-light {{ request()->is('contact') ? ' current' : '' }}">
-									 <a class="menu-link" href="{{ '/contact' }}">
-										  <div class="overflow-hidden">
-												<div data-animate="fadeInDownSmall" data-delay="800">Contact</div>
-										  </div>
-									 </a>
-								</li>
-						  </ul>
+							<nav class="primary-menu">
 
-						</nav>
+								 <ul class="menu-container">
+									  <!-- Dropdown for Services -->
+									  <li class="menu-item dropdown">
+											<a class="menu-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Skin Treatment</a>
+											<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+												<li><a class="dropdown-item" href="service/skin-treatment/acne-treatment">Acne Treatment</a></li>
+												<li><a class="dropdown-item" href="service/skin-treatment/acne-scar-treatment">Acne Scar Treatment</a></li>
+												<li><a class="dropdown-item" href="service/skin-treatment/pigmentation-treatment">Pigmentation Treatment</a></li>
+												<li><a class="dropdown-item" href="service/skin-treatment/melasma-treatment">Melasma Treatment</a></li>
+												<li><a class="dropdown-item" href="service/skin-treatment/open-pores-treatment">Open Pores Treatment</a></li>
+												<li><a class="dropdown-item" href="service/skin-treatment/skin-lightening-treatment">Skin Lightening Treatment</a></li>
+											</ul>
+								  		</li>
+										  <li class="menu-item dropdown">
+											<a class="menu-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cosmetics Treatment</a>
+											<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+												<li><a class="dropdown-item" href="service/cosmetics-treatment/anti-ageing-treatment">Anti Ageing Treatment</a></li>
+												<li><a class="dropdown-item" href="service/cosmetics-treatment/botox">Botox</a></li>
+												<li><a class="dropdown-item" href="service/cosmetics-treatment/dermal-fillers">Dermal Fillers</a></li>
+												<li><a class="dropdown-item" href="service/cosmetics-treatment/lip-filler">Lip Filler</a></li>
+												<li><a class="dropdown-item" href="service/cosmetics-treatment/cheek-filler">Cheek Filler</a></li>
+												<li><a class="dropdown-item" href="service/cosmetics-treatment/chin-filler">Chin Filler</a></li>
+												<li><a class="dropdown-item" href="service/cosmetics-treatment/nose-filler">Nose Filler</a></li>
+												<li><a class="dropdown-item" href="service/cosmetics-treatment/jawline-filler">Jawline Filler</a></li>
+												<li><a class="dropdown-item" href="service/cosmetics-treatment/neck-filler">Neck Filler</a></li>
+												<li><a class="dropdown-item" href="service/cosmetics-treatment/hand-filler">Hand Filler</a></li>
+												<li><a class="dropdown-item" href="service/cosmetics-treatment/body-filler">Body Filler</a></li>
+												<li><a class="dropdown-item" href="service/cosmetics-treatment/skin-booster">Skin Booster</a></li>
+												<li><a class="dropdown-item" href="service/cosmetics-treatment/thread-lift-face">Thread Lift Face</a></li>
+												<li><a class="dropdown-item" href="service/cosmetics-treatment/nose-thread-lift">Nose Thread Lift</a></li>
+												<li><a class="dropdown-item" href="service/cosmetics-treatment/lip-threads">Lip Threads</a></li>
+												<li><a class="dropdown-item" href="service/cosmetics-treatment/body-threads">Body Threads</a></li>
+												<li><a class="dropdown-item" href="service/cosmetics-treatment/eye-brow-thread-lift">Eye brow Thread Lift</a></li>
+												<li><a class="dropdown-item" href="service/cosmetics-treatment/hifu">HIFU</a></li>
+												<li><a class="dropdown-item" href="service/cosmetics-treatment/radio-frequency">Radio Frequency</a></li>
+												<li><a class="dropdown-item" href="service/cosmetics-treatment/microneedling-rf">Microneedling RF</a></li>
+											</ul>
+								  		</li>
+										  <li class="menu-item dropdown">
+											<a class="menu-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Hair Treatment</a>
+											<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+												<li><a class="dropdown-item" href="service/hair-treatment/hair-fall-treatment">Hair fall Treatment</a></li>
+												<li><a class="dropdown-item" href="service/hair-treatment/gfc-hair-treatment">GFC Hair Treatment</a></li>
+												<li><a class="dropdown-item" href="service/hair-treatment/dandruff-treatment">Dandruff Treatment</a></li>
+												<li><a class="dropdown-item" href="service/hair-treatment/hair-regrowth-treatment">Hair Regrowth Treatment</a></li>
+												<li><a class="dropdown-item" href="service/hair-treatment/hair-transplant">Hair Transplant</a></li>
+											</ul>
+								  		</li>
+										  <li class="menu-item dropdown">
+											<a class="menu-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Laser Treatment</a>
+											<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+												<li><a class="dropdown-item" href="service/lazer-treatment/laser-hair-reduction">Laser hair reduction</a></li>
+												<li><a class="dropdown-item" href="service/lazer-treatment/laser-hair-removal">Laser hair removal</a></li>
+											</ul>
+								  		</li>
+										  <li class="menu-item dropdown">
+											<a class="menu-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Skin Rejuvenation Treatments</a>
+											<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+												<li><a class="dropdown-item" href="service/skin-rejuvenation-treatment/medi-facials">Medi Facials</a></li>
+												<li><a class="dropdown-item" href="service/skin-rejuvenation-treatment/hydrafacial">Hydrafacial</a></li>
+												<li><a class="dropdown-item" href="service/skin-rejuvenation-treatment/photo-facial">Photo Facial</a></li>
+												<li><a class="dropdown-item" href="service/skin-rejuvenation-treatment/carbon-facial">Carbon Facial</a></li>
+												<li><a class="dropdown-item" href="service/skin-rejuvenation-treatment/oxygeneo-facial">Oxygeneo Facial</a></li>
+												<li><a class="dropdown-item" href="service/skin-rejuvenation-treatment/carboxy-facial">Carboxy Facial</a></li>
+												<li><a class="dropdown-item" href="service/skin-rejuvenation-treatment/vampire-facial">Vampire Facial</a></li>
+												<li><a class="dropdown-item" href="service/skin-rejuvenation-treatment/pink-shot-facial">Pink Shot Facial</a></li>
+												<li><a class="dropdown-item" href="service/skin-rejuvenation-treatment/bb-glow-facial">Bb Glow Facial</a></li>
+												<li><a class="dropdown-item" href="service/skin-rejuvenation-treatment/korean-glass-skin-facial">Korean Glass Skin Facial</a></li>
+												<li><a class="dropdown-item" href="service/skin-rejuvenation-treatment/skin-polishing">Skin Polishing</a></li>
+												<li><a class="dropdown-item" href="service/skin-rejuvenation-treatment/microneedling">Microneedling</a></li>
+												<li><a class="dropdown-item" href="service/skin-rejuvenation-treatment/hydraneedling">Hydraneedling</a></li>
+												<li><a class="dropdown-item" href="service/skin-rejuvenation-treatment/dermaroller">Dermaroller</a></li>
+												<li><a class="dropdown-item" href="service/skin-rejuvenation-treatment/dermapen">Dermapen</a></li>
+												<li><a class="dropdown-item" href="service/skin-rejuvenation-treatment/chemical-peel">Chemical Peel</a></li>
+												<li><a class="dropdown-item" href="service/skin-rejuvenation-treatment/advanced-whitening-peel">Advanced Whitening Peel</a></li>
+												<li><a class="dropdown-item" href="service/skin-rejuvenation-treatment/glow-peel">Glow Peel</a></li>
+												<li><a class="dropdown-item" href="service/skin-rejuvenation-treatment/ultrasonic-treatment">Ultrasonic Treatment</a></li>
+												<li><a class="dropdown-item" href="service/skin-rejuvenation-treatment/oxyjet-treatment">Oxyjet Treatment</a></li>
+											</ul>
+								  		</li>
+										  <li class="menu-item dropdown">
+											<a class="menu-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Make Over</a>
+											<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+												<li><a class="dropdown-item" href="service/microblading/eyebrow-microblading">Eyebrow Microblading</a></li>
+												<li><a class="dropdown-item" href="service/micropigmentation/eyebrow-micropigmentation">Eyebrow Micropigmentation</a></li>
+												<li><a class="dropdown-item" href="service/micropigmentation/scalp-micropigmentation">Scalp Micropigmentation</a></li>
+												<li><a class="dropdown-item" href="service/micropigmentation/lip-micropigmentation">Lip Micropigmentation</a></li>
+											</ul>
+								  		</li>
+									  <!-- End Dropdown for Services -->
+									  <li class="menu-item"><a class="menu-link" href="#"><div>Contact</div></a></li>
+								 </ul>
 
-					</div>
-				</div>
+							</nav><!-- #primary-menu end -->
+
+					  </div>
+				 </div>
 			</div>
 			<div class="header-wrap-clone"></div>
-		</header>
-		<!-- #header end -->
+	  </header><!-- #header end -->
