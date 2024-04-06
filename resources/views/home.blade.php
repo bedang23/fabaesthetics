@@ -11,7 +11,7 @@
 						<img src="assets/images/icons/wave.svg" alt="..." class="position-absolute top-0 start-0 translate-middle d-none d-md-block" width="50">
 						<h2 class="display-3 fw-bold color all-ts">Fabaesthetics <span class="underliner nocolor viewport-detect" data-delay="1000">Celebrity's'</u></span> Favourite Clinic <img class="position-relative" style="top: -5px;" src="assets/images/icons/smile.svg" alt="..." width="50"></h2>
 						<p>Your journey to great skin begins with a free consultation to identify your concerns, assess yours skin and tailor a skincare regime to your exact needs..</p>
-						<a href="#" class="button py-3 px-4 bg-color-2 color h-bg-color h-text-light rounded mx-0">Request an Appoinment<i class="bi-arrow-right ms-2 me-0"></i></a>
+						<a href="{{ '/contact' }}" class="button py-3 px-4 bg-color-2 color h-bg-color h-text-light rounded mx-0">Request an Appoinment<i class="bi-arrow-right ms-2 me-0"></i></a>
 					</div>
 					<div class="col-lg-6">
 						<!-- Gallery -->
@@ -169,7 +169,7 @@
 					</div>
 				</div>
 
-				<div class="section mt-0">
+				<div class="section mt-0 mb-0">
 					<div class="container">
 						<div class="row justify-content-center mb-4">
 							<div class="col-md-9 text-center">
@@ -272,89 +272,18 @@
 					</div>
 				</div>
 
-				<div class="section mt-0 bg-transparent doctor-lists">
+				<div class="section mt-0 mb-0" style="background-color: #cacac817 !important;">
 					<div class="container">
-						<div class="row justify-content-center">
-							<div class="col-md-9 text-center">
-								<h2 class="display-4 mb-5">Meet with our Experts</h2>
-							</div>
-						</div>
-						<div class="position-relative scroll-detect" style="--cnvs-transitions: .3s linear; transform: translate(calc(-.1% * calc(var(--cnvs-scroll-percent) * .3)), 0);">
-							<div class="row row-cols-lg-6 row-cols-sm-2 row-cols-1 g-4" style="transform: translateX(1%);">
-								<div class="col">
-									<img src="assets/images/experts/1.jpg" alt="..." class="rounded-6 mb-2">
-									<h4 class="mb-0">D.W. Coffman</h4>
-									<small class="fw-light">Psychologists</small>
-								</div>
-								<div class="col">
-									<img src="assets/images/experts/2.jpg" alt="..." class="rounded-6 mb-2">
-									<h4 class="mb-0">D.W. Coffman</h4>
-									<small class="fw-light">Psychologists</small>
-								</div>
-
-								<div class="col">
-									<img src="assets/images/experts/3.jpg" alt="..." class="rounded-6 mb-2">
-									<h4 class="mb-0">R.G. Everhart</h4>
-									<small class="fw-light">Anesthesiology</small>
-								</div>
-
-								<div class="col">
-									<img src="assets/images/experts/4.jpg" alt="..." class="rounded-6 mb-2">
-									<h4 class="mb-0">D.B. Truluck</h4>
-									<small class="fw-light">Cardiology</small>
-								</div>
-
-								<div class="col">
-									<img src="assets/images/experts/5.jpg" alt="..." class="rounded-6 mb-2">
-									<h4 class="mb-0">W.L. Popwell</h4>
-									<small class="fw-light">Chiropractic</small>
-								</div>
-
-								<div class="col">
-									<img src="assets/images/experts/6.jpg" alt="..." class="rounded-6 mb-2">
-									<h4 class="mb-0">P.M. Adres</h4>
-									<small class="fw-light">Chiropractic</small>
+						<div class="row gy-4 justify-content-around align-items-center">
+							<div class="col-md-5">
+								<div class=" position-relative" style="padding-bottom: 30px; padding-top:30px;">
+									<img src="assets/images/dr-samreen-khan.jpg" alt=".." style="border-radius: 5px; box-shadow: 0px 0px 10px #888;">
 								</div>
 							</div>
-						</div>
-						<div class="position-relative scroll-detect" style="--cnvs-transitions: .3s linear; transform: translate(calc(.1% * calc(var(--cnvs-scroll-percent) * .3)), 0);">
-							<div class="row flex-row-reverse row-cols-lg-6 row-cols-sm-2 row-cols-1 g-4 mt-0" style="transform: translateX(-1%);">
-
-								<div class="col">
-									<img src="assets/images/experts/7.jpg" alt="..." class="rounded-6 mb-2">
-									<h4 class="mb-0">L.D. Plack</h4>
-									<small class="fw-light">Cardiology</small>
-								</div>
-
-								<div class="col">
-									<img src="assets/images/experts/8.jpg" alt="..." class="rounded-6 mb-2">
-									<h4 class="mb-0">M.L. Paine</h4>
-									<small class="fw-light">Dermatology</small>
-								</div>
-
-								<div class="col">
-									<img src="assets/images/experts/9.jpg" alt="..." class="rounded-6 mb-2">
-									<h4 class="mb-0">M.E. Pullen</h4>
-									<small class="fw-light">Surgery</small>
-								</div>
-
-								<div class="col">
-									<img src="assets/images/experts/10.jpg" alt="..." class="rounded-6 mb-2">
-									<h4 class="mb-0">W.L. Shotts</h4>
-									<small class="fw-light">Neurology</small>
-								</div>
-
-								<div class="col">
-									<img src="assets/images/experts/11.jpg" alt="..." class="rounded-6 mb-2">
-									<h4 class="mb-0">M.S. Sugar</h4>
-									<small class="fw-light">Ophthalmology</small>
-								</div>
-
-								<div class="col">
-									<img src="assets/images/experts/12.jpg" alt="..." class="rounded-6 mb-2">
-									<h4 class="mb-0">M.S. Sugar</h4>
-									<small class="fw-light">Ophthalmology</small>
-								</div>
+							<div class="col-md-5">
+								<img src="assets/images/icons/wave.svg" alt="..." class="position-absolute top-0 start-0 translate-middle d-none d-md-block" width="36">
+								<h2 class="display-4 mb-3">Meet Our Doctor</h2>
+								<p class=""><b>Dr Samreen Khan</b> is Clinical Head at Fab Aesthetics. She has graduated from the prestigious Maharashtra University of Health Sciences(MUHS), Nasik and is a proud “Gold medalist”. She is an internationally trained aesthetic cosmetologist. She specializes Dr. Samreen Khan with renowned surgeons of india. She routinely hones her skills through training from acclaimed trainers/surgeons in the field of Aesthetic Cosmetology in Aesthetic Cosmetology procedures, antiaging, skin rejuvenation, laser, eye brow reshaping and lip lightening to name a few. She has good surgical hand and has worked throughout the world. Let your transformation begin at our Aesthetic Cosmetology clinic based in Lokhandwala Complex, Andheri West. We provide a range of Skincare, Minor surgeries and the latest Non-surgical cosmetic treatments, all performed to the highest of medical standards.	</p>
 							</div>
 						</div>
 					</div>
@@ -364,18 +293,18 @@
 					<div class="container py-lg-5">
 						<div class="row g-4 justify-content-around">
 							<div class="col-md-3 col-6">
-								<h3 class="display-3 text-white mb-1">75+</h3>
-								<small class="color-2 text-uppercase ls-2 text-smaller">Available Countries</small>
+								<h3 class="display-3 text-white mb-1">2000+</h3>
+								<small class="color-2 text-uppercase ls-2 text-smaller">Treatments Done</small>
 							</div>
 
 							<div class="col-md-3 col-6">
-								<h3 class="display-3 text-white mb-1">634+</h3>
-								<small class="color-2 text-uppercase ls-2 text-smaller">Available Experts</small>
+								<h3 class="display-3 text-white mb-1">20+</h3>
+								<small class="color-2 text-uppercase ls-2 text-smaller">Celebrity Clients</small>
 							</div>
 
 							<div class="col-md-3 col-6">
-								<h3 class="display-3 text-white mb-1">23+</h3>
-								<small class="color-2 text-uppercase ls-2 text-smaller">Winning Awards</small>
+								<h3 class="display-3 text-white mb-1">10+</h3>
+								<small class="color-2 text-uppercase ls-2 text-smaller">Years Of Experience</small>
 							</div>
 
 							<div class="col-md-3 col-6">
@@ -383,98 +312,32 @@
 								<small class="color-2 text-uppercase ls-2 text-smaller">5 Star Reviews</small>
 							</div>
 						</div>
-						<img src="assets/images/section.jpg" alt=".." class="my-5">
+						<img  src="assets/images/home/clinical-care.png" alt=".." class="my-5">
 						<div class="row align-items-end justify-content-between">
-							<div class="col-md-5">
+							<div class="col-md-10">
 								<img src="assets/images/icons/wave.svg" alt="..." class="position-absolute top-0 start-0 translate-middle d-none d-md-block" width="36">
-								<h3 class="display-6 mb-md-0">People pay the doctor for his trouble, for his kindness they still remain in his debt.</h3>
-							</div>
-							<div class="col-md-5">
-								<p class="mb-0">Enthusiastically exploit cutting-edge value with highly efficient e-business. Assertively promote integrated testing procedures vis-a-vis magnetic "outside the box" thinking.</p>
+								<h3 class="display-6 mb-md-0">Your journey to great skin begins with a free consultation to identify your concerns, assess your	skin and tailor a skincare regime to your exact needs.</h3>
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="section bg-transparent mt-0">
-					<div class="container">
-						<div class="row gy-4 justify-content-around align-items-center">
-							<div class="col-md-5">
-								<div class="widget-img position-relative">
-									<img src="assets/images/widget-img.png" alt="..">
-								</div>
-							</div>
-							<div class="col-md-5">
-								<img src="assets/images/icons/wave.svg" alt="..." class="position-absolute top-0 start-0 translate-middle d-none d-md-block" width="36">
-								<h2 class="display-4 mb-3">Subscribe to Our Newsletter</h2>
-								<p class="">Holisticly supply plug-and-play sources with client-based testing procedures. Assertively leverage existing user friendly infrastructures through ethical strategic theme areas.</p>
-								<div class="widget subscribe-widget" data-loader="button">
-
-									<div class="widget-subscribe-form-result"></div>
-									<form id="widget-subscribe-form" action="include/subscribe.php" method="post" class="mb-0 d-flex bg-color-2 rounded-pill p-2 bg-opacity-50">
-										<input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control bg-transparent border-0 required email ps-3" placeholder="Your Email Address">
-										<button class="button button-large rounded-pill m-0" type="submit">Subscribe</button>
-									</form>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="section dark bg-color my-0">
+				<div class="section  bg-transparent my-0">
 					<div class="container">
 						<div class="row align-items-center justify-content-between">
 							<div class="col-md-4 mt-4">
 								<img src="assets/images/icons/wave.svg" alt="..." class="position-absolute top-0 start-0 translate-middle d-none d-md-block" width="36">
-								<h3 class="display-6">Get in touch with Us.</h3>
-								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, a hic? Velit aliquam dolorum maxime corporis blanditiis sed dignissimos animi?</p>
+								<h6 class="display-4">Get in touch..</h6>
+								<p>We'd love to hear from you! Contact us today for any inquiries or assistance.</p>
 
 								<div class="divider divider-xs fw-light font-body text-uppercase mb-5 op-05 ms-0" style="--cnvs-divider-border-color: rgba(var(--cnvs-contrast-rgb), 0.2)"><div class="divider-text">Or</div></div>
 
-								<h3 class="fs-6 fw-light text-uppercase op-07 mb-2">Give us a Quick Call</h3>
-								<h2 class="display-4">+0 (11) 222 333</h2>
+								<h6 class="fs-6 fw-light text-uppercase op-07 mb-2">Give us a Quick Call</h6>
+								<h6 class="display-4">91 84339 66645</h6>
 							</div>
 
 							<div class="col-md-6">
-								<div class="form-widget">
-
-									<div class="form-result"></div>
-
-									<form class="row mb-0" id="template-contactform" name="template-contactform" action="include/form.php" method="post">
-										<div class="form-process">
-											<div class="css3-spinner">
-												<div class="css3-spinner-scaler"></div>
-											</div>
-										</div>
-
-										<div class="col-12 form-group">
-											<input type="text" id="template-contactform-name" name="template-contactform-name" value="" class="form-control border-form-control border-light border-opacity-50 py-3 required" placeholder="Full Name..">
-										</div>
-
-										<div class="col-12 form-group">
-											<input type="email" id="template-contactform-email" name="template-contactform-email" value="" class="email form-control border-form-control border-light border-opacity-50 py-3 required " placeholder="Email Address..">
-										</div>
-
-										<div class="col-12 form-group">
-											<input type="text" id="template-contactform-phone" name="template-contactform-phone" value="" class="form-control border-form-control border-light border-opacity-50 py-3" placeholder="Phone Number..">
-										</div>
-
-										<div class="col-12 form-group">
-											<textarea class="required form-control border-form-control border-light border-opacity-50 py-3" id="template-contactform-message" name="template-contactform-message" rows="2" cols="30" placeholder="Type Your Message Here.."></textarea>
-										</div>
-
-										<div class="col-12 form-group d-none">
-											<input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="form-control border-form-control border-light border-opacity-50 py-4">
-										</div>
-
-										<div class="col-12 form-group">
-											<button class="button button-large button-light h-text-dark h-bg-color-2 rounded ms-0 mt-3" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">Send Message</button>
-										</div>
-
-										<input type="hidden" name="prefix" value="template-contactform-">
-									</form>
-
-								</div>
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5869.117578583781!2d72.82211596178176!3d19.143136488720295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b7163b47aaf7%3A0xdc9a1e2d1f20519!2sFab%20Aesthetics%7CDr.Samreen%20Khan%7CHydrafacial%7CSkinclinic%7CBotox%7CFiller%7CThread%20lift%7CChemical%20Peel%20%7CAcne%20Scar%7CUnder%20Eye%20Filler!5e0!3m2!1sen!2sin!4v1712392897640!5m2!1sen!2sin" width="700" height="400" style="border:0; border-radius:5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 							</div>
 						</div>
 					</div>

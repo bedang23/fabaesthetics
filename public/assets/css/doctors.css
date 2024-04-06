@@ -244,3 +244,41 @@
 .is-expanded-menu .sticky-header #header-wrap {
 	top: 10px !important;
 }
+
+
+
+.custom-card {
+	display: flex;
+	border-radius: 5px;
+	background-color: green;
+	color: white;
+	padding: 20px;
+	flex-wrap: wrap; /* Allows flex items to wrap to the next line if necessary */
+ }
+
+ .custom-left-half {
+	flex: 1;
+	min-width: 0; /* Ensure left half can shrink if necessary */
+ }
+
+ .custom-right-half {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center; /* Center align the button vertically */
+	margin-top: 10px; /* Add margin to separate from the text */
+ }
+
+ .custom-button {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: white;
+	color: green;
+	border: none;
+	border-radius: 5px;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+ }
+
+ .custom-button:hover {
+	background-color: darkgreen;
+ }
