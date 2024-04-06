@@ -282,3 +282,51 @@
  .custom-button:hover {
 	background-color: darkgreen;
  }
+
+
+
+
+
+/* Social Icons */
+ .my-social-icons {
+	display: flex;
+	justify-content: center;
+ }
+
+ .my-social-link {
+	margin: 0 10px;
+	text-decoration: none;
+ }
+
+ .my-social-link i {
+	font-size: 24px;
+	transition: color 0.3s; /* Add transition effect for color change */
+ }
+
+ .my-social-link:hover {
+	border-color: #3b5998; /* Change border color on hover */
+ }
+
+ .my-social-link:hover i.fa-whatsapp {
+	color: #25D366; /* Change icon color on hover */
+ }
+
+ .my-social-link:hover i.fa-instagram {
+	color: #c32aa3; /* Change icon color on hover */
+ }
+
+ .my-social-link:hover i.fa-facebook-f {
+	color: #3b5998; /* Change icon color on hover */
+ }
+
+ .my-social-link:hover i.fa-youtube {
+	color: #FF0000; /* Change icon color on hover */
+ }
+
+ .my-social-link:hover i.fa-linkedin-in {
+	color: #0077b5; /* Change icon color on hover */
+ }
+
+ .my-social-link:hover i.fa-twitter {
+	color: #1da1f2; /* Change icon color on hover */
+ }
