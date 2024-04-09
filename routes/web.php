@@ -37,3 +37,15 @@ Route::get('/admin/dashboard',[AdminController::class,'dashboard']);
 // Route::get('/admin/logout',[AdminController::class,'logout']);
 Route::post('/admin/logout', [AdminController::class, 'logout']);
 
+
+Route::get('/admin/contact',[AdminController::class,'contact']);
+
+
+//service
+Route::get('/admin/service/list',[AdminController::class,'servicelist']);
+Route::get('/admin/service/create',[AdminController::class,'servicecreate']);
+Route::post('/admin/service/create',[AdminController::class,'saveservice']);
+Route::get('/admin/service/edit/{id}',[AdminController::class,'serviceedit']);
+Route::post('/admin/service/update/{id}',[AdminController::class,'updateservice']);
+Route::get('/admin/service/delete/{id}',[AdminController::class,'deleteservice']);
+

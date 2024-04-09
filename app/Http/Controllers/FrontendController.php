@@ -25,20 +25,18 @@ class FrontendController extends Controller
         $request->validate([
             'name' => 'required',
             'email' => 'required|email',
-            'subject' => 'required',
+            'phone' => 'required',
             'message' => 'required',
-            'number' => 'required'
         ]);
 
         Contacts::create([
             'name' => $request->name,
             'email' => $request->email,
-            'number' => $request->number,
-            'subject' => $request->subject,
+            'phone' => $request->phone,
             'message' => $request->message,
         ]);
 
-        return redirect('contact-us/#alert')->with('message','Thank You for Contacting Us');
+        return redirect('contact-us/#alert')->with('message','Thank You for Contacting Us, we will get back to you soon.');
 
     }
 

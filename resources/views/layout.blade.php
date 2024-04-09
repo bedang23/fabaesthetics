@@ -2,10 +2,31 @@
 <html dir="ltr" lang="en-US">
 <head>
 
+   {{-- Dynamic SEO Content --}}
+
+
+	<title>@yield('mytitle')</title>
+	<meta name="description" content="@yield('mydescription')" />
+	<link rel="canonical" href="{{ url()->current() }}" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="@yield('mytitle')" />
+	<meta property="og:description" content="@yield('mydescription')" />
+	<meta property="og:url" content="{{ url()->current() }}" />
+	<meta property="og:site_name" content="Fab Aesthetics." />
+   <meta property="og:image" content="{{asset('assets/images/home/clinical-care.png')}}" />
+	<meta property="og:image:width" content="600" />
+	<meta property="og:image:height" content="400" />
+	<meta property="og:image:type" content="image/png" />
+	<meta name="twitter:card" content="summary_large_image" />
+
+
    <meta http-equiv="content-type" content="text/html; charset=utf-8">
    <meta http-equiv="x-ua-compatible" content="IE=edge">
-   <meta name="author" content="SemiColonWeb">
-   <meta name="description" content="Get Canvas to build powerful websites easily with the Highly Customizable &amp; Best Selling Bootstrap Template, today.">
+   <meta name="author" content="Bedang">
+
+
+
+   <link rel="canonical" href="{{ url()->current() }}" />
 
    <!-- Font Imports -->
    <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,9 +45,6 @@
 
    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-   <!-- Document Title
-	============================================= -->
-   <title>Doctors | Canvas</title>
 
 </head>
 

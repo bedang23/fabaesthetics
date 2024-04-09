@@ -7,7 +7,7 @@
 
 							<!-- Logo -->
 							<div id="logo" class="me-lg-0 col-lg-2 col-6">
-								 <a href="index.html">
+								 <a href="{{ url('/') }}">
 									  <img class="logo-default ms-0" src="{{ asset('assets/images/logo.png') }}" alt="Fabaesthetics Logo">
 									  <img class="logo-dark" src="{{ asset('assets/images/logo.png') }}" alt="Fabaesthetics Logo">
 								 </a>

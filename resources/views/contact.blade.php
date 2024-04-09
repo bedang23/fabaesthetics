@@ -37,13 +37,7 @@
                            <div class="col-lg-6">
                                <div class="form-group app-label">
                                    <label class="text-muted">Phone Number</label>
-                                   <input name="number" type="number" class="form-control resume" placeholder="Enter Phone Number">
-                               </div>
-                           </div>
-                           <div class="col-lg-6">
-                               <div class="form-group app-label">
-                                   <label class="text-muted">Subject</label>
-                                   <input type="text" class="form-control resume" name="subject" placeholder="Subject..">
+                                   <input name="phone" type="number" class="form-control resume" placeholder="Enter Phone Number">
                                </div>
                            </div>
                            <div class="col-lg-12">

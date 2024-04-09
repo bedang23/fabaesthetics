@@ -1,5 +1,9 @@
 @extends('layout')
 
+@section('mytitle', 'Home: Fabaesthetics')
+
+@section('mydescription', " Demo description for Fabaesthetics")
+
 @section('content')
 
 <!-- Hero
