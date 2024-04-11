@@ -266,7 +266,7 @@
 							<div class="services-category-item">
 								<a href="#" class="card border-0 rounded-6">
 									<div class="card-body justify-content-center align-items-center px-4 py-5 text-center">
-										<h4 class="my-1">Glutathione Injection</h4>
+										<h4 class="my-1">Glutathione</h4>
 										<small class="text-smaller">Brighten Your Skin, Radiate Confidence.</small>
 									</div>
 								</a>

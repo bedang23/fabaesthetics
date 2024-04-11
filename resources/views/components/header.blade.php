@@ -30,7 +30,7 @@
 								 <ul class="menu-container">
 									  <!-- Dropdown for Services -->
 									  <li class="menu-item dropdown">
-											<a class="menu-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Skin Treatment</a>
+											<a class="menu-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Skin</a>
 											<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 												<li><a class="dropdown-item" href="{{ url('service/skin-treatment/acne-treatment') }}">Acne Treatment</a></li>
 													<li><a class="dropdown-item" href="{{ url('service/skin-treatment/acne-scar-treatment') }}">Acne Scar Treatment</a></li>
@@ -41,7 +41,7 @@
 											</ul>
 								  		</li>
 										  <li class="menu-item dropdown">
-											<a class="menu-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cosmetics Treatment</a>
+											<a class="menu-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cosmetics</a>
 											<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 												<li><a class="dropdown-item" href="{{ url('service/cosmetics-treatment/anti-ageing-treatment') }}">Anti Ageing Treatment</a></li>
 												<li><a class="dropdown-item" href="{{ url('service/cosmetics-treatment/botox') }}">Botox</a></li>
@@ -76,14 +76,14 @@
 											</ul>
 								  		</li>
 										  <li class="menu-item dropdown">
-											<a class="menu-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Laser Treatment</a>
+											<a class="menu-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Laser</a>
 											<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 												<li><a class="dropdown-item" href="{{ url('service/lazer-treatment/laser-hair-reduction') }}">Laser hair reduction</a></li>
 												<li><a class="dropdown-item" href="{{ url('service/lazer-treatment/laser-hair-removal') }}">Laser hair removal</a></li>
 											</ul>
 								  		</li>
 										  <li class="menu-item dropdown">
-											<a class="menu-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Skin Rejuvenation Treatments</a>
+											<a class="menu-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Skin Rejuvenation</a>
 											<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 												<li><a class="dropdown-item" href="{{ url('service/skin-rejuvenation-treatment/medi-facials') }}">Medi Facials</a></li>
 												<li><a class="dropdown-item" href="{{ url('service/skin-rejuvenation-treatment/hydrafacial') }}">Hydrafacial</a></li>
@@ -126,4 +126,4 @@
 				 </div>
 			</div>
 			<div class="header-wrap-clone"></div>
-	  </header><!-- #header end -->
+		</header><!-- #header end -->

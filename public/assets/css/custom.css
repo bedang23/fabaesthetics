@@ -10,7 +10,9 @@
 	padding-bottom: 60px;
 }
 
-
+.service-details{
+	padding-top: 60px;
+}
 
 /* Service Details Section */
 #service-details .service-details {
@@ -23,6 +25,10 @@
 	height: auto;
  }
 
+ .featured-image{
+	text-align: center;
+ }
+
  /* Service Content */
  #service-details .service-content {
 	margin-top: 30px;
@@ -33,7 +39,23 @@
 	background-color: #fff;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow to the sidebar */
 	padding: 20px;
+	border-radius: 5px;
+	margin-bottom: 30px;
  }
+
+ .sidebar-two{
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow to the sidebar */
+	padding: 20px;
+	border-radius: 5px;
+	margin-bottom: 30px;
+ }
+
+ .sidebar-two {
+    position: sticky;
+    top: 100px;
+}
+
 
  /* Featured Categories */
  #service-details .featured-categories {
@@ -41,7 +63,7 @@
  }
 
  #service-details .featured-categories h3 {
-	font-size: 18px;
+	font-size: 20px;
 	font-weight: bold;
 	margin-bottom: 10px;
  }
@@ -80,4 +102,22 @@
 
  #service-details .social-icons a:hover {
 	color: #007bff;
+ }
+
+
+ .popular-treatments li{
+	border: 1px solid #f4f4f4;
+	border-radius: 5px;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #ddecbe08;
+ }
+
+ .popular-treatments li:hover{
+	border: 1px solid #e8e8e8;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #9acd321c;
  }

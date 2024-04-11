@@ -203,6 +203,7 @@
    <script src="{{ asset('assets/js/functions.bundle.js') }}"></script>
    <script src="{{ asset('assets/js/selectsplitter.js') }}"></script>
    <script src="{{ asset('assets/js/bs-select.js') }}"></script>
+   <script src="{{ asset('assets/js/custom.js') }}"></script>
 
 
 </body>
