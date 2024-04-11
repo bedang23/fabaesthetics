@@ -1,8 +1,8 @@
 @extends('layout')
 
-@section('mytitle', 'Home: Fabaesthetics')
+@section('mytitle', 'Transform Your Skin & Hair | Best Skin Clinic in Mumbai | Fabaesthetics')
 
-@section('mydescription', " Demo description for Fabaesthetics")
+@section('mydescription', "Experience top-tier skin and hair treatments at Fabaesthetics, the premier skin clinic in Mumbai. From HydraFacial to Microneedling, Chemical Peels, and more, our expert team delivers personalized solutions for radiant skin and luscious hair. Over 5 years of trusted experience, with 20+ celebrities among our satisfied clientele. Discover your ultimate skincare solution in Mumbai today!")
 
 @section('content')
 

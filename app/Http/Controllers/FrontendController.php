@@ -20,6 +20,10 @@ class FrontendController extends Controller
         return view('contact');
     }
 
+    public function servicedetail() {
+        return view('service');
+    }
+
     public function contactsubmit(Request $request)
     {
         $request->validate([
