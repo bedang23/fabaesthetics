@@ -74,7 +74,7 @@
 
                      <div class="widget widget_links widget-li-noicon">
 
-                        <h4 class="text-uppercase mb-4">Skin Treatment</h4>
+                        <h4 class="text-uppercase mb-4" style="font-size:16px ">Skin Treatment</h4>
 
                         <ul>
                            <li><a href="{{ url('service/skin-treatment/acne-treatment') }}">Acne Treatment</a></li>

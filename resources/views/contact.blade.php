@@ -1,83 +1,90 @@
 @extends('layout')
 
+@section('mytitle', 'Contact the Experts | Reach Out to Fabaesthetics for Skin & Hair Solutions')
+
+@section('mydescription', "Connect with Fabaesthetics for expert skin & hair solutions. Contact us for personalized treatments in Mumbai!")
+
 @section('content')
 
- <!-- CONTACT FORM START -->
- <section class="section" id="alert">
-   <div class="container">
-       <div class="row">
-           <div class="col-lg-12">
-               <h4 class="text-dark mb-0">Get In Touch :</h4>
-           </div>
-       </div>
-
-       <div class="row">
-           <div class="col-lg-8 col-md-7 mt-4 pt-2">
-               <div class="custom-form rounded border p-4">
-                   <div id="message">
-                       @if(Session::has('message'))
-                       <p class="alert {{ Session::get('alert-class', 'alert-success') }} mt-3">{{ Session::get('message') }}</p>
-                       @endif
-                   </div>
-                   <form method="post" action="/contact-us">
-                       @csrf
-                       <div class="row">
-                           <div class="col-lg-6">
-                               <div class="form-group app-label">
-                                   <label class="text-muted">Name</label>
-                                   <input name="name" id="name2" type="text" class="form-control resume" placeholder="Enter Name..">
-                               </div>
-                           </div>
-                           <div class="col-lg-6">
-                               <div class="form-group app-label">
-                                   <label class="text-muted">Email address</label>
-                                   <input name="email" id="email1" type="email" class="form-control resume" placeholder="Enter Email..">
-                               </div>
-                           </div>
-                           <div class="col-lg-6">
-                               <div class="form-group app-label">
-                                   <label class="text-muted">Phone Number</label>
-                                   <input name="phone" type="number" class="form-control resume" placeholder="Enter Phone Number">
-                               </div>
-                           </div>
-                           <div class="col-lg-12">
-                               <div class="form-group app-label">
-                                   <label class="text-muted">Message</label>
-                                   <textarea name="message" id="comments" rows="5" class="form-control resume" placeholder="Message.."></textarea>
-                               </div>
-                           </div>
-                       </div>
-                       <div class="row">
-                           <div class="col-sm-12">
-                               <input type="submit" id="submit" name="send" class="submitBnt btn btn-primary" value="Send Message">
-                               <div id="simple-msg"></div>
-                           </div>
-                       </div>
-                   </form>
-               </div>
-           </div>
-
-           <div class="col-lg-4 col-md-5 mt-4 pt-2">
-               <div class="border rounded text-center p-4">
-                   <h5 class="text-dark pb-3">Contact Info</h5>
-                   <div class="contact-location rounded mt-5 p-4">
-                       <div class="contact-location-icon bg-white text-primary rounded-pill">
-                           <i class="mdi mdi-cellphone-iphone"></i>
-                       </div>
-                       <p class="text-muted pt-4 f-20 mb-0"><a href="mailto:support@theactorscasting.com">support@theactorscasting.com</a><br><a href="tel:916260153846">+91 6260153846</a></p>
-                   </div>
-                   <h6 class="text-muted mt-4 mb-0">Share</h6>
-                   <ul class="list-unstyled social-icon mt-3 mb-0">
-                       <li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=100087267705867&mibextid=ZbWKwL" class=""><i class="mdi mdi-facebook"></i></a></li>
-                       <li class="list-inline-item"><a href="https://www.instagram.com/invites/contact/?i=1pvwrz8hdw1bo&utm_content=kmdd83e" class=""><i class="mdi mdi-instagram"></i></a></li>
-                       <li class="list-inline-item"><a href="https://www.youtube.com/@theactorscasting" class=""><i class="mdi mdi-youtube"></i></a></li>
-                       <li class="list-inline-item"><a href="https://www.linkedin.com/company/the-actor-s-casting/" class="rounded"><i class="mdi mdi-linkedin"></i></a></li>
-                   </ul>
-               </div>
-           </div>
-       </div>
-   </div>
+<section id="slider" class="slider-element include-header" style="background: linear-gradient(90deg, rgba(34, 193, 195, 0.06), rgba(253, 187, 45, 0.1));">
+    <div class="container mt-lg-12" style="text-align: center">
+        <div class="row justify-content-between align-items-center py-lg-6 py-5" style="padding-top: 12rem !important;">
+            <h1 class="display-3 color all-ts" style="font-weight: 600">Contact Us</h1>
+        </div>
+    </div>
 </section>
-<!-- CONTACT FORM END -->
+
+<section>
+    <div class="container contact-container">
+        <div class="row">
+            <div class="col-lg-5">
+                <img src="assets/images/icons/wave.svg" alt="..." class="position-absolute top-0 start-0 translate-middle d-none d-md-block" width="36">
+                <h2 class="display-4">Get in touch..</h2>
+                <div class="custom-form">
+                    <div id="message">
+                        @if(Session::has('message'))
+                        <p class="alert {{ Session::get('alert-class', 'alert-success') }} mt-3">{{ Session::get('message') }}</p>
+                        @endif
+                    </div>
+                    <form method="post" action="/contact-us">
+                        @csrf
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group app-label">
+                                    {{-- <label class="text-muted">Name</label> --}}
+                                    <input required name="name" id="name2" type="text" class="form-control resume" placeholder="Enter Name..">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group app-label">
+                                    {{-- <label class="text-muted">Email address</label> --}}
+                                    <input required name="email" id="email1" type="email" class="form-control resume" placeholder="Enter Email..">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group app-label">
+                                    {{-- <label class="text-muted">Phone Number</label> --}}
+                                    <input required name="phone" type="number" class="form-control resume" placeholder="Enter Phone Number">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group app-label">
+                                    {{-- <label class="text-muted">Message</label> --}}
+                                    <textarea required name="message" id="comments" rows="2" class="form-control resume" placeholder="Message.."></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <input type="submit" id="submit" name="send" class="submitBnt btn" style="background-color: #206631;  border-block: #206631; color:white" value="Send Message">
+                                <div id="simple-msg"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-2"></div>
+            <div class="col-lg-5" style="padding-top: 60px !important">
+
+                <h6 class="fs-6 fw-light text-uppercase op-07 mb-2">Give us a Quick Call</h6>
+                <h6 class="display-6"><a href="tel:+918433966645"> 84339 66645</a></h6>
+
+                <h6 class="fs-6 fw-light text-uppercase op-07 mb-2">Mail Us</h6>
+                <h6 class="display-6"><a href="mailto:info@fabaesthetics.in">info@fabaesthetics.in</a></h6>
+
+                <div class="divider divider-xs fw-light font-body text-uppercase mb-3 op-05 ms-0" style="--cnvs-divider-border-color: rgba(var(--cnvs-contrast-rgb), 0.2); margin-top: 2rem; margin-bottom:2rem !important"><div class="divider-text">Or</div></div>
+
+                <h6 class="fs-6 fw-light text-uppercase op-07 mb-2">Visit Us</h6>
+                <p>Flat no.606, Kamdhenu Building no.4, Lokhandwala Market,<br> Andheri West,  Mumbai-400053 </p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5869.117578583781!2d72.82211596178176!3d19.143136488720295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b7163b47aaf7%3A0xdc9a1e2d1f20519!2sFab%20Aesthetics%7CDr.Samreen%20Khan%7CHydrafacial%7CSkinclinic%7CBotox%7CFiller%7CThread%20lift%7CChemical%20Peel%20%7CAcne%20Scar%7CUnder%20Eye%20Filler!5e0!3m2!1sen!2sin!4v1712392897640!5m2!1sen!2sin" width="400" height="100" style="border:0; border-radius:5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
 
 @endsection('content')

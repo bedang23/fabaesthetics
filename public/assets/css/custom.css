@@ -5,3 +5,79 @@
 	Overwriting Default Theme Styles for Better Handling Updates
 -----------------------------------------------------------------*/
 
+.contact-container{
+	padding-top: 100px;
+	padding-bottom: 60px;
+}
+
+
+
+/* Service Details Section */
+#service-details .service-details {
+	padding: 50px 0;
+ }
+
+ /* Featured Image */
+ #service-details .featured-image img {
+	max-width: 100%;
+	height: auto;
+ }
+
+ /* Service Content */
+ #service-details .service-content {
+	margin-top: 30px;
+ }
+
+ /* Sidebar */
+ #service-details .sidebar {
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow to the sidebar */
+	padding: 20px;
+ }
+
+ /* Featured Categories */
+ #service-details .featured-categories {
+	margin-bottom: 20px;
+ }
+
+ #service-details .featured-categories h3 {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 10px;
+ }
+
+ #service-details .featured-categories ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+ }
+
+ #service-details .featured-categories li {
+	margin-bottom: 10px;
+ }
+
+ /* Social Icons */
+ #service-details .social-icons {
+	margin-top: 20px;
+ }
+
+ #service-details .social-icons ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+ }
+
+ #service-details .social-icons li {
+	display: inline-block;
+	margin-right: 10px;
+ }
+
+ #service-details .social-icons a {
+	color: #333;
+	font-size: 20px;
+	transition: color 0.3s ease;
+ }
+
+ #service-details .social-icons a:hover {
+	color: #007bff;
+ }

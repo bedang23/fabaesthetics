@@ -17389,7 +17389,7 @@ body:not(.is-expanded-menu) #header:not([data-mobile-sticky=true]) .header-wrap-
   position: relative;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .is-expanded-menu .header-row {
   position: initial;
@@ -22012,7 +22012,7 @@ body:not(.has-plugin-html5video) .video-wrap video {
 -----------------------------------------------------------------*/
 #comments {
   position: relative;
-  margin-top: 3rem;
+  margin-top: 1rem;
   padding-top: 3rem;
   border-top: 1px solid var(--cnvs-contrast-100);
 }
@@ -30086,7 +30086,7 @@ label.error {
 
 .widget {
   --cnvs-widget-border: 1px solid rgba(var(--cnvs-contrast-rgb), 0.1);
-  --cnvs-widget-margin: 3rem;
+  --cnvs-widget-margin: 0rem;
   --cnvs-widget-title-margin: 1.5rem;
   --cnvs-widget-title-font-size: 0.9325rem;
   --cnvs-widget-title-font-weight: 600;
