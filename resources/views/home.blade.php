@@ -12,8 +12,8 @@
 			<div class="container mt-lg-6">
 				<div class="row justify-content-between align-items-center py-lg-6 py-5">
 					<div class="col-lg-5 mb-4 mb-lg-0">
-						<img src="assets/images/icons/wave.svg" alt="..." class="position-absolute top-0 start-0 translate-middle d-none d-md-block" width="50">
-						<h2 class="display-3 fw-bold color all-ts">Fabaesthetics <span class="underliner nocolor viewport-detect" data-delay="1000">Celebrity's'</u></span> Favourite Clinic <img class="position-relative" style="top: -5px;" src="assets/images/icons/smile.svg" alt="..." width="50"></h2>
+						<img src="assets/images/icons/wave.svg" alt="wave" class="position-absolute top-0 start-0 translate-middle d-none d-md-block" width="50">
+						<h2 class="display-3 fw-bold color all-ts">Fabaesthetics <span class="underliner nocolor viewport-detect" data-delay="1000">Celebrity's'</u></span> Favourite Clinic <img class="position-relative" style="top: -5px;" src="assets/images/icons/smile.svg" alt="smile" width="50"></h2>
 						<p>Your journey to great skin begins with a free consultation to identify your concerns, assess yours skin and tailor a skincare regime to your exact needs..</p>
 						<a href="{{ '/contact' }}" class="button py-3 px-4 bg-color-2 color h-bg-color h-text-light rounded mx-0">Request an Appoinment<i class="bi-arrow-right ms-2 me-0"></i></a>
 					</div>
@@ -81,7 +81,7 @@
 							<div class="tab-pane fade show active" id="skin-treatment" role="tabpanel" aria-labelledby="skin-treatment-tab" tabindex="0">
 								<div class="row justify-content-between align-items-stretch">
 									<div class="col-md-5">
-										<img src="assets/images/icons/wave.svg" alt="..." class="position-absolute top-0 start-0 translate-middle d-none d-md-block" width="36">
+										<img src="assets/images/icons/wave.svg" alt="wave" class="position-absolute top-0 start-0 translate-middle d-none d-md-block" width="36">
 										<h3 class="display-5">Skin Treatments</h3>
 										<p class="mb-0">Skin treatments are treatments which suggested by our expert doctor on the basis of detailed analysis of your skin. Our doctor will discuss in detailed with you about your real skin	problem and will recommend you the best and	most effective solutions for your beautiful skin problem. Thise treatment will specially target your	skin problem like acne, acne scars, pigmentation,	melasma, open pores, Tan removals, etc..</p>
 										<div class="line my-4"></div>
@@ -90,14 +90,14 @@
 										</div>
 									</div>
 									<div class="col-md-6">
-										<img src="assets/images/treatments/skin-treatments.jpg" alt=".." class="rounded-6 h-100 object-cover">
+										<img src="assets/images/treatments/skin-treatments.jpg" alt="Skin treatments" class="rounded-6 h-100 object-cover">
 									</div>
 								</div>
 							</div>
 							<div class="tab-pane fade" id="hair-treatments" role="tabpanel" aria-labelledby="hair-treatments-tab" tabindex="0">
 								<div class="row justify-content-between align-items-stretch">
 									<div class="col-md-5">
-										<img src="assets/images/icons/wave.svg" alt="..." class="position-absolute top-0 start-0 translate-middle d-none d-md-block" width="36">
+										<img src="assets/images/icons/wave.svg" alt="wave" class="position-absolute top-0 start-0 translate-middle d-none d-md-block" width="36">
 										<h3 class="display-5">Hair Treatments</h3>
 										<p>Losing hair is undoubtedly heartwrenching. Many doctors may have claimed to bring back your hair through various unheard means but all in vain. Here at Fab Aesthetics, we do not claim, we create hair-full heads. From Medication, PRP, Mesotherapy to Hair Transplant, we do it all for various needs of patients. We have all possible and effective treatments for your hair problems like hair fall, dandruff, hair regrowth, etc.</p>
 										<div class="line my-4"></div>
@@ -106,7 +106,7 @@
 										</div>
 									</div>
 									<div class="col-md-6">
-										<img src="assets/images/treatments/hair-treatments.jpg" alt=".." class="rounded-6 h-100 object-cover">
+										<img src="assets/images/treatments/hair-treatments.jpg" alt="hair treatments" class="rounded-6 h-100 object-cover">
 									</div>
 								</div>
 							</div>
@@ -122,41 +122,41 @@
 										</div>
 									</div>
 									<div class="col-md-6">
-										<img src="assets/images/treatments/lazer-treatments.jpg" alt=".." class="rounded-6 h-100 object-cover">
+										<img src="assets/images/treatments/lazer-treatments.jpg" alt="lazer treatments" class="rounded-6 h-100 object-cover">
 									</div>
 								</div>
 							</div>
 							<div class="tab-pane fade" id="makeover-treatments" role="tabpanel" aria-labelledby="makeover-treatments-tab" tabindex="0">
 								<div class="row justify-content-between align-items-stretch">
 									<div class="col-md-5">
-										<img src="assets/images/icons/wave.svg" alt="..." class="position-absolute top-0 start-0 translate-middle d-none d-md-block" width="36">
+										<img src="assets/images/icons/wave.svg" alt="wave" class="position-absolute top-0 start-0 translate-middle d-none d-md-block" width="36">
 										<h3 class="display-5">Make over Treatments</h3>
 										<p><b>There are two types of makeover treatments:</b> 	Microblading and Micropigmentation</p>
 										<p>Microblading involves implanting pigment into the skin's superficial layers to resemble eyebrow hair. It is ideal for people who have experienced some hair loss and wish to restore the appearance of very natural-looking eyebrows.</p>
 										<p>Micropigmentation, also known as permanent makeup or cosmetic tattooing, is used to improve or replace lost coloring on skin. It's most often used on the face to enhance eyebrows, eyelashes, eyelids (as eyeliner), and lips.</p>
 									</div>
 									<div class="col-md-6">
-										<img src="assets/images/treatments/makeover-treatments.jpg" alt=".." class="rounded-6 h-100 object-cover">
+										<img src="assets/images/treatments/makeover-treatments.jpg" alt="makeover treatments" class="rounded-6 h-100 object-cover">
 									</div>
 								</div>
 							</div>
 							<div class="tab-pane fade" id="cosmetic-treatments" role="tabpanel" aria-labelledby="cosmetic-treatments-tab" tabindex="0">
 								<div class="row justify-content-between align-items-stretch">
 									<div class="col-md-5">
-										<img src="assets/images/icons/wave.svg" alt="..." class="position-absolute top-0 start-0 translate-middle d-none d-md-block" width="36">
+										<img src="assets/images/icons/wave.svg" alt="wave" class="position-absolute top-0 start-0 translate-middle d-none d-md-block" width="36">
 										<h3 class="display-5">Cosmetic Treatments</h3>
 										<p>A cosmetic treatment which aims to restore a	youthful appearance to the human face, which can be achieved through either surgical and/or non-surgical options. Procedures can vary in invasiveness and depth of treatment.</p>
 										<p>Surgical procedure can restore facial symmetry through targeted procedures and facial restructuring and skin alterations. Non-surgical procedures can target specific depths of facial structures and treat localized facial concerns such as wrinkles, skin laxity, hyperpigmentation and scars.</p>
 									</div>
 									<div class="col-md-6">
-										<img src="assets/images/treatments/cosmetic-treatments.jpg" alt=".." class="rounded-6 h-100 object-cover">
+										<img src="assets/images/treatments/cosmetic-treatments.jpg" alt="cosmetic treatments" class="rounded-6 h-100 object-cover">
 									</div>
 								</div>
 							</div>
 							<div class="tab-pane fade" id="skin-rejuvenation" role="tabpanel" aria-labelledby="skin-rejuvenation-tab" tabindex="0">
 								<div class="row justify-content-between align-items-stretch">
 									<div class="col-md-5">
-										<img src="assets/images/icons/wave.svg" alt="..." class="position-absolute top-0 start-0 translate-middle d-none d-md-block" width="36">
+										<img src="assets/images/icons/wave.svg" alt="wave" class="position-absolute top-0 start-0 translate-middle d-none d-md-block" width="36">
 										<h3 class="display-5">Skin Rejuvenation Treatment</h3>
 										<p>Are you looking to take years off your face? Skin	rejuvenation treatments can help you. Due to hectic work routines and unhealthy lifestyle habits, most of us deprive our skin from the care it needs. Skin rejuvenation treatments can help your skin restore its natural glow, reverse signs of aging, and prevent any type of damage.</p>
 										<div class="line my-4"></div>
@@ -165,7 +165,7 @@
 										</div>
 									</div>
 									<div class="col-md-6">
-										<img src="assets/images/treatments/skin-rejuvenation.jpg" alt=".." class="rounded-6 h-100 object-cover">
+										<img src="assets/images/treatments/skin-rejuvenation.jpg" alt="skin rejuvenation" class="rounded-6 h-100 object-cover">
 									</div>
 								</div>
 							</div>
@@ -177,16 +177,16 @@
 					<div class="container">
 						<div class="row justify-content-center mb-4">
 							<div class="col-md-9 text-center">
-								<h2 class="display-4 mb-3">We take your Health Seriously</h2>
-								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe Libero cum <br> quaerat maxime! Ducimus quibusdam</p>
+								<h2 class="display-4 mb-3">Elevating Skin Wellness: Our Serious Commitment</h2>
+								<p>Elevating Skin Wellness: Our Serious Commitment<br> Trust Us for Your Skin's Health and Beauty.</p>
 							</div>
 						</div>
 						<div class="row row-cols-xl-5 row-cols-lg-4 row-cols-sm-2 row-cols-1 services-categories g-4 align-items-stretch">
 							<div class="services-category-item">
 								<a href="#" class="card border-0 rounded-6">
 									<div class="card-body justify-content-center align-items-center px-4 py-5 text-center">
-										<h4 class="my-1">Dermatologist</h4>
-										<small class="text-smaller">Eczema, Hair Loss, Acne, Skin cancer..</small>
+										<h4 class="my-1">Hydra facial</h4>
+										<small class="text-smaller">HydraFacial: Radiant skin, renewed confidence.</small>
 									</div>
 								</a>
 							</div>
@@ -194,8 +194,8 @@
 							<div class="services-category-item">
 								<a href="#" class="card border-0 rounded-6">
 									<div class="card-body justify-content-center align-items-center px-4 py-5 text-center">
-										<h4 class="my-1">Neurologist</h4>
-										<small class="text-smaller">Neuromuscular disorders, ADD, brain tumors..</small>
+										<h4 class="my-1">Oxygeneo Facial</h4>
+										<small class="text-smaller">OxyGeneo Facial: Oxygenate, Glow, Renew.</small>
 									</div>
 								</a>
 							</div>
@@ -203,8 +203,8 @@
 							<div class="services-category-item">
 								<a href="#" class="card border-0 rounded-6">
 									<div class="card-body justify-content-center align-items-center px-4 py-5 text-center">
-										<h4 class="my-1">Radiologist</h4>
-										<small class="text-smaller">Cancers or tumors. Blockages in your arteries or veins</small>
+										<h4 class="my-1">Microneedling</h4>
+										<small class="text-smaller">Revitalize Your Skin with Microneedling.</small>
 									</div>
 								</a>
 							</div>
@@ -212,8 +212,8 @@
 							<div class="services-category-item">
 								<a href="#" class="card border-0 rounded-6">
 									<div class="card-body justify-content-center align-items-center px-4 py-5 text-center">
-										<h4 class="my-1">Pathologist</h4>
-										<small class="text-smaller">bleeding disorders, clotting problems, and anemia</small>
+										<h4 class="my-1">Chemical peel</h4>
+										<small class="text-smaller">Renew Your Skin with Chemical Peels.</small>
 									</div>
 								</a>
 							</div>
@@ -221,8 +221,8 @@
 							<div class="services-category-item">
 								<a href="#" class="card border-0 rounded-6">
 									<div class="card-body justify-content-center align-items-center px-4 py-5 text-center">
-										<h4 class="my-1">Pulmonologist</h4>
-										<small class="text-smaller">asthma and chronic obstructive pulmonary disease (COPD)</small>
+										<h4 class="my-1">PRP</h4>
+										<small class="text-smaller">Regenerate Hair, Restore Confidence.</small>
 									</div>
 								</a>
 							</div>
@@ -230,8 +230,8 @@
 							<div class="services-category-item">
 								<a href="#" class="card border-0 rounded-6">
 									<div class="card-body justify-content-center align-items-center px-4 py-5 text-center">
-										<h4 class="my-1">Dermatologist</h4>
-										<small class="text-smaller">Acne, blocked skin follicles that lead to oil, bacteria and dead skin buildup in your pores.</small>
+										<h4 class="my-1">Dermapen 4</h4>
+										<small class="text-smaller">Precision, Perfection, Radiant Skin.</small>
 									</div>
 								</a>
 							</div>
@@ -239,9 +239,8 @@
 							<div class="services-category-item">
 								<a href="#" class="card border-0 rounded-6">
 									<div class="card-body justify-content-center align-items-center px-4 py-5 text-center">
-										<h4 class="my-1">Psychiatrist</h4>
-										<small class="text-smaller">Depression, bipolar disorder, and other mood disorders.
-											Eating disorders.</small>
+										<h4 class="my-1">Botox</h4>
+										<small class="text-smaller">Smooth, Refresh, Renew: Botox Beauty Solutions.</small>
 									</div>
 								</a>
 							</div>
@@ -249,8 +248,8 @@
 							<div class="services-category-item">
 								<a href="#" class="card border-0 rounded-6">
 									<div class="card-body justify-content-center align-items-center px-4 py-5 text-center">
-										<h4 class="my-1">Psychiatrist</h4>
-										<small class="text-smaller">Atherosclerosis, High blood pressure, High cholesterol, Heart Failure..</small>
+										<h4 class="my-1">Dermal Filler</h4>
+										<small class="text-smaller">Enhance, Restore, Rejuvenate Beauty.</small>
 									</div>
 								</a>
 							</div>
@@ -258,8 +257,8 @@
 							<div class="services-category-item">
 								<a href="#" class="card border-0 rounded-6">
 									<div class="card-body justify-content-center align-items-center px-4 py-5 text-center">
-										<h4 class="my-1">Orthopedic</h4>
-										<small class="text-smaller">fractures, Knee joint ligament injuries, Knee joint damage due to different causes of arthritis</small>
+										<h4 class="my-1">Thread Lift</h4>
+										<small class="text-smaller">Lift, Tighten, Illuminate Your Beauty.</small>
 									</div>
 								</a>
 							</div>
@@ -267,8 +266,8 @@
 							<div class="services-category-item">
 								<a href="#" class="card border-0 rounded-6">
 									<div class="card-body justify-content-center align-items-center px-4 py-5 text-center">
-										<h4 class="my-1">Gastroenterology</h4>
-										<small class="text-smaller">Constipation, Crohn's disease, Diarrhoea, Vomiting in children, Gastritis..</small>
+										<h4 class="my-1">Glutathione Injection</h4>
+										<small class="text-smaller">Brighten Your Skin, Radiate Confidence.</small>
 									</div>
 								</a>
 							</div>
@@ -281,11 +280,11 @@
 						<div class="row gy-4 justify-content-around align-items-center">
 							<div class="col-md-5">
 								<div class=" position-relative" style="padding-bottom: 30px; padding-top:30px;">
-									<img src="assets/images/dr-samreen-khan.jpg" alt=".." style="border-radius: 5px; box-shadow: 0px 0px 10px #888;">
+									<img src="assets/images/dr-samreen-khan.jpg" alt="Dr Samreen Khan" style="border-radius: 5px; box-shadow: 0px 0px 10px #888;">
 								</div>
 							</div>
 							<div class="col-md-5">
-								<img src="assets/images/icons/wave.svg" alt="..." class="position-absolute top-0 start-0 translate-middle d-none d-md-block" width="36">
+								<img src="assets/images/icons/wave.svg" alt="wave" class="position-absolute top-0 start-0 translate-middle d-none d-md-block" width="36">
 								<h2 class="display-4 mb-3">Meet Our Doctor</h2>
 								<p class=""><b>Dr Samreen Khan</b> is Clinical Head at Fab Aesthetics. She has graduated from the prestigious Maharashtra University of Health Sciences(MUHS), Nasik and is a proud “Gold medalist”. She is an internationally trained aesthetic cosmetologist. She specializes Dr. Samreen Khan with renowned surgeons of india. She routinely hones her skills through training from acclaimed trainers/surgeons in the field of Aesthetic Cosmetology in Aesthetic Cosmetology procedures, antiaging, skin rejuvenation, laser, eye brow reshaping and lip lightening to name a few. She has good surgical hand and has worked throughout the world. Let your transformation begin at our Aesthetic Cosmetology clinic based in Lokhandwala Complex, Andheri West. We provide a range of Skincare, Minor surgeries and the latest Non-surgical cosmetic treatments, all performed to the highest of medical standards.	</p>
 							</div>
@@ -316,10 +315,10 @@
 								<small class="color-2 text-uppercase ls-2 text-smaller">5 Star Reviews</small>
 							</div>
 						</div>
-						<img  src="assets/images/home/clinical-care.png" alt=".." class="my-5">
+						<img  src="assets/images/home/clinical-care.png" alt="clinical care" class="my-5">
 						<div class="row align-items-end justify-content-between">
 							<div class="col-md-10">
-								<img src="assets/images/icons/wave.svg" alt="..." class="position-absolute top-0 start-0 translate-middle d-none d-md-block" width="36">
+								<img src="assets/images/icons/wave.svg" alt="wave" class="position-absolute top-0 start-0 translate-middle d-none d-md-block" width="36">
 								<h3 class="display-6 mb-md-0">Your journey to great skin begins with a free consultation to identify your concerns, assess your	skin and tailor a skincare regime to your exact needs.</h3>
 							</div>
 						</div>
@@ -330,7 +329,7 @@
 					<div class="container">
 						<div class="row align-items-center justify-content-between">
 							<div class="col-md-4 mt-4">
-								<img src="assets/images/icons/wave.svg" alt="..." class="position-absolute top-0 start-0 translate-middle d-none d-md-block" width="36">
+								<img src="assets/images/icons/wave.svg" alt="wave" class="position-absolute top-0 start-0 translate-middle d-none d-md-block" width="36">
 								<h6 class="display-4">Get in touch..</h6>
 								<p>We'd love to hear from you! Contact us today for any inquiries or assistance.</p>
 
