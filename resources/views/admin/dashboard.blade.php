@@ -42,10 +42,10 @@
       <div class="col-lg-12">
         <div class="card">
           <div class="card-body text-center" style="height: 450px">
-            <h3 style="padding-top: 200px">Welcome to the Chahal Academy</h3>                
+            <h3 style="padding-top: 200px">Welcome to the Fab Aesthetics Panel</h3>
           </div>
-        </div>            
-      </div>         
+        </div>
+      </div>
     </div>
     <!-- /.row -->
   </div><!-- /.container-fluid -->
@@ -55,5 +55,5 @@
 <!-- /.content-wrapper -->
 
 @endsection
-  
+
 

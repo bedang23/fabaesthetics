@@ -15,7 +15,7 @@
 			<div class="row justify-content-md-center h-100">
 				<div class="card-wrapper">
 					<div class="brand">
-						<img src="{{asset('login_assets/img/logo.jpg')}}" alt="logo">
+						<img src="{{asset('assets/images/logo.png')}}" alt="logo">
 					</div>
 					<div class="card fat">
 						<div class="card-body">
@@ -36,9 +36,6 @@
 
 								<div class="form-group">
 									<label for="password">Password
-										<a href="forgot.html" class="float-right">
-											Forgot Password?
-										</a>
 									</label>
 									<input id="password" type="password" class="form-control" name="password" required data-eye>
 									<span style="color: red; float: left;"></span>
@@ -58,12 +55,12 @@
 									<button type="submit" class="btn btn-primary btn-block">
 										Login
 									</button>
-								</div>							
+								</div>
 							</form>
 						</div>
 					</div>
 					<div class="footer">
-						Copyright &copy; 2021 &mdash; Chahal Academy 
+						Copyright &copy; 2024 &mdash; Fabaesthetics
 					</div>
 				</div>
 			</div>
