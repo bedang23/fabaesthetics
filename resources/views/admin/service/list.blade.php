@@ -52,9 +52,12 @@
                     <thead>
                         <tr>
                             <th width="30">#</th>
+                            <th width="30">Featured Image</th>
                             <th width="150">Title</th>
                             <th width="150">SEO Title</th>
+                            <th width="150">URL</th>
                             <th width="150">SEO Description</th>
+                            <th width="150">Category</th>
                             <th width="220">Content</th>
                             <th width="120" class="text-center">Action</th>
                         </tr>
@@ -64,10 +67,13 @@
                       @foreach ($record_details as $key => $value)
                         <tr>
                             <td width="30">{{ $value['id'] }}</td>
+                            <td><img src="http://127.0.0.1:8000/{{ $value['featured_image'] }}" style="max-width:100px" alt=""></td>
                             <td>{{ $value['title'] }}</td>
                             <td>{{ $value['seo_title'] }}</td>
+                            <td>{{ $value['slug'] }}</td>
                             <td>{{ $value['seo_description'] }}</td>
-                            <td><textarea>{{ $value['content'] }}</textarea></td>
+                            <td>{{ $value['category'] }}</td>
+                            <td><textarea readonly>{{ $value['content'] }}</textarea></td>
                             <td width="120" class="text-center">
                               <a href="{{url('/admin/service/edit')}}/{{$value['id']}}" class="btn btn-sm btn-primary">Edit</a>
                               <a href="javascript:void(0);"onclick="deleteArticle({{$value['id']}})" class="btn btn-sm btn-danger">Delete</a></td>
@@ -77,12 +83,15 @@
 
                     <tfoot>
                         <tr>
-                        <th width="30">#</th>
-                            <th width="150">Title</th>
-                            <th width="150">SEO Title</th>
-                            <th width="150">SEO Description</th>
-                            <th width="220">Content</th>
-                            <th width="120" class="text-center">Action</th>
+                          <th width="30">#</th>
+                          <th width="30">Featured Image</th>
+                          <th width="150">Title</th>
+                          <th width="150">SEO Title</th>
+                          <th width="150">URL</th>
+                          <th width="150">SEO Description</th>
+                          <th width="150">Category</th>
+                          <th width="220">Content</th>
+                          <th width="120" class="text-center">Action</th>
                         </tr>
                     </tfoot>
 

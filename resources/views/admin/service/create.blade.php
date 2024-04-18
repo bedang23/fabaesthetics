@@ -22,7 +22,11 @@
     </div><!-- /.container-fluid -->
   </section>
 
-
+  @if(session()->has('mesg'))
+  <div class="alert alert-danger m-3">
+      {{ session()->get('mesg') }}
+  </div>
+@endif
 
   <!-- Main content -->
   <section class="content">
@@ -37,7 +41,7 @@
 
             </div>
             <!-- /.card-header -->
-            <form name="createlist" id="createlist" method="post" action="{{url('admin/service/create')}}">
+            <form name="createlist" id="createlist" method="post" action="{{url('admin/service/create')}}" enctype="multipart/form-data">
               @csrf
 
                 <div class="card-body">
@@ -49,6 +53,14 @@
                     <label>SEO Title</label>
                     <input type="text" name="seo_title" id="seo_title" value="" class="ckeditor form-control">
                 </div>
+                <div class="form-group">
+                    <label for="featured_image">Featured Image</label>
+                    <input type="file" name="featured_image" id="featured_image" class="form-control ckeditor">
+                </div>
+                <div class = "form-group">
+                    <label>URL</label>
+                    <input type="text" name="slug" id="slug" value="" class="ckeditor form-control">
+                </div>
                 <div class = "form-group">
                     <label>SEO Description</label>
                     <input class="form-control"  name="seo_description" id="seo_description" value=""  type="text">
@@ -56,12 +68,12 @@
                 <div class = "form-group">
                     <label>Category</label>
                     <select class="form-control" name="category" id="category">
-                        <option value="Skin Treatment">Skin Treatment</option>
-                        <option value="Cosmetic Treatment">Cosmetic Treatment</option>
-                        <option value="Hair Treatment">Hair Treatment</option>
-                        <option value="Laser Treatment">Laser Treatment</option>
-                        <option value="Skin Rejuvenation Treatment">Skin Rejuvenation Treatment</option>
-                        <option value="Make Over">Make Over</option>
+                      <option value="skin-treatment">Skin Treatment</option>
+                      <option value="cosmetic-treatment">Cosmetic Treatment</option>
+                      <option value="hair-treatment">Hair Treatment</option>
+                      <option value="laser-treatment">Laser Treatment</option>
+                      <option value="skin-rejuvenation-treatment">Skin Rejuvenation Treatment</option>
+                      <option value="make-over">Make Over</option>
                         <!-- Add more options as needed -->
                     </select>
                 </div>

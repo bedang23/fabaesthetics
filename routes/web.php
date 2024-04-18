@@ -28,6 +28,7 @@ Route::get('/about', [FrontendController::class, 'about']);
 Route::get('contact-us', [FrontendController::class, 'contact'])->name('contact');
 Route::post('contact-us', [FrontendController::class, 'contactsubmit'])->name('contact.submit');
 Route::get('service',[FrontendController::class, 'servicedetail']);
+Route::get('/{category}/{service}',[FrontendController::class, 'show'])->name('service.show');
 
 
 //Admin Panel
