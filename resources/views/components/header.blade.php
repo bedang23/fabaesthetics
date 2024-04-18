@@ -32,12 +32,15 @@
 									  <li class="menu-item dropdown">
 											<a class="menu-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Skin</a>
 											<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-												<li><a class="dropdown-item" href="{{ url('service/skin-treatment/acne-treatment') }}">Acne Treatment</a></li>
+                                                @foreach($services as $service)
+                                                <li>{{ $service->title }}</li>
+                                            @endforeach
+												{{-- <li><a class="dropdown-item" href="{{ url('service/skin-treatment/acne-treatment') }}">Acne Treatment</a></li>
 													<li><a class="dropdown-item" href="{{ url('service/skin-treatment/acne-scar-treatment') }}">Acne Scar Treatment</a></li>
 													<li><a class="dropdown-item" href="{{ url('service/skin-treatment/pigmentation-treatment') }}">Pigmentation Treatment</a></li>
 													<li><a class="dropdown-item" href="{{ url('service/skin-treatment/melasma-treatment') }}">Melasma Treatment</a></li>
 													<li><a class="dropdown-item" href="{{ url('service/skin-treatment/open-pores-treatment') }}">Open Pores Treatment</a></li>
-													<li><a class="dropdown-item" href="{{ url('service/skin-treatment/skin-lightening-treatment') }}">Skin Lightening Treatment</a></li>
+													<li><a class="dropdown-item" href="{{ url('service/skin-treatment/skin-lightening-treatment') }}">Skin Lightening Treatment</a></li> --}}
 											</ul>
 								  		</li>
 										  <li class="menu-item dropdown">

@@ -38,7 +38,7 @@
       </li> -->
     </ul>
     <div>
-      <img src="https://chahalacademy.com/assets/logonew.jpeg" alt="chahal academy logo" width="150px" class="img-responsive">
+      <img src="" alt="Fab Aesthetics" width="150px" class="img-responsive">
     </div>
 
     <!-- Right navbar links -->
@@ -122,7 +122,7 @@
 
 <!-- Main Footer -->
 <footer class="main-footer">
-  <strong>Copyright &copy; <a href="{{url('/')}}">Chahal Academy</a>.</strong>
+  <strong>Copyright &copy; <a href="{{url('/')}}">Fab Aesthetics</a>.</strong>
   All rights reserved.
   <div class="float-right d-none d-sm-inline-block">
     <b>Version</b> 3.0.5

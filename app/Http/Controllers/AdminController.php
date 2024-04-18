@@ -8,6 +8,8 @@ use App\Models\Service;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 use Auth;
 
 
@@ -117,17 +119,31 @@ class AdminController extends Controller
           return view('admin/login');
       }
     }
+
     public function saveservice(Request $request)
     {
-        $newRecord = new Service;
-        $newRecord->title = $request['title'];
-        $newRecord->seo_title = $request['seo_title'];
-        $newRecord->seo_description = $request['seo_description'];
-        $newRecord->content = $request['content'];
-        //echo "<pre>";print_r($newRecord);exit;
-        $newRecord->save();
-        return redirect('admin/service/list');
+        if ($request->hasFile('featured_image')) {
+            $imageName = time().'.'.$request->featured_image->extension();
+
+            $newRecord = new Service;
+            $newRecord->title = $request->input('title');
+            $newRecord->seo_title = $request->input('seo_title');
+            $newRecord->slug = $request->input('slug');
+            $newRecord->featured_image = $request->featured_image->move('images', $imageName);
+            $newRecord->seo_description = $request->input('seo_description');
+            $newRecord->category = $request->input('category');
+            $newRecord->content = $request->input('content');
+
+            $newRecord->save();
+
+            $mesg = "Data saved successfully";
+        } else {
+            $mesg = "No file uploaded"; // Provide a message indicating no file was uploaded
+            return back()->with('mesg', $mesg);
+        }
+        return redirect('admin/service/list')->with('mesg', $mesg);
     }
+
 
     public function serviceedit($id)
     {
@@ -141,23 +157,39 @@ class AdminController extends Controller
           return view('admin/login');
       }
      }
+
      public function updateservice(Request $request)
-    {
-      //$request =  Service::all()->toArray();
-        $mesg="";
-        $newRecord = Service::find($request['id']);
-        //echo"<pre>";print_r($request['content']);exit;
-        $newRecord->title = $request['title'];
-        $newRecord->seo_title = $request['seo_title'];
-        $newRecord->seo_description = $request['seo_description'];
-        $newRecord->content = $request['content'];
-        //echo "<pre>";print_r($newRecord);exit;
-        $newRecord->save();
-        if($newRecord->save()){
-            $mesg = "Data saved successfully";
-        }
-        return redirect('admin/service/list')->with('mesg', 'Data saved successfully!');
+     {
+         $mesg = "";
+
+         $newRecord = Service::find($request->id);
+
+         if (!$newRecord) {
+             return redirect('admin/service/list')->with('mesg', 'Record not found!');
+         }
+
+         $newRecord->title = $request->input('title');
+         $newRecord->seo_title = $request->input('seo_title');
+         $newRecord->slug = $request->input('slug');
+         $newRecord->seo_description = $request->input('seo_description');
+         $newRecord->category = $request->input('category');
+         $newRecord->content = $request->input('content');
+
+         // Handle featured image upload
+         if ($request->hasFile('featured_image')) {
+             $imageName = time().'.'.$request->featured_image->extension();
+             $imagePath = $request->featured_image->move('images', $imageName);
+             $newRecord->featured_image = $imagePath;
+         }
+
+         $newRecord->save();
+
+         $mesg = "Data saved successfully";
+
+         return redirect('admin/service/list')->with('mesg', $mesg);
      }
+
+
      public function deleteservice(Request $request)
     {
         $record=Service::where('id', $request['id'])->delete();
