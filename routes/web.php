@@ -23,23 +23,21 @@ Route::get('/', function () {
 });
 
 
+//Admin Panel
+Route::get('/admin',[AdminController::class,'index']);
+Route::post('/admin/login',[AdminController::class,'doLogin']);
+Route::get('/admin/dashboard',[AdminController::class,'dashboard']);
+Route::post('/admin/logout', [AdminController::class, 'logout']);
+Route::get('/admin/contact',[AdminController::class,'contact']);
+
+
+//Frontend
 Route::get('/', [FrontendController::class, 'index']);
 Route::get('/about', [FrontendController::class, 'about']);
 Route::get('contact-us', [FrontendController::class, 'contact'])->name('contact');
 Route::post('contact-us', [FrontendController::class, 'contactsubmit'])->name('contact.submit');
 Route::get('service',[FrontendController::class, 'servicedetail']);
 Route::get('/{category}/{service}',[FrontendController::class, 'show'])->name('service.show');
-
-
-//Admin Panel
-Route::get('/admin',[AdminController::class,'index']);
-Route::post('/admin/login',[AdminController::class,'doLogin']);
-Route::get('/admin/dashboard',[AdminController::class,'dashboard']);
-// Route::get('/admin/logout',[AdminController::class,'logout']);
-Route::post('/admin/logout', [AdminController::class, 'logout']);
-
-
-Route::get('/admin/contact',[AdminController::class,'contact']);
 
 
 //service
