@@ -113,7 +113,7 @@
     function deleteArticle(id) {
 
       if(confirm("Are you sure you want to article")){
-        window.location.href='{{url('/admin/hindu/delete')}}/'+id;
+        window.location.href='{{url('/admin/service/delete')}}/'+id;
       }
 
     }

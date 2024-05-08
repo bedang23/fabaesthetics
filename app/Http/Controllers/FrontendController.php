@@ -12,7 +12,7 @@ class FrontendController extends Controller
     public function index() {
 
         $skinServices = $this->getServicesByCategory('skin-treatment');
-        $cosmeticServices = $this->getServicesByCategory('cosmetics-treatment');
+        $cosmeticServices = $this->getServicesByCategory('cosmetic-treatment');
         $hairServices = $this->getServicesByCategory('hair-treatment');
         $laserServices = $this->getServicesByCategory('laser-treatment');
         $rejuvenationServices = $this->getServicesByCategory('skin-rejuvenation-treatment');
@@ -30,7 +30,7 @@ class FrontendController extends Controller
     public function about() {
 
         $skinServices = $this->getServicesByCategory('skin-treatment');
-        $cosmeticServices = $this->getServicesByCategory('cosmetics-treatment');
+        $cosmeticServices = $this->getServicesByCategory('cosmetic-treatment');
         $hairServices = $this->getServicesByCategory('hair-treatment');
         $laserServices = $this->getServicesByCategory('laser-treatment');
         $rejuvenationServices = $this->getServicesByCategory('skin-rejuvenation-treatment');
@@ -42,7 +42,7 @@ class FrontendController extends Controller
     public function contact() {
 
         $skinServices = $this->getServicesByCategory('skin-treatment');
-        $cosmeticServices = $this->getServicesByCategory('cosmetics-treatment');
+        $cosmeticServices = $this->getServicesByCategory('cosmetic-treatment');
         $hairServices = $this->getServicesByCategory('hair-treatment');
         $laserServices = $this->getServicesByCategory('laser-treatment');
         $rejuvenationServices = $this->getServicesByCategory('skin-rejuvenation-treatment');
@@ -54,7 +54,7 @@ class FrontendController extends Controller
     public function servicedetail() {
 
         $skinServices = $this->getServicesByCategory('skin-treatment');
-        $cosmeticServices = $this->getServicesByCategory('cosmetics-treatment');
+        $cosmeticServices = $this->getServicesByCategory('cosmetic-treatment');
         $hairServices = $this->getServicesByCategory('hair-treatment');
         $laserServices = $this->getServicesByCategory('laser-treatment');
         $rejuvenationServices = $this->getServicesByCategory('skin-rejuvenation-treatment');
@@ -67,7 +67,7 @@ class FrontendController extends Controller
     {
 
         $skinServices = $this->getServicesByCategory('skin-treatment');
-        $cosmeticServices = $this->getServicesByCategory('cosmetics-treatment');
+        $cosmeticServices = $this->getServicesByCategory('cosmetic-treatment');
         $hairServices = $this->getServicesByCategory('hair-treatment');
         $laserServices = $this->getServicesByCategory('laser-treatment');
         $rejuvenationServices = $this->getServicesByCategory('skin-rejuvenation-treatment');

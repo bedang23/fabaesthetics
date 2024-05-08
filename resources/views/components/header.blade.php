@@ -44,28 +44,28 @@
 											</ul>
 								  		</li>
 										  <li class="menu-item dropdown">
-											<a class="menu-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cosmetics</a>
+											<a class="menu-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cosmetics Treatment</a>
 											<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-												<li><a class="dropdown-item" href="{{ url('service/cosmetics-treatment/anti-ageing-treatment') }}">Anti Ageing Treatment</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/cosmetics-treatment/botox') }}">Botox</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/cosmetics-treatment/dermal-fillers') }}">Dermal Fillers</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/cosmetics-treatment/lip-filler') }}">Lip Filler</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/cosmetics-treatment/cheek-filler') }}">Cheek Filler</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/cosmetics-treatment/chin-filler') }}">Chin Filler</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/cosmetics-treatment/nose-filler') }}">Nose Filler</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/cosmetics-treatment/jawline-filler') }}">Jawline Filler</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/cosmetics-treatment/neck-filler') }}">Neck Filler</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/cosmetics-treatment/hand-filler') }}">Hand Filler</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/cosmetics-treatment/body-filler') }}">Body Filler</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/cosmetics-treatment/skin-booster') }}">Skin Booster</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/cosmetics-treatment/thread-lift-face') }}">Thread Lift Face</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/cosmetics-treatment/nose-thread-lift') }}">Nose Thread Lift</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/cosmetics-treatment/lip-threads') }}">Lip Threads</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/cosmetics-treatment/body-threads') }}">Body Threads</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/cosmetics-treatment/eye-brow-thread-lift') }}">Eye brow Thread Lift</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/cosmetics-treatment/hifu') }}">HIFU</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/cosmetics-treatment/radio-frequency') }}">Radio Frequency</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/cosmetics-treatment/microneedling-rf') }}">Microneedling RF</a></li>
+												<li><a class="dropdown-item" href="{{ url('service/cosmetic-treatment/anti-ageing-treatment') }}">Anti Ageing Treatment</a></li>
+												<li><a class="dropdown-item" href="{{ url('service/cosmetic-treatment/botox') }}">Botox</a></li>
+												<li><a class="dropdown-item" href="{{ url('service/cosmetic-treatment/dermal-fillers') }}">Dermal Fillers</a></li>
+												<li><a class="dropdown-item" href="{{ url('service/cosmetic-treatment/lip-filler') }}">Lip Filler</a></li>
+												<li><a class="dropdown-item" href="{{ url('service/cosmetic-treatment/cheek-filler') }}">Cheek Filler</a></li>
+												<li><a class="dropdown-item" href="{{ url('service/cosmetic-treatment/chin-filler') }}">Chin Filler</a></li>
+												<li><a class="dropdown-item" href="{{ url('service/cosmetic-treatment/nose-filler') }}">Nose Filler</a></li>
+												<li><a class="dropdown-item" href="{{ url('service/cosmetic-treatment/jawline-filler') }}">Jawline Filler</a></li>
+												<li><a class="dropdown-item" href="{{ url('service/cosmetic-treatment/neck-filler') }}">Neck Filler</a></li>
+												<li><a class="dropdown-item" href="{{ url('service/cosmetic-treatment/hand-filler') }}">Hand Filler</a></li>
+												<li><a class="dropdown-item" href="{{ url('service/cosmetic-treatment/body-filler') }}">Body Filler</a></li>
+												<li><a class="dropdown-item" href="{{ url('service/cosmetic-treatment/skin-booster') }}">Skin Booster</a></li>
+												<li><a class="dropdown-item" href="{{ url('service/cosmetic-treatment/thread-lift-face') }}">Thread Lift Face</a></li>
+												<li><a class="dropdown-item" href="{{ url('service/cosmetic-treatment/nose-thread-lift') }}">Nose Thread Lift</a></li>
+												<li><a class="dropdown-item" href="{{ url('service/cosmetic-treatment/lip-threads') }}">Lip Threads</a></li>
+												<li><a class="dropdown-item" href="{{ url('service/cosmetic-treatment/body-threads') }}">Body Threads</a></li>
+												<li><a class="dropdown-item" href="{{ url('service/cosmetic-treatment/eye-brow-thread-lift') }}">Eye brow Thread Lift</a></li>
+												<li><a class="dropdown-item" href="{{ url('service/cosmetic-treatment/hifu') }}">HIFU</a></li>
+												<li><a class="dropdown-item" href="{{ url('service/cosmetic-treatment/radio-frequency') }}">Radio Frequency</a></li>
+												<li><a class="dropdown-item" href="{{ url('service/cosmetic-treatment/microneedling-rf') }}">Microneedling RF</a></li>
 											</ul>
 								  		</li>
 										  <li class="menu-item dropdown">

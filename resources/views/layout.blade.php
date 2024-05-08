@@ -90,41 +90,17 @@
 									  <li class="menu-item dropdown">
 											<a class="menu-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Skin</a>
 											<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    @foreach($skinServices as $service)
-                                    <li><a class="dropdown-item" href="{{ url('skin-treatment/' . $service->slug) }}">{{ $service->title }}</a></li>
+                                    @foreach($skinServices as $skinService)
+                                    <li><a class="dropdown-item" href="{{ url('skin-treatment/' . $skinService->slug) }}">{{ $skinService->title }}</a></li>
                                     @endforeach
-
-												{{-- <li><a class="dropdown-item" href="{{ url('service/skin-treatment/acne-treatment') }}">Acne Treatment</a></li>
-													<li><a class="dropdown-item" href="{{ url('service/skin-treatment/acne-scar-treatment') }}">Acne Scar Treatment</a></li>
-													<li><a class="dropdown-item" href="{{ url('service/skin-treatment/pigmentation-treatment') }}">Pigmentation Treatment</a></li>
-													<li><a class="dropdown-item" href="{{ url('service/skin-treatment/melasma-treatment') }}">Melasma Treatment</a></li>
-													<li><a class="dropdown-item" href="{{ url('service/skin-treatment/open-pores-treatment') }}">Open Pores Treatment</a></li>
-													<li><a class="dropdown-item" href="{{ url('service/skin-treatment/skin-lightening-treatment') }}">Skin Lightening Treatment</a></li> --}}
 											</ul>
 								  		</li>
 										  <li class="menu-item dropdown">
-											<a class="menu-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cosmetics</a>
+											<a class="menu-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cosmetics Treatment</a>
 											<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-												<li><a class="dropdown-item" href="{{ url('service/cosmetics-treatment/anti-ageing-treatment') }}">Anti Ageing Treatment</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/cosmetics-treatment/botox') }}">Botox</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/cosmetics-treatment/dermal-fillers') }}">Dermal Fillers</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/cosmetics-treatment/lip-filler') }}">Lip Filler</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/cosmetics-treatment/cheek-filler') }}">Cheek Filler</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/cosmetics-treatment/chin-filler') }}">Chin Filler</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/cosmetics-treatment/nose-filler') }}">Nose Filler</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/cosmetics-treatment/jawline-filler') }}">Jawline Filler</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/cosmetics-treatment/neck-filler') }}">Neck Filler</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/cosmetics-treatment/hand-filler') }}">Hand Filler</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/cosmetics-treatment/body-filler') }}">Body Filler</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/cosmetics-treatment/skin-booster') }}">Skin Booster</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/cosmetics-treatment/thread-lift-face') }}">Thread Lift Face</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/cosmetics-treatment/nose-thread-lift') }}">Nose Thread Lift</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/cosmetics-treatment/lip-threads') }}">Lip Threads</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/cosmetics-treatment/body-threads') }}">Body Threads</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/cosmetics-treatment/eye-brow-thread-lift') }}">Eye brow Thread Lift</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/cosmetics-treatment/hifu') }}">HIFU</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/cosmetics-treatment/radio-frequency') }}">Radio Frequency</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/cosmetics-treatment/microneedling-rf') }}">Microneedling RF</a></li>
+												@foreach($cosmeticServices as $cosmeticService)
+                                    <li><a class="dropdown-item" href="{{ url('cosmetic-treatment/' . $cosmeticService->slug) }}">{{ $cosmeticService->title }}</a></li>
+                                    @endforeach
 											</ul>
 								  		</li>
 										  <li class="menu-item dropdown">
