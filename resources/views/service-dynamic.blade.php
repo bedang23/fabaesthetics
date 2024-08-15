@@ -1,14 +1,14 @@
 @extends('layout')
 
-@section('mytitle', 'Expert [Service Name] Solutions | Fabaesthetics Mumbai')
+@section('mytitle',){{  $service->seo_title }}@endsection('mytitle')
 
-@section('mydescription', "Explore our specialized [Service Name] solutions at Fabaesthetics. Tailored treatments for you in Mumbai")
+@section('mydescription',){{ $service->seo_description }}@endsection('mydescription')
 
 @section('mycontent')
 
 <section id="slider" class="slider-element include-header" style="background: linear-gradient(90deg, rgba(34, 193, 195, 0.06), rgba(253, 187, 45, 0.1));">
-    <div class="container mt-lg-12" style="text-align: center">
-        <div class="row justify-content-between align-items-center py-lg-6 py-5" style="padding-top: 12rem !important;">
+    <div class="container mt-lg-12" style="text-align: center"> 
+        <div class="row justify-content-between align-items-center py-lg-6 py-5 service-breadcrumb">
             <h1 class="display-3 color all-ts" style="font-weight: 600">{{ $service->title }}</h1>
         </div>
     </div>
@@ -20,7 +20,7 @@
         <div class="col-lg-8">
           <!-- Featured Image -->
           <div class="featured-image">
-            <img style="max-height:500px; width: 100%;" src="http://127.0.0.1:8000/{{ $service->featured_image }}" alt="">
+            <img style="max-height:500px; width: 100%;" src="https://www.fabaesthetics.in/{{ $service->featured_image }}" alt="Featured Image">
           </div>
           <!-- Service Content -->
           <div class="service-content">

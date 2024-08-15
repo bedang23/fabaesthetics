@@ -13,9 +13,9 @@
 	<meta property="og:description" content="@yield('mydescription')" />
 	<meta property="og:url" content="{{ url()->current() }}" />
 	<meta property="og:site_name" content="Fab Aesthetics." />
-   <meta property="og:image" content="{{asset('assets/images/home/clinical-care.png')}}" />
-	<meta property="og:image:width" content="600" />
-	<meta property="og:image:height" content="400" />
+   <meta property="og:image" content="https://www.fabaesthetics.in/assets/images/home/clinical-care.png" />
+	<meta property="og:image:width" content="1920" />
+	<meta property="og:image:height" content="1080" />
 	<meta property="og:image:type" content="image/png" />
 	<meta name="twitter:card" content="summary_large_image" />
 
@@ -71,13 +71,7 @@
 								 </a>
 							</div><!-- #logo end -->
 
-							<div class="header-misc col-lg-2 justify-content-lg-end ms-0">
-
-								 <a href="#" class="button rounded button-border border-contrast-900 text-contrast-900 h-border-transparent h-text-contrast-100 h-bg-contrast-900"><i class="fa-solid fa-phone-volume d-block d-xl-none m-0"></i><span class="d-none d-xl-block">+01 4424 579</span></a>
-
-							</div>
-
-							<div class="primary-menu-trigger">
+							<div class="primary-menu-trigger col-2" style="text-align: right">
 								 <button class="cnvs-hamburger" type="button" title="Open Mobile Menu">
 									  <span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span>
 								 </button>
@@ -106,52 +100,33 @@
 										  <li class="menu-item dropdown">
 											<a class="menu-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Hair Treatment</a>
 											<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-												<li><a class="dropdown-item" href="{{ url('service/hair-treatment/hair-fall-treatment') }}">Hair fall Treatment</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/hair-treatment/gfc-hair-treatment') }}">GFC Hair Treatment</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/hair-treatment/dandruff-treatment') }}">Dandruff Treatment</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/hair-treatment/hair-regrowth-treatment') }}">Hair Regrowth Treatment</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/hair-treatment/hair-transplant') }}">Hair Transplant</a></li>
+												@foreach($hairServices as $hairService)
+                                    <li><a class="dropdown-item" href="{{ url('hair-treatment/' . $hairService->slug) }}">{{ $hairService->title }}</a></li>
+                                    @endforeach
 											</ul>
 								  		</li>
 										  <li class="menu-item dropdown">
 											<a class="menu-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Laser</a>
 											<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-												<li><a class="dropdown-item" href="{{ url('service/lazer-treatment/laser-hair-reduction') }}">Laser hair reduction</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/lazer-treatment/laser-hair-removal') }}">Laser hair removal</a></li>
+												@foreach($laserServices as $laserService)
+                                    <li><a class="dropdown-item" href="{{ url('laser-treatment/' . $laserService->slug) }}">{{ $laserService->title }}</a></li>
+                                    @endforeach
 											</ul>
 								  		</li>
 										  <li class="menu-item dropdown">
 											<a class="menu-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Skin Rejuvenation</a>
 											<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-												<li><a class="dropdown-item" href="{{ url('service/skin-rejuvenation-treatment/medi-facials') }}">Medi Facials</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/skin-rejuvenation-treatment/hydrafacial') }}">Hydrafacial</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/skin-rejuvenation-treatment/photo-facial') }}">Photo Facial</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/skin-rejuvenation-treatment/carbon-facial') }}">Carbon Facial</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/skin-rejuvenation-treatment/oxygeneo-facial') }}">Oxygeneo Facial</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/skin-rejuvenation-treatment/carboxy-facial') }}">Carboxy Facial</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/skin-rejuvenation-treatment/vampire-facial') }}">Vampire Facial</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/skin-rejuvenation-treatment/pink-shot-facial') }}">Pink Shot Facial</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/skin-rejuvenation-treatment/bb-glow-facial') }}">Bb Glow Facial</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/skin-rejuvenation-treatment/korean-glass-skin-facial') }}">Korean Glass Skin Facial</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/skin-rejuvenation-treatment/skin-polishing') }}">Skin Polishing</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/skin-rejuvenation-treatment/microneedling') }}">Microneedling</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/skin-rejuvenation-treatment/hydraneedling') }}">Hydraneedling</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/skin-rejuvenation-treatment/dermaroller') }}">Dermaroller</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/skin-rejuvenation-treatment/dermapen') }}">Dermapen</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/skin-rejuvenation-treatment/chemical-peel') }}">Chemical Peel</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/skin-rejuvenation-treatment/advanced-whitening-peel') }}">Advanced Whitening Peel</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/skin-rejuvenation-treatment/glow-peel') }}">Glow Peel</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/skin-rejuvenation-treatment/ultrasonic-treatment') }}">Ultrasonic Treatment</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/skin-rejuvenation-treatment/oxyjet-treatment') }}">Oxyjet Treatment</a></li>
+												@foreach($rejuvenationServices as $rejuvenationService)
+                                    <li><a class="dropdown-item" href="{{ url('skin-rejuvenation-treatment/' . $rejuvenationService->slug) }}">{{ $rejuvenationService->title }}</a></li>
+                                    @endforeach
 											</ul>
 								  		</li>
 										  <li class="menu-item dropdown">
 											<a class="menu-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Make Over</a>
 											<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-												<li><a class="dropdown-item" href="{{ url('service/microblading/eyebrow-microblading') }}">Eyebrow Microblading</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/micropigmentation/eyebrow-micropigmentation') }}">Eyebrow Micropigmentation</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/micropigmentation/scalp-micropigmentation') }}">Scalp Micropigmentation</a></li>
-												<li><a class="dropdown-item" href="{{ url('service/micropigmentation/lip-micropigmentation') }}">Lip Micropigmentation</a></li>
+												@foreach($makeoverServices as $makeoverService)
+                                    <li><a class="dropdown-item" href="{{ url('make-over/' . $makeoverService->slug) }}">{{ $makeoverService->title }}</a></li>
+                                    @endforeach
 											</ul>
 								  		</li>
 									  <!-- End Dropdown for Services -->
@@ -190,10 +165,10 @@
                         <h4 class="text-uppercase mb-4" style="font-size:16px ">Skin Treatment</h4>
 
                         <ul>
-                           <li><a href="{{ url('service/skin-treatment/acne-treatment') }}">Acne Treatment</a></li>
-                           <li><a href="{{ url('service/skin-treatment/pigmentation-treatment') }}">Pigmentation Treatment</a></li>
-                           <li><a href="{{ url('service/skin-treatment/open-pores-treatment') }}">Open Pores Treatment</a></li>
-                           <li><a href="{{ url('service/skin-treatment/skin-lightening-treatment') }}">Skin Lightening Treatment</a></li>
+                           <li><a href="{{ url('skin-treatment/acne-treatment') }}">Acne Treatment</a></li>
+                           <li><a href="{{ url('skin-treatment/pigmentation-treatment') }}">Pigmentation Treatment</a></li>
+                           <li><a href="{{ url('skin-treatment/open-pores-treatment') }}">Open Pores Treatment</a></li>
+                           <li><a href="{{ url('skin-treatment/skin-lightening-treatment') }}">Skin Lightening Treatment</a></li>
                         </ul>
 
                      </div>
@@ -207,11 +182,11 @@
                         <h4 class="text-uppercase mb-4">Hair Treatment</h4>
 
                         <ul>
-                           <li><a href="{{ url('service/hair-treatment/hair-fall-treatment') }}">Hair Fall Treatment</a></li>
-                           <li><a href="{{ url('service/hair-treatment/gfc-hair-treatment') }}">GFC Hair Treatment</a></li>
-                           <li><a href="{{ url('service/hair-treatment/dandruff-treatment') }}">Dandruff Treatment</a></li>
-                           <li><a href="{{ url('service/hair-treatment/hair-regrowth-treatment') }}">Hair Regrowth Treatment</a></li>
-                           <li><a href="{{ url('service/hair-treatment/hair-transplant') }}">Hair Transplant</a></li>
+                           <li><a href="{{ url('hair-treatment/hair-fall-treatment') }}">Hair Fall Treatment</a></li>
+                           <li><a href="{{ url('hair-treatment/gfc-hair-treatment') }}">GFC Hair Treatment</a></li>
+                           <li><a href="{{ url('hair-treatment/dandruff-treatment') }}">Dandruff Treatment</a></li>
+                           <li><a href="{{ url('hair-treatment/hair-regrowth-treatment') }}">Hair Regrowth Treatment</a></li>
+                           <li><a href="{{ url('hair-treatment/hair-transplant') }}">Hair Transplant</a></li>
                         </ul>
 
                      </div>

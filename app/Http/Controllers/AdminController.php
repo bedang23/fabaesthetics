@@ -100,7 +100,7 @@ class AdminController extends Controller
       $value=session()->get('user');
       if(isset($value))
       {
-      $record_details = Service::select('*')->orderBy('id', 'desc')->paginate(10);
+      $record_details = Service::select('*')->orderBy('id', 'desc')->paginate(100);
       return view('admin/service/list', compact('record_details'));
       }
       else{

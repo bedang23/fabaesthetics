@@ -19,7 +19,7 @@ class FrontendController extends Controller
         $makeoverServices = $this->getServicesByCategory('make-over');
 
 
-        return view('home', compact('skinServices', 'cosmeticServices', 'hairServices', 'laserServices', 'rejuvenationServices', 'makeoverServices'));
+        return view('home-new', compact('skinServices', 'cosmeticServices', 'hairServices', 'laserServices', 'rejuvenationServices', 'makeoverServices'));
     }
 
     protected function getServicesByCategory($category)
