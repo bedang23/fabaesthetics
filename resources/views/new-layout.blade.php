@@ -31,7 +31,7 @@
 
 
 
-   <link rel='stylesheet' id='ht_ctc_main_css-css' href='https://www.thebombayskinclinic.com/wp-content/plugins/click-to-chat-for-whatsapp/new/inc/assets/css/main.css?ver=4.6' type='text/css' media='all' />
+   <link rel='stylesheet' id='ht_ctc_main_css-css' href='{{ asset('new-assets/css/click-to-chat-for-whatsapp.css') }}' type='text/css' media='all' />
    <style id='wp-emoji-styles-inline-css' type='text/css'>
       img.wp-smiley,
       img.emoji {
@@ -47,14 +47,14 @@
       }
 
    </style>
-   <link rel='stylesheet' id='rplg-css-css' href='https://www.thebombayskinclinic.com/wp-content/plugins/business-reviews-bundle/assets/css/rplg.css?ver=1.3.3' type='text/css' media='all' />
+   <link rel='stylesheet' id='rplg-css-css' href='{{ asset('new-assets/css/rplg.css') }}' type='text/css' media='all' />
    <link rel='stylesheet' id='swiper-css-css' href='https://www.thebombayskinclinic.com/wp-content/plugins/business-reviews-bundle/assets/css/swiper.min.css?ver=1.3.3' type='text/css' media='all' />
    <link rel='stylesheet' id='child-style-css' href='https://www.thebombayskinclinic.com/wp-content/themes/Avada-Child-Theme/style.css?ver=abf1639e42bd692c6c98071add9ab41d' type='text/css' media='all' />
    <link rel='stylesheet' id='fusion-dynamic-css-css' href='https://www.thebombayskinclinic.com/wp-content/uploads/fusion-styles/142e04b8fbe05a8dfea8aa1331e87534.min.css?ver=3.11.9' type='text/css' media='all' />
    <script type="text/javascript" src="https://www.thebombayskinclinic.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
    <script type="text/javascript" src="https://www.thebombayskinclinic.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
    <script type="text/javascript" src="https://www.thebombayskinclinic.com/wp-content/plugins/business-reviews-bundle/assets/js/wpac-time.js?ver=1.3.3" id="brb-wpac-time-js-js"></script>
-   <script type="text/javascript" src="https://www.thebombayskinclinic.com/wp-content/plugins/business-reviews-bundle/assets/js/blazy.min.js?ver=1.3.3" id="blazy-js-js"></script>
+   <script type="text/javascript" src="{{ asset('new-assets/js/blazy.min.js') }}" id="blazy-js-js"></script>
    <script type="text/javascript" src="https://www.thebombayskinclinic.com/wp-content/plugins/business-reviews-bundle/assets/js/swiper.min.js?ver=1.3.3" id="swiper-js-js"></script>
    <script type="text/javascript" src="https://www.thebombayskinclinic.com/wp-content/plugins/business-reviews-bundle/assets/js/rplg.js?ver=1.3.3" id="rplg-js-js"></script>
    <link rel="https://api.w.org/" href="https://www.thebombayskinclinic.com/wp-json/" />
@@ -394,11 +394,11 @@
                            <a class="fusion-logo-link" href="https://www.thebombayskinclinic.com/">
 
                               <!-- standard logo -->
-                              <img src="https://www.thebombayskinclinic.com/wp-content/uploads/2018/05/logo-tbsc.png" srcset="https://www.thebombayskinclinic.com/wp-content/uploads/2018/05/logo-tbsc.png 1x, https://www.thebombayskinclinic.com/wp-content/uploads/2018/05/logo2x.png 2x" width="150" height="80" style="max-height:80px;height:auto;" alt="The Bombay Skin Clinic Logo" data-retina_logo_url="https://www.thebombayskinclinic.com/wp-content/uploads/2018/05/logo2x.png" class="fusion-standard-logo" />
+                              <img src="{{ asset('assets/images/logo.png') }}"  width="150" height="80" style="max-height:80px;height:auto;" alt="The Bombay Skin Clinic Logo" data-retina_logo_url={{ asset('assets/images/logo.png') }}" class="fusion-standard-logo" />
 
 
                               <!-- sticky header logo -->
-                              <img src="https://www.thebombayskinclinic.com/wp-content/uploads/2022/01/tbsc-logo-tiny.jpg" srcset="https://www.thebombayskinclinic.com/wp-content/uploads/2022/01/tbsc-logo-tiny.jpg 1x, https://www.thebombayskinclinic.com/wp-content/uploads/2018/05/logo-tbsc.png 2x" width="77" height="40" style="max-height:40px;height:auto;" alt="The Bombay Skin Clinic Logo" data-retina_logo_url="https://www.thebombayskinclinic.com/wp-content/uploads/2018/05/logo-tbsc.png" class="fusion-sticky-logo" />
+                              <img src="{{ asset('assets/images/logo.png') }}"  width="77" height="40" style="max-height:40px;height:auto;" alt="The Bombay Skin Clinic Logo" data-retina_logo_url="{{ asset('assets/images/logo.png') }}" class="fusion-sticky-logo" />
                            </a>
                         </div>
                         <div class="fusion-flyout-menu-icons">
