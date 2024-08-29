@@ -391,14 +391,14 @@
                   <div class="fusion-row">
                      <div class="fusion-header-v6-content fusion-header-has-flyout-menu-content">
                         <div class="fusion-logo" data-margin-top="15px" data-margin-bottom="15px" data-margin-left="0px" data-margin-right="0px">
-                           <a class="fusion-logo-link" href="https://www.thebombayskinclinic.com/">
+                           <a class="fusion-logo-link" href="https://fabaesthetics.in/">
 
                               <!-- standard logo -->
-                              <img src="{{ asset('assets/images/logo.png') }}"  width="150" height="80" style="max-height:80px;height:auto;" alt="The Bombay Skin Clinic Logo" data-retina_logo_url={{ asset('assets/images/logo.png') }}" class="fusion-standard-logo" />
+                              <img src="{{ asset('assets/images/logo.png') }}" width="150" height="80" style="max-height:80px;height:auto;" alt="Fabaesthetics Logo" data-retina_logo_url="{{ asset('assets/images/logo.png') }}" class="fusion-standard-logo" />
 
 
                               <!-- sticky header logo -->
-                              <img src="{{ asset('assets/images/logo.png') }}"  width="77" height="40" style="max-height:40px;height:auto;" alt="The Bombay Skin Clinic Logo" data-retina_logo_url="{{ asset('assets/images/logo.png') }}" class="fusion-sticky-logo" />
+                              <img src="{{ asset('assets/images/logo.png') }}" width="77" height="40" style="max-height:40px;height:auto;" alt="Fabaesthetics Logo" data-retina_logo_url="{{ asset('assets/images/logo.png') }}" class="fusion-sticky-logo" />
                            </a>
                         </div>
                         <div class="fusion-flyout-menu-icons">
@@ -517,7 +517,7 @@
 
                      <div class="fusion-copyright-notice">
                         <div>
-                           © 2023 The Bombay Skin Clinic | <a href="https://www.thebombayskinclinic.com/terms-conditions/" rel="nofollow">Terms & conditions</a> | <a href="https://www.thebombayskinclinic.com/privacy-policy/" rel="nofollow">Privacy policy</a> | <a href="https://shop.thebombayskinclinic.com/policies/refund-policy.html" rel="nofollow">Refund policy</a> | <a rel="nofollow" href="https://shop.thebombayskinclinic.com/policies/shipping-policy">Shipping Info</a> <br>* Disclaimer: Results may vary from person to person and treatment to treatment. Images are for representational purposes only.<br><br><br> </div>
+                           © 2024 FAB Aesthtics Clinic <br><br><br> </div>
                      </div>
                      <div class="fusion-social-links-footer">
                      </div>
@@ -552,7 +552,7 @@
             </div>
          </div>
       </div>
-      <span class="ht_ctc_chat_data" data-no_number="" data-settings="{&quot;number&quot;:&quot;917506737366&quot;,&quot;pre_filled&quot;:&quot;Hi, \r\nI am interested to know more about the The Bombay Skin Clinic&quot;,&quot;dis_m&quot;:&quot;show&quot;,&quot;dis_d&quot;:&quot;show&quot;,&quot;css&quot;:&quot;display: none; cursor: pointer; z-index: 99999999;&quot;,&quot;pos_d&quot;:&quot;position: fixed; bottom: 15px; right: 15px;&quot;,&quot;pos_m&quot;:&quot;position: fixed; bottom: 15px; right: 15px;&quot;,&quot;schedule&quot;:&quot;no&quot;,&quot;se&quot;:150,&quot;ani&quot;:&quot;no-animations&quot;,&quot;url_target_d&quot;:&quot;_blank&quot;,&quot;ga&quot;:&quot;yes&quot;,&quot;fb&quot;:&quot;yes&quot;,&quot;g_init&quot;:&quot;default&quot;,&quot;g_an_event_name&quot;:&quot;click to chat&quot;,&quot;pixel_event_name&quot;:&quot;Click to Chat by HoliThemes&quot;}"></span>
+      <span class="ht_ctc_chat_data" data-no_number="" data-settings="{&quot;number&quot;:&quot;918433966645&quot;,&quot;pre_filled&quot;:&quot;Hi, \r\nI am interested to know more about the FAB Aesthtics Clinic&quot;,&quot;dis_m&quot;:&quot;show&quot;,&quot;dis_d&quot;:&quot;show&quot;,&quot;css&quot;:&quot;display: none; cursor: pointer; z-index: 99999999;&quot;,&quot;pos_d&quot;:&quot;position: fixed; bottom: 15px; right: 15px;&quot;,&quot;pos_m&quot;:&quot;position: fixed; bottom: 15px; right: 15px;&quot;,&quot;schedule&quot;:&quot;no&quot;,&quot;se&quot;:150,&quot;ani&quot;:&quot;no-animations&quot;,&quot;url_target_d&quot;:&quot;_blank&quot;,&quot;ga&quot;:&quot;yes&quot;,&quot;fb&quot;:&quot;yes&quot;,&quot;g_init&quot;:&quot;default&quot;,&quot;g_an_event_name&quot;:&quot;click to chat&quot;,&quot;pixel_event_name&quot;:&quot;Click to Chat by HoliThemes&quot;}"></span>
       <style id='global-styles-inline-css' type='text/css'>
          :root {
             --wp--preset--aspect-ratio--square: 1;
@@ -1106,8 +1106,8 @@
       <script type="text/javascript" id="ht_ctc_app_js-js-extra">
          /* <![CDATA[ */
          var ht_ctc_chat_var = {
-            "number": "917506737366"
-            , "pre_filled": "Hi, \r\nI am interested to know more about the The Bombay Skin Clinic"
+            "number": "918433966645"
+            , "pre_filled": "Hi, \r\nI am interested to know more about the FAB Aesthtics Clinic"
             , "dis_m": "show"
             , "dis_d": "show"
             , "css": "display: none; cursor: pointer; z-index: 99999999;"
@@ -1477,9 +1477,9 @@
 
       <div id="footerfixed">
 
-         <!---<a href="tel:+917506737366" onClick="ga('send','event','Appointment','Click','Footer Fixed','10');"><div id="footerfixeddiv" style="font-family:'Open Sans'">Book an Appointment Call +917506737366</div></a>--->
-         <a href="tel:+917506737366">
-            <div id="footerfixeddiv" style="font-family:'Open Sans'">Book an Appointment Call +917506737366</div>
+         <!---<a href="tel:+918433966645" onClick="ga('send','event','Appointment','Click','Footer Fixed','10');"><div id="footerfixeddiv" style="font-family:'Open Sans'">Book an Appointment Call +918433966645</div></a>--->
+         <a href="tel:+918433966645">
+            <div id="footerfixeddiv" style="font-family:'Open Sans'">Book an Appointment Call +918433966645</div>
          </a>
 
       </div>
