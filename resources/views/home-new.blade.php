@@ -21,7 +21,7 @@
                         <div class="fusion-column-wrapper fusion-flex-column-wrapper-legacy">
                            <div class="fusion-text fusion-text-1">
                               <p style="text-align: center; margin-bottom: -5px; font-size: 10px;">WELCOME TO</p>
-                              <h1 style="text-align: center; margin: 2px; padding: 2px;">The Bombay Skin Clinic</h1>
+                              <h1 style="text-align: center; margin: 2px; padding: 2px;">FAB Aesthtics Clinic</h1>
                            </div>
                            <div class="fusion-clearfix"></div>
                         </div>
@@ -43,7 +43,7 @@
                      <div class="fusion-layout-column fusion_builder_column fusion-builder-column-2 fusion_builder_column_1_2 1_2 fusion-one-half fusion-column-last" style="--awb-bg-size:cover;width:50%;width:calc(50% - ( ( 4% ) * 0.5 ) );">
                         <div class="fusion-column-wrapper fusion-flex-column-wrapper-legacy">
                            <div class="fusion-text fusion-text-2">
-                              <p style="font-size: 18px;">The Bombay Skin Clinic is an award winning advanced medical facility founded by celebrity dermatologist Dr. Batul Patel.</p>
+                              <p style="font-size: 18px;">Your journey to great skin begins with a free consultation to identify your concerns, assess yours skin and tailor a skincare regime to your exact needs.</p>
                               <p><img decoding="async" class="alignleft size-600 wp-image-1354" src="https://www.thebombayskinclinic.com/wp-content/uploads/2022/01/dr-batul-patel-600x399.jpg" alt="" width="600" height="399" srcset="https://www.thebombayskinclinic.com/wp-content/uploads/2022/01/dr-batul-patel-200x133.jpg 200w, https://www.thebombayskinclinic.com/wp-content/uploads/2022/01/dr-batul-patel-300x200.jpg 300w, https://www.thebombayskinclinic.com/wp-content/uploads/2022/01/dr-batul-patel-400x266.jpg 400w, https://www.thebombayskinclinic.com/wp-content/uploads/2022/01/dr-batul-patel-600x399.jpg 600w, https://www.thebombayskinclinic.com/wp-content/uploads/2022/01/dr-batul-patel-768x511.jpg 768w, https://www.thebombayskinclinic.com/wp-content/uploads/2022/01/dr-batul-patel-800x532.jpg 800w, https://www.thebombayskinclinic.com/wp-content/uploads/2022/01/dr-batul-patel-1024x681.jpg 1024w, https://www.thebombayskinclinic.com/wp-content/uploads/2022/01/dr-batul-patel.jpg 1200w" sizes="(max-width: 600px) 100vw, 600px" /></p>
                               <p style="font-size: 18px;">Located in the heart of South Mumbai, Bandra and Andheri, we provide a wide range of body sculpting, facial aesthetic &amp; dermatology solutions. Our clinics are equipped with international US FDA approved machines and internationally recognized products that are operated by trained technicians.</p>
                            </div>
@@ -55,7 +55,7 @@
                                     </div>
                                     <div id="2a30887a6bcc8ecd0" class="panel-collapse collapse " aria-labelledby="toggle_2a30887a6bcc8ecd0">
                                        <div class="panel-body toggle-content fusion-clearfix">
-                                          <p style="font-size: 18px;">We believe in a holistic, less-is-more approach. Dr. Batul Patel is the Medical Head of The Bombay Skin Clinic, and one of India’s leading skin specialist in Mumbai. Here are some examples of the equipment our facility offers:</p>
+                                          <p style="font-size: 18px;">We believe in a holistic, less-is-more approach. Dr. Batul Patel is the Medical Head of FAB Aesthtics Clinic, and one of India’s leading skin specialist in Mumbai. Here are some examples of the equipment our facility offers:</p>
                                           <ul>
                                              <li>First clinic in India to have the Emsculpt NEO, world’s first and only non-invasive body shaping procedure that provides simultaneous fat elimination and muscle building in a combined treatment.</li>
                                              <li>Advanced micro needling RF technology for acne, scar &amp; stretch mark removal etc.</li>
@@ -94,7 +94,7 @@
                         <div class="fusion-column-wrapper fusion-flex-column-wrapper-legacy">
                            <div class="fusion-text fusion-text-3">
                               <h2 style="text-align: center; margin-bottom: 10px;">Emsculpt NEO</h2>
-                              <p style="text-align: center; font-size: 18px;">India&#8217;s first Emsculpt NEO technology now at The Bombay Skin Clinic.<br />
+                              <p style="text-align: center; font-size: 18px;">India&#8217;s first Emsculpt NEO technology now at FAB Aesthtics Clinic.<br />
                                  World&#8217;s leading US-FDA approved non-invasive body shaping procedure that provides simultaneous muscle building and fat elimination.<br />
                                  Know more about <a style="color: #a0ce4e;" href="https://www.thebombayskinclinic.com/emsculpt-neo-mumbai/">Emsculpt NEO</a></p>
                            </div>
@@ -125,7 +125,7 @@
                               <div class="fusion-column-content">
                                  <div class="fusion-text fusion-text-4">
                                     <h2 style="margin-bottom: 10px; text-align: center;">Exquisite Medi-Facials</h2>
-                                    <p style="font-size: 18px; text-align: center;">Get great looking skin with our <a style="color: #a0ce4e;" href="https://www.thebombayskinclinic.com/different-types-of-facial-treatments/">medi facial treatments</a> using a water jet, <a style="color: #a0ce4e;" href="https://www.thebombayskinclinic.com/laser-facial-treatment/">laser facial</a>, burst of vitamin C, refreshing pumpkin facial, our signature The Bombay Skin Clinic Facial and more. Know more about <a style="color: #a0ce4e;" href="https://www.thebombayskinclinic.com/face-brightening-treatments/">face lightening treatments</a>.</p>
+                                    <p style="font-size: 18px; text-align: center;">Get great looking skin with our <a style="color: #a0ce4e;" href="https://www.thebombayskinclinic.com/different-types-of-facial-treatments/">medi facial treatments</a> using a water jet, <a style="color: #a0ce4e;" href="https://www.thebombayskinclinic.com/laser-facial-treatment/">laser facial</a>, burst of vitamin C, refreshing pumpkin facial, our signature FAB Aesthtics Clinic Facial and more. Know more about <a style="color: #a0ce4e;" href="https://www.thebombayskinclinic.com/face-brightening-treatments/">face lightening treatments</a>.</p>
                                  </div>
                               </div>
                            </div>
@@ -614,12 +614,11 @@
                         <div class="fusion-column-wrapper fusion-flex-column-wrapper-legacy">
                            <div class="fusion-text fusion-text-16">
                               <p style="font-size: 26px; text-align: center;"><strong>Call to know more</strong><br />
-                                 <a href="tel:+917506737366">7506737366</a><br />
-                                 <a href="tel:+919152807388">9152807388</a></p>
+                                 <a href="tel:+918433966645">8433966645</a></p>
                            </div>
                            <div class="fusion-text fusion-text-17">
                               <p style="text-align: center;">OR</p>
-                              <p style="text-align: center;"><strong>email </strong><a href="mailto:thebombayskinclinic@gmail.com">thebombayskinclinic@gmail.com</a></p>
+                              <p style="text-align: center;"><strong>email </strong><a href="mailto:info@fabaesthetics.in">info@fabaesthetics.in</a></p>
                            </div>
                            <div class="fusion-clearfix"></div>
                         </div>
