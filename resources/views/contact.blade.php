@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('new-layout')
 
 @section('mytitle', 'Contact the Experts | Reach Out to Fabaesthetics for Skin & Hair Solutions')
 

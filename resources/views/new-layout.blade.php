@@ -47,16 +47,18 @@
       }
 
    </style>
+
+   <link rel='stylesheet' href='{{ asset('new-assets/css/mycss.css') }}' type='text/css' media='all' />
    <link rel='stylesheet' id='rplg-css-css' href='{{ asset('new-assets/css/rplg.css') }}' type='text/css' media='all' />
-   <link rel='stylesheet' id='swiper-css-css' href='https://www.thebombayskinclinic.com/wp-content/plugins/business-reviews-bundle/assets/css/swiper.min.css?ver=1.3.3' type='text/css' media='all' />
-   <link rel='stylesheet' id='child-style-css' href='https://www.thebombayskinclinic.com/wp-content/themes/Avada-Child-Theme/style.css?ver=abf1639e42bd692c6c98071add9ab41d' type='text/css' media='all' />
-   <link rel='stylesheet' id='fusion-dynamic-css-css' href='https://www.thebombayskinclinic.com/wp-content/uploads/fusion-styles/142e04b8fbe05a8dfea8aa1331e87534.min.css?ver=3.11.9' type='text/css' media='all' />
-   <script type="text/javascript" src="https://www.thebombayskinclinic.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
-   <script type="text/javascript" src="https://www.thebombayskinclinic.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
-   <script type="text/javascript" src="https://www.thebombayskinclinic.com/wp-content/plugins/business-reviews-bundle/assets/js/wpac-time.js?ver=1.3.3" id="brb-wpac-time-js-js"></script>
+   <link rel='stylesheet' id='swiper-css-css' href='{{ asset('new-assets/css/swiper.css') }}' type='text/css' media='all' />
+   <link rel='stylesheet' id='child-style-css' href='{{ asset('new-assets/css/child.css') }}' type='text/css' media='all' />
+   <link rel='stylesheet' id='fusion-dynamic-css-css' href='{{ asset('new-assets/css/fusion-dynamic.css') }}' type='text/css' media='all' />
+   <script type="text/javascript" src="{{ asset('new-assets/js/jquery.min.js') }}" id="jquery-core-js"></script>
+   <script type="text/javascript" src="{{ asset('new-assets/js/jquery-migrate.min.js') }}" id="jquery-migrate-js"></script>
+   <script type="text/javascript" src="{{ asset('new-assets/js/brb-wpac-time.js') }}" id="brb-wpac-time-js-js"></script>
    <script type="text/javascript" src="{{ asset('new-assets/js/blazy.min.js') }}" id="blazy-js-js"></script>
-   <script type="text/javascript" src="https://www.thebombayskinclinic.com/wp-content/plugins/business-reviews-bundle/assets/js/swiper.min.js?ver=1.3.3" id="swiper-js-js"></script>
-   <script type="text/javascript" src="https://www.thebombayskinclinic.com/wp-content/plugins/business-reviews-bundle/assets/js/rplg.js?ver=1.3.3" id="rplg-js-js"></script>
+   <script type="text/javascript" src="{{ asset('new-assets/js/swiper.js') }}" id="swiper-js-js"></script>
+   <script type="text/javascript" src="{{ asset('new-assets/js/rplg.js') }}" id="rplg-js-js"></script>
    <link rel="https://api.w.org/" href="https://www.thebombayskinclinic.com/wp-json/" />
    <link rel="alternate" title="JSON" type="application/json" href="https://www.thebombayskinclinic.com/wp-json/wp/v2/pages/8" />
    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.thebombayskinclinic.com/xmlrpc.php?rsd" />
@@ -391,7 +393,7 @@
                   <div class="fusion-row">
                      <div class="fusion-header-v6-content fusion-header-has-flyout-menu-content">
                         <div class="fusion-logo" data-margin-top="15px" data-margin-bottom="15px" data-margin-left="0px" data-margin-right="0px">
-                           <a class="fusion-logo-link" href="https://fabaesthetics.in/">
+                           <a class="fusion-logo-link" href="{{ ('/') }}">
 
                               <!-- standard logo -->
                               <img src="{{ asset('assets/images/logo.png') }}" width="150" height="80" style="max-height:80px;height:auto;" alt="Fabaesthetics Logo" data-retina_logo_url="{{ asset('assets/images/logo.png') }}" class="fusion-standard-logo" />
@@ -415,70 +417,31 @@
 
                      <div class="fusion-main-menu fusion-flyout-menu" role="navigation" aria-label="Main Menu">
                         <ul id="menu-main-menu" class="fusion-menu">
-                           <li id="menu-item-1325" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1325" data-item-id="1325"><a href="https://www.thebombayskinclinic.com/emsculpt-neo-mumbai/" class="fusion-bar-highlight"><span class="menu-text">Emsculpt NEO</span></a></li>
-                           <li id="menu-item-602" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-602" data-item-id="602"><a href="https://www.thebombayskinclinic.com/coolsculpting-bodysculpting/" class="fusion-bar-highlight"><span class="menu-text">CoolSculpting</span></a></li>
-                           <li id="menu-item-484" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-484" data-item-id="484"><a href="https://www.thebombayskinclinic.com/acne-scars-treatment/" class="fusion-bar-highlight"><span class="menu-text">Acne Treatments</span></a></li>
-                           <li id="menu-item-738" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-738" data-item-id="738"><a href="https://www.thebombayskinclinic.com/treatments-before-after/" class="fusion-bar-highlight"><span class="menu-text">Treatments Before After</span></a></li>
-                           <li id="menu-item-1280" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1280" data-item-id="1280"><a href="https://www.thebombayskinclinic.com/different-types-of-facial-treatments/" class="fusion-bar-highlight"><span class="menu-text">Types of Facials</span></a></li>
-                           <li id="menu-item-482" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-482" data-item-id="482"><a href="https://www.thebombayskinclinic.com/face-brightening-treatments/" class="fusion-bar-highlight"><span class="menu-text">Face Brightening</span></a></li>
-                           <li id="menu-item-739" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-739" data-item-id="739"><a href="https://www.thebombayskinclinic.com/microblading-eyebrows/" class="fusion-bar-highlight"><span class="menu-text">Microblading Eyebrows</span></a></li>
-                           <li id="menu-item-1086" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1086" data-item-id="1086"><a href="https://www.thebombayskinclinic.com/chemical-peel-treatments/" class="fusion-bar-highlight"><span class="menu-text">Chemical Peels</span></a></li>
-                           <li id="menu-item-1054" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1054" data-item-id="1054"><a href="/cosmelan-peel/" class="fusion-bar-highlight"><span class="menu-text">Cosmelan Peel</span></a></li>
-                           <li id="menu-item-1109" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1109" data-item-id="1109"><a href="https://www.thebombayskinclinic.com/drip-iv-therapy/" class="fusion-bar-highlight"><span class="menu-text">IV Therapy &#038; Vitamin Injections</span></a></li>
-                           <li id="menu-item-1055" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1055" data-item-id="1055"><a href="/pigmentation-treatments/" class="fusion-bar-highlight"><span class="menu-text">Pigmentation Treatments</span></a></li>
-                           <li id="menu-item-1087" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1087" data-item-id="1087"><a href="https://www.thebombayskinclinic.com/skin-lightening-treatments/" class="fusion-bar-highlight"><span class="menu-text">Skin Lightening Treatments</span></a></li>
-                           <li id="menu-item-1400" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1400" data-item-id="1400"><a href="https://www.thebombayskinclinic.com/skin-tightening-treatments/" class="fusion-bar-highlight"><span class="menu-text">Skin Tightening Treatments</span></a></li>
-                           <li id="menu-item-1382" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1382" data-item-id="1382"><a href="https://www.thebombayskinclinic.com/dandruff-seborrheic-dermatitis-craddle-cap-treatment/" class="fusion-bar-highlight"><span class="menu-text">Dandruff Treatment</span></a></li>
-                           <li id="menu-item-1383" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1383" data-item-id="1383"><a href="https://www.thebombayskinclinic.com/laser-hair-removal-treatment-for-men-women-in-mumbai/" class="fusion-bar-highlight"><span class="menu-text">Laser Hair Removal</span></a></li>
-                           <li id="menu-item-1384" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1384" data-item-id="1384"><a href="https://www.thebombayskinclinic.com/microdermabrasion-treatment/" class="fusion-bar-highlight"><span class="menu-text">Microdermabrasion</span></a></li>
-                           <li id="menu-item-1386" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1386" data-item-id="1386"><a href="https://www.thebombayskinclinic.com/body-sculpting-treatment/" class="fusion-bar-highlight"><span class="menu-text">Body Sculpting</span></a></li>
-                           <li id="menu-item-1387" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1387" data-item-id="1387"><a href="https://www.thebombayskinclinic.com/microneedling-treatment-benefits/" class="fusion-bar-highlight"><span class="menu-text">Microneedling</span></a></li>
-                           <li id="menu-item-1390" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1390" data-item-id="1390"><a href="https://www.thebombayskinclinic.com/dermapen-microneedling-treatment/" class="fusion-bar-highlight"><span class="menu-text">Dermapen Microneedling</span></a></li>
-                           <li id="menu-item-1388" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1388" data-item-id="1388"><a href="https://www.thebombayskinclinic.com/hifu-skin-tightening-facial-treatment/" class="fusion-bar-highlight"><span class="menu-text">Facial &#8211; Hifu</span></a></li>
-                           <li id="menu-item-1391" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1391" data-item-id="1391"><a href="https://www.thebombayskinclinic.com/benefits-of-gold-facial-treatment/" class="fusion-bar-highlight"><span class="menu-text">Facial &#8211; Gold</span></a></li>
-                           <li id="menu-item-1392" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1392" data-item-id="1392"><a href="https://www.thebombayskinclinic.com/papaya-facial-treatment/" class="fusion-bar-highlight"><span class="menu-text">Facial &#8211; Papaya</span></a></li>
-                           <li id="menu-item-1393" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1393" data-item-id="1393"><a href="https://www.thebombayskinclinic.com/oxygen-facial-treatment/" class="fusion-bar-highlight"><span class="menu-text">Facial &#8211; Oxygen</span></a></li>
-                           <li id="menu-item-1394" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1394" data-item-id="1394"><a href="https://www.thebombayskinclinic.com/diamond-facial-treatment/" class="fusion-bar-highlight"><span class="menu-text">Facial &#8211; Diamond</span></a></li>
-                           <li id="menu-item-1395" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1395" data-item-id="1395"><a href="https://www.thebombayskinclinic.com/laser-facial-treatment/" class="fusion-bar-highlight"><span class="menu-text">Facial &#8211; Laser</span></a></li>
-                           <li id="menu-item-1396" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1396" data-item-id="1396"><a href="https://www.thebombayskinclinic.com/mens-facial-treatment/" class="fusion-bar-highlight"><span class="menu-text">Facial &#8211; Men&#8217;s</span></a></li>
-                           <li id="menu-item-1397" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1397" data-item-id="1397"><a href="https://www.thebombayskinclinic.com/charcoal-facial-at-clinic-vs-at-home/" class="fusion-bar-highlight"><span class="menu-text">Facial &#8211; Charcoal</span></a></li>
-                           <li id="menu-item-846" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-846" data-item-id="846"><a href="https://www.thebombayskinclinic.com/hyperhidrosis-miradry/" class="fusion-bar-highlight"><span class="menu-text">Hyperhidrosis miraDry</span></a></li>
-                           <li id="menu-item-1398" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1398" data-item-id="1398"><a href="https://www.thebombayskinclinic.com/double-chin-treatments/" class="fusion-bar-highlight"><span class="menu-text">Double Chin Treatments</span></a></li>
-                           <li id="menu-item-1469" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1469" data-item-id="1469"><a href="https://www.thebombayskinclinic.com/hair-fact-kit-tablets/" class="fusion-bar-highlight"><span class="menu-text">Hair Fact Kit Tablets</span></a></li>
-                           <li id="menu-item-1641" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1641 fusion-flyout-menu-item-last" data-item-id="1641"><a href="https://www.thebombayskinclinic.com/careers/" class="fusion-bar-highlight"><span class="menu-text">Amazing Career Opportunities</span></a></li>
-                        </ul>
-                        <ul id="menu-main-menu-1" class="fusion-menu">
-                           <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1325" data-item-id="1325"><a href="https://www.thebombayskinclinic.com/emsculpt-neo-mumbai/" class="fusion-bar-highlight"><span class="menu-text">Emsculpt NEO</span></a></li>
-                           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-602" data-item-id="602"><a href="https://www.thebombayskinclinic.com/coolsculpting-bodysculpting/" class="fusion-bar-highlight"><span class="menu-text">CoolSculpting</span></a></li>
-                           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-484" data-item-id="484"><a href="https://www.thebombayskinclinic.com/acne-scars-treatment/" class="fusion-bar-highlight"><span class="menu-text">Acne Treatments</span></a></li>
-                           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-738" data-item-id="738"><a href="https://www.thebombayskinclinic.com/treatments-before-after/" class="fusion-bar-highlight"><span class="menu-text">Treatments Before After</span></a></li>
-                           <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1280" data-item-id="1280"><a href="https://www.thebombayskinclinic.com/different-types-of-facial-treatments/" class="fusion-bar-highlight"><span class="menu-text">Types of Facials</span></a></li>
-                           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-482" data-item-id="482"><a href="https://www.thebombayskinclinic.com/face-brightening-treatments/" class="fusion-bar-highlight"><span class="menu-text">Face Brightening</span></a></li>
-                           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-739" data-item-id="739"><a href="https://www.thebombayskinclinic.com/microblading-eyebrows/" class="fusion-bar-highlight"><span class="menu-text">Microblading Eyebrows</span></a></li>
-                           <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1086" data-item-id="1086"><a href="https://www.thebombayskinclinic.com/chemical-peel-treatments/" class="fusion-bar-highlight"><span class="menu-text">Chemical Peels</span></a></li>
-                           <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1054" data-item-id="1054"><a href="/cosmelan-peel/" class="fusion-bar-highlight"><span class="menu-text">Cosmelan Peel</span></a></li>
-                           <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1109" data-item-id="1109"><a href="https://www.thebombayskinclinic.com/drip-iv-therapy/" class="fusion-bar-highlight"><span class="menu-text">IV Therapy &#038; Vitamin Injections</span></a></li>
-                           <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1055" data-item-id="1055"><a href="/pigmentation-treatments/" class="fusion-bar-highlight"><span class="menu-text">Pigmentation Treatments</span></a></li>
-                           <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1087" data-item-id="1087"><a href="https://www.thebombayskinclinic.com/skin-lightening-treatments/" class="fusion-bar-highlight"><span class="menu-text">Skin Lightening Treatments</span></a></li>
-                           <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1400" data-item-id="1400"><a href="https://www.thebombayskinclinic.com/skin-tightening-treatments/" class="fusion-bar-highlight"><span class="menu-text">Skin Tightening Treatments</span></a></li>
-                           <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1382" data-item-id="1382"><a href="https://www.thebombayskinclinic.com/dandruff-seborrheic-dermatitis-craddle-cap-treatment/" class="fusion-bar-highlight"><span class="menu-text">Dandruff Treatment</span></a></li>
-                           <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1383" data-item-id="1383"><a href="https://www.thebombayskinclinic.com/laser-hair-removal-treatment-for-men-women-in-mumbai/" class="fusion-bar-highlight"><span class="menu-text">Laser Hair Removal</span></a></li>
-                           <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1384" data-item-id="1384"><a href="https://www.thebombayskinclinic.com/microdermabrasion-treatment/" class="fusion-bar-highlight"><span class="menu-text">Microdermabrasion</span></a></li>
-                           <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1386" data-item-id="1386"><a href="https://www.thebombayskinclinic.com/body-sculpting-treatment/" class="fusion-bar-highlight"><span class="menu-text">Body Sculpting</span></a></li>
-                           <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1387" data-item-id="1387"><a href="https://www.thebombayskinclinic.com/microneedling-treatment-benefits/" class="fusion-bar-highlight"><span class="menu-text">Microneedling</span></a></li>
-                           <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1390" data-item-id="1390"><a href="https://www.thebombayskinclinic.com/dermapen-microneedling-treatment/" class="fusion-bar-highlight"><span class="menu-text">Dermapen Microneedling</span></a></li>
-                           <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1388" data-item-id="1388"><a href="https://www.thebombayskinclinic.com/hifu-skin-tightening-facial-treatment/" class="fusion-bar-highlight"><span class="menu-text">Facial &#8211; Hifu</span></a></li>
-                           <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1391" data-item-id="1391"><a href="https://www.thebombayskinclinic.com/benefits-of-gold-facial-treatment/" class="fusion-bar-highlight"><span class="menu-text">Facial &#8211; Gold</span></a></li>
-                           <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1392" data-item-id="1392"><a href="https://www.thebombayskinclinic.com/papaya-facial-treatment/" class="fusion-bar-highlight"><span class="menu-text">Facial &#8211; Papaya</span></a></li>
-                           <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1393" data-item-id="1393"><a href="https://www.thebombayskinclinic.com/oxygen-facial-treatment/" class="fusion-bar-highlight"><span class="menu-text">Facial &#8211; Oxygen</span></a></li>
-                           <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1394" data-item-id="1394"><a href="https://www.thebombayskinclinic.com/diamond-facial-treatment/" class="fusion-bar-highlight"><span class="menu-text">Facial &#8211; Diamond</span></a></li>
-                           <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1395" data-item-id="1395"><a href="https://www.thebombayskinclinic.com/laser-facial-treatment/" class="fusion-bar-highlight"><span class="menu-text">Facial &#8211; Laser</span></a></li>
-                           <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1396" data-item-id="1396"><a href="https://www.thebombayskinclinic.com/mens-facial-treatment/" class="fusion-bar-highlight"><span class="menu-text">Facial &#8211; Men&#8217;s</span></a></li>
-                           <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1397" data-item-id="1397"><a href="https://www.thebombayskinclinic.com/charcoal-facial-at-clinic-vs-at-home/" class="fusion-bar-highlight"><span class="menu-text">Facial &#8211; Charcoal</span></a></li>
-                           <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-846" data-item-id="846"><a href="https://www.thebombayskinclinic.com/hyperhidrosis-miradry/" class="fusion-bar-highlight"><span class="menu-text">Hyperhidrosis miraDry</span></a></li>
-                           <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1398" data-item-id="1398"><a href="https://www.thebombayskinclinic.com/double-chin-treatments/" class="fusion-bar-highlight"><span class="menu-text">Double Chin Treatments</span></a></li>
-                           <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1469" data-item-id="1469"><a href="https://www.thebombayskinclinic.com/hair-fact-kit-tablets/" class="fusion-bar-highlight"><span class="menu-text">Hair Fact Kit Tablets</span></a></li>
-                           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1641 fusion-flyout-menu-item-last" data-item-id="1641"><a href="https://www.thebombayskinclinic.com/careers/" class="fusion-bar-highlight"><span class="menu-text">Amazing Career Opportunities</span></a></li>
+
+                           @foreach($skinServices as $skinService)
+                              <li class="menu-item menu-item-type-custom menu-item-object-custom"><a class="fusion-bar-highlight" href="{{ url('skin-treatment/' . $skinService->slug) }}"><span class="menu-text">{{ $skinService->title }}</span></a></li>
+                           @endforeach
+
+                           @foreach($cosmeticServices as $cosmeticService)
+                              <li class="menu-item menu-item-type-custom menu-item-object-custom"><a class="fusion-bar-highlight" href="{{ url('skin-treatment/' . $cosmeticService->slug) }}"><span class="menu-text">{{ $cosmeticService->title }}</span></a></li>
+                           @endforeach
+
+                           @foreach($hairServices as $hairService)
+                              <li class="menu-item menu-item-type-custom menu-item-object-custom"><a class="fusion-bar-highlight" href="{{ url('skin-treatment/' . $hairService->slug) }}"><span class="menu-text">{{ $hairService->title }}</span></a></li>
+                           @endforeach
+
+                           @foreach($laserServices as $laserService)
+                              <li class="menu-item menu-item-type-custom menu-item-object-custom"><a class="fusion-bar-highlight" href="{{ url('skin-treatment/' . $laserService->slug) }}"><span class="menu-text">{{ $laserService->title }}</span></a></li>
+                           @endforeach
+
+                           @foreach($rejuvenationServices as $rejuvenationService)
+                              <li class="menu-item menu-item-type-custom menu-item-object-custom"><a class="fusion-bar-highlight" href="{{ url('skin-treatment/' . $rejuvenationService->slug) }}"><span class="menu-text">{{ $rejuvenationService->title }}</span></a></li>
+                           @endforeach
+
+                           @foreach($makeoverServices as $makeoverService)
+                              <li class="menu-item menu-item-type-custom menu-item-object-custom"><a class="fusion-bar-highlight" href="{{ url('skin-treatment/' . $makeoverService->slug) }}"><span class="menu-text">{{ $makeoverService->title }}</span></a></li>
+                           @endforeach
+
                         </ul>
                      </div>
 
@@ -495,17 +458,176 @@
 
 
 
-
-
-
-
-
-
-
          @yield('content')
 
          @yield('mycontent')
 
+
+         <div class="fusion-fullwidth fullwidth-box fusion-builder-row-13 nonhundred-percent-fullwidth non-hundred-percent-height-scrolling" style="--awb-border-radius-top-left:0px;--awb-border-radius-top-right:0px;--awb-border-radius-bottom-right:0px;--awb-border-radius-bottom-left:0px;--awb-padding-top:0px;--awb-padding-right:0px;--awb-padding-bottom:0px;--awb-padding-left:0px;--awb-margin-top:0px;--awb-margin-bottom:0px;--awb-flex-wrap:wrap;">
+            <div class="fusion-builder-row fusion-row">
+               <div class="fusion-layout-column fusion_builder_column fusion-builder-column-20 fusion_builder_column_1_1 1_1 fusion-one-full fusion-column-first fusion-column-last" style="--awb-padding-top:0px;--awb-padding-right:0px;--awb-padding-bottom:0px;--awb-padding-left:0px;--awb-bg-color:#5b5b5b;--awb-bg-color-hover:#5b5b5b;--awb-bg-size:cover;--awb-margin-bottom:50px;">
+                  <div class="fusion-column-wrapper fusion-flex-column-wrapper-legacy">
+                     <div class="fusion-text fusion-text-13">
+                        <h3 style="text-align: center;"><span style="color: #ffffff;">Featured in</span></h3>
+                     </div>
+                     <div class="fusion-clearfix"></div>
+                  </div>
+               </div>
+               <div class="fusion-layout-column fusion_builder_column fusion-builder-column-21 fusion_builder_column_1_5 1_5 fusion-one-fifth fusion-column-first" style="--awb-padding-top:0px;--awb-padding-right:25px;--awb-padding-bottom:0px;--awb-padding-left:25px;--awb-bg-size:cover;--awb-margin-bottom:0px;width:20%;width:calc(20% - ( ( 4% + 4% + 4% + 4% ) * 0.2 ) );margin-right: 4%;">
+                  <div class="fusion-column-wrapper fusion-flex-column-wrapper-legacy">
+                     <div class="fusion-image-element in-legacy-container" style="--awb-caption-title-font-family:var(--h2_typography-font-family);--awb-caption-title-font-weight:var(--h2_typography-font-weight);--awb-caption-title-font-style:var(--h2_typography-font-style);--awb-caption-title-size:var(--h2_typography-font-size);--awb-caption-title-transform:var(--h2_typography-text-transform);--awb-caption-title-line-height:var(--h2_typography-line-height);--awb-caption-title-letter-spacing:var(--h2_typography-letter-spacing);"><span class=" fusion-imageframe imageframe-none imageframe-1 hover-type-none"><img fetchpriority="high" decoding="async" width="480" height="200" title="Logo Vogue" src="https://www.thebombayskinclinic.com/wp-content/uploads/2018/10/logo-vogue.jpg" alt class="img-responsive wp-image-550" srcset="https://www.thebombayskinclinic.com/wp-content/uploads/2018/10/logo-vogue-200x83.jpg 200w, https://www.thebombayskinclinic.com/wp-content/uploads/2018/10/logo-vogue-400x167.jpg 400w, https://www.thebombayskinclinic.com/wp-content/uploads/2018/10/logo-vogue.jpg 480w" sizes="(max-width: 800px) 100vw, 400px" /></span></div>
+                     <div class="fusion-clearfix"></div>
+                  </div>
+               </div>
+               <div class="fusion-layout-column fusion_builder_column fusion-builder-column-22 fusion_builder_column_1_5 1_5 fusion-one-fifth" style="--awb-padding-top:0px;--awb-padding-right:25px;--awb-padding-bottom:0px;--awb-padding-left:25px;--awb-bg-size:cover;--awb-margin-bottom:0px;width:20%;width:calc(20% - ( ( 4% + 4% + 4% + 4% ) * 0.2 ) );margin-right: 4%;">
+                  <div class="fusion-column-wrapper fusion-flex-column-wrapper-legacy">
+                     <div class="fusion-image-element in-legacy-container" style="--awb-caption-title-font-family:var(--h2_typography-font-family);--awb-caption-title-font-weight:var(--h2_typography-font-weight);--awb-caption-title-font-style:var(--h2_typography-font-style);--awb-caption-title-size:var(--h2_typography-font-size);--awb-caption-title-transform:var(--h2_typography-text-transform);--awb-caption-title-line-height:var(--h2_typography-line-height);--awb-caption-title-letter-spacing:var(--h2_typography-letter-spacing);"><span class=" fusion-imageframe imageframe-none imageframe-2 hover-type-none"><img decoding="async" width="480" height="200" title="Logo Cosmopolitan" src="https://www.thebombayskinclinic.com/wp-content/uploads/2018/10/logo-cosmopolitan.jpg" alt class="img-responsive wp-image-547" srcset="https://www.thebombayskinclinic.com/wp-content/uploads/2018/10/logo-cosmopolitan-200x83.jpg 200w, https://www.thebombayskinclinic.com/wp-content/uploads/2018/10/logo-cosmopolitan-400x167.jpg 400w, https://www.thebombayskinclinic.com/wp-content/uploads/2018/10/logo-cosmopolitan.jpg 480w" sizes="(max-width: 800px) 100vw, 400px" /></span></div>
+                     <div class="fusion-clearfix"></div>
+                  </div>
+               </div>
+               <div class="fusion-layout-column fusion_builder_column fusion-builder-column-23 fusion_builder_column_1_5 1_5 fusion-one-fifth" style="--awb-padding-top:0px;--awb-padding-right:25px;--awb-padding-bottom:0px;--awb-padding-left:25px;--awb-bg-size:cover;--awb-margin-bottom:0px;width:20%;width:calc(20% - ( ( 4% + 4% + 4% + 4% ) * 0.2 ) );margin-right: 4%;">
+                  <div class="fusion-column-wrapper fusion-flex-column-wrapper-legacy">
+                     <div class="fusion-image-element in-legacy-container" style="--awb-caption-title-font-family:var(--h2_typography-font-family);--awb-caption-title-font-weight:var(--h2_typography-font-weight);--awb-caption-title-font-style:var(--h2_typography-font-style);--awb-caption-title-size:var(--h2_typography-font-size);--awb-caption-title-transform:var(--h2_typography-text-transform);--awb-caption-title-line-height:var(--h2_typography-line-height);--awb-caption-title-letter-spacing:var(--h2_typography-letter-spacing);"><span class=" fusion-imageframe imageframe-none imageframe-3 hover-type-none"><img decoding="async" width="480" height="200" alt="Logo Mumbai Mirror" title="Logo Mumbai Mirror" src="https://www.thebombayskinclinic.com/wp-content/uploads/2018/01/logo-mumbai-mirror.jpg" class="img-responsive wp-image-85" srcset="https://www.thebombayskinclinic.com/wp-content/uploads/2018/01/logo-mumbai-mirror-200x83.jpg 200w, https://www.thebombayskinclinic.com/wp-content/uploads/2018/01/logo-mumbai-mirror-400x167.jpg 400w, https://www.thebombayskinclinic.com/wp-content/uploads/2018/01/logo-mumbai-mirror.jpg 480w" sizes="(max-width: 800px) 100vw, 400px" /></span></div>
+                     <div class="fusion-clearfix"></div>
+                  </div>
+               </div>
+               <div class="fusion-layout-column fusion_builder_column fusion-builder-column-24 fusion_builder_column_1_5 1_5 fusion-one-fifth" style="--awb-padding-right:25px;--awb-padding-left:25px;--awb-bg-size:cover;width:20%;width:calc(20% - ( ( 4% + 4% + 4% + 4% ) * 0.2 ) );margin-right: 4%;">
+                  <div class="fusion-column-wrapper fusion-flex-column-wrapper-legacy">
+                     <div class="fusion-image-element in-legacy-container" style="--awb-caption-title-font-family:var(--h2_typography-font-family);--awb-caption-title-font-weight:var(--h2_typography-font-weight);--awb-caption-title-font-style:var(--h2_typography-font-style);--awb-caption-title-size:var(--h2_typography-font-size);--awb-caption-title-transform:var(--h2_typography-text-transform);--awb-caption-title-line-height:var(--h2_typography-line-height);--awb-caption-title-letter-spacing:var(--h2_typography-letter-spacing);"><span class=" fusion-imageframe imageframe-none imageframe-4 hover-type-none"><img decoding="async" width="480" height="200" alt="Logo Ht" title="Logo Ht" src="https://www.thebombayskinclinic.com/wp-content/uploads/2018/01/logo-ht.jpg" class="img-responsive wp-image-86" srcset="https://www.thebombayskinclinic.com/wp-content/uploads/2018/01/logo-ht-200x83.jpg 200w, https://www.thebombayskinclinic.com/wp-content/uploads/2018/01/logo-ht-400x167.jpg 400w, https://www.thebombayskinclinic.com/wp-content/uploads/2018/01/logo-ht.jpg 480w" sizes="(max-width: 800px) 100vw, 400px" /></span></div>
+                     <div class="fusion-clearfix"></div>
+                  </div>
+               </div>
+               <div class="fusion-layout-column fusion_builder_column fusion-builder-column-25 fusion_builder_column_1_5 1_5 fusion-one-fifth fusion-column-last" style="--awb-padding-right:25px;--awb-padding-left:25px;--awb-bg-size:cover;width:20%;width:calc(20% - ( ( 4% + 4% + 4% + 4% ) * 0.2 ) );">
+                  <div class="fusion-column-wrapper fusion-flex-column-wrapper-legacy">
+                     <div class="fusion-image-element in-legacy-container" style="--awb-caption-title-font-family:var(--h2_typography-font-family);--awb-caption-title-font-weight:var(--h2_typography-font-weight);--awb-caption-title-font-style:var(--h2_typography-font-style);--awb-caption-title-size:var(--h2_typography-font-size);--awb-caption-title-transform:var(--h2_typography-text-transform);--awb-caption-title-line-height:var(--h2_typography-line-height);--awb-caption-title-letter-spacing:var(--h2_typography-letter-spacing);"><span class=" fusion-imageframe imageframe-none imageframe-5 hover-type-none"><img decoding="async" width="480" height="200" alt="Logo DNA" title="Logo DNA" src="https://www.thebombayskinclinic.com/wp-content/uploads/2018/01/logo-dna.jpg" class="img-responsive wp-image-83" srcset="https://www.thebombayskinclinic.com/wp-content/uploads/2018/01/logo-dna-200x83.jpg 200w, https://www.thebombayskinclinic.com/wp-content/uploads/2018/01/logo-dna-400x167.jpg 400w, https://www.thebombayskinclinic.com/wp-content/uploads/2018/01/logo-dna.jpg 480w" sizes="(max-width: 800px) 100vw, 400px" /></span></div>
+                     <div class="fusion-clearfix"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="fusion-fullwidth fullwidth-box fusion-builder-row-14 nonhundred-percent-fullwidth non-hundred-percent-height-scrolling" style="--awb-border-radius-top-left:0px;--awb-border-radius-top-right:0px;--awb-border-radius-bottom-right:0px;--awb-border-radius-bottom-left:0px;--awb-padding-top:0px;--awb-padding-right:0px;--awb-padding-bottom:0px;--awb-padding-left:0px;--awb-margin-top:25px;--awb-margin-bottom:0px;--awb-flex-wrap:wrap;">
+            <div class="fusion-builder-row fusion-row">
+               <div class="fusion-layout-column fusion_builder_column fusion-builder-column-26 fusion_builder_column_1_1 1_1 fusion-one-full fusion-column-first fusion-column-last" style="--awb-padding-top:0px;--awb-padding-right:0px;--awb-padding-bottom:0px;--awb-padding-left:0px;--awb-bg-color:#5b5b5b;--awb-bg-color-hover:#5b5b5b;--awb-bg-size:cover;--awb-margin-bottom:25px;">
+                  <div class="fusion-column-wrapper fusion-flex-column-wrapper-legacy">
+                     <div class="fusion-text fusion-text-14">
+                        <h3 style="text-align: center;"><span style="color: #ffffff;">Book appointment today!</span></h3>
+                     </div>
+                     <div class="fusion-clearfix"></div>
+                  </div>
+               </div>
+               <div class="fusion-layout-column fusion_builder_column fusion-builder-column-27 fusion_builder_column_1_3 1_3 fusion-one-third fusion-column-first" style="--awb-padding-top:0px;--awb-padding-right:25px;--awb-padding-bottom:0px;--awb-padding-left:25px;--awb-bg-size:cover;--awb-margin-bottom:15px;width:33.333333333333%;width:calc(33.333333333333% - ( ( 4% + 4% ) * 0.33333333333333 ) );margin-right: 4%;">
+                  <div class="fusion-column-wrapper fusion-flex-column-wrapper-legacy"><span style="font-size:32px;">Google Reviews</span>
+                     <p style="text-align: left; font-size: 16px; margin-top:10px"><strong style="color: orange; font-size:18px">4.6</strong> <span class="rw-gl">
+                           <i class="fas fa-star" style="color:orange"></i>
+                           <i class="fas fa-star" style="color:orange"></i>
+                           <i class="fas fa-star" style="color:orange"></i>
+                           <i class="fas fa-star" style="color:orange"></i>
+                           <i class="fas fa-star-half-alt" style="color:orange"></i></span> based on 312 reviews<br>
+                        <img decoding="async" src="{{ asset('assets/images/review-gl.jpg') }}" style="width:50%;margin-bottom:15px;"><br>
+
+                        <span class="name"><b>Twinkle Matta</b></span><br>
+                        <span style="float:left; margin-right:5px;">
+                           <i class="fas fa-star" style="color:orange"></i>
+                           <i class="fas fa-star" style="color:orange"></i>
+                           <i class="fas fa-star" style="color:orange"></i>
+                           <i class="fas fa-star" style="color:orange"></i>
+                           <i class="fas fa-star" style="color:orange"></i> </span>
+                        Best Dermatologist in town! Coudnt go to any other doctor. My skin went from bad to fab in just in no time.<br><br>
+
+                        <span class="name"><b>Teri Fijak</b></span><br>
+                        <span style="float:left; margin-right:5px;">
+                           <i class="fas fa-star" style="color:orange"></i>
+                           <i class="fas fa-star" style="color:orange"></i>
+                           <i class="fas fa-star" style="color:orange"></i>
+                           <i class="fas fa-star" style="color:orange"></i>
+                        </span>
+                        So I am from USA visting my friend in India and was looking for Botox while visitng. Came across Fab Aesthetics and saw great reviews so i had to give it a go. So happy I did, very happy with the results. <br><br>
+
+                        <span class="name"><b>Nida Shaikh</b></span><br>
+                        <span style="float:left; margin-right:5px;">
+                           <i class="fas fa-star" style="color:orange"></i>
+                           <i class="fas fa-star" style="color:orange"></i>
+                           <i class="fas fa-star" style="color:orange"></i>
+                           <i class="fas fa-star" style="color:orange"></i>
+                           <i class="fas fa-star" style="color:orange"></i> </span>
+                        Pigmentation treatment I have done in Fab Aesthetics clinic. Thank you Dr Samreen Khan for yourproper guidance.My face is much better now. Highly recommended.
+
+                        <br><br>
+                        <a href="https://g.page/tbscsouth" target="_blank" rel="nofollow">View more</a> on Google.
+                     </p>
+                     <div class="fusion-clearfix"></div>
+                  </div>
+               </div>
+               <div class="fusion-layout-column fusion_builder_column fusion-builder-column-28 fusion_builder_column_1_3 1_3 fusion-one-third" style="--awb-padding-top:0px;--awb-padding-right:25px;--awb-padding-bottom:0px;--awb-padding-left:25px;--awb-bg-size:cover;--awb-margin-bottom:0px;width:33.333333333333%;width:calc(33.333333333333% - ( ( 4% + 4% ) * 0.33333333333333 ) );margin-right: 4%;">
+                  <div class="fusion-column-wrapper fusion-flex-column-wrapper-legacy" id="contactForm">
+                     <div id="message">
+                        @if(Session::has('message'))
+                        <p class="alert {{ Session::get('alert-class', 'alert-success') }} mt-3">{{ Session::get('message') }}</p>
+                        @endif
+                    </div>
+                     <form method="post" action="/contact-us">
+                        @csrf
+                        <div class="row">
+                           <div class="col-lg-12">
+                              <div class="form-group app-label">
+                                    {{-- <label class="text-muted">Name</label> --}}
+                                    <input required name="name" id="name2" type="text" class="form-control resume" placeholder="Enter Name..">
+                              </div>
+                           </div>
+                           <div class="col-lg-12">
+                              <div class="form-group app-label">
+                                    {{-- <label class="text-muted">Email address</label> --}}
+                                    <input required name="email" id="email1" type="email" class="form-control resume" placeholder="Enter Email..">
+                              </div>
+                           </div>
+                           <div class="col-lg-12">
+                              <div class="form-group app-label">
+                                    {{-- <label class="text-muted">Phone Number</label> --}}
+                                    <input required name="phone" type="number" class="form-control resume" placeholder="Enter Phone Number">
+                              </div>
+                           </div>
+                           <div class="col-lg-12">
+                              <div class="form-group app-label">
+                                    {{-- <label class="text-muted">Message</label> --}}
+                                    <textarea required name="message" id="comments" rows="2" class="form-control resume" placeholder="Message.."></textarea>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-sm-12">
+                              <input type="submit" id="submit" name="send" class="wpcf7-form-control wpcf7-submit has-spinner" style="background-color: #1f9e96;  border-block: #1f9e96; color:white" value="Send Message">
+                              <div id="simple-msg"></div>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+               <div class="fusion-layout-column fusion_builder_column fusion-builder-column-29 fusion_builder_column_1_3 1_3 fusion-one-third fusion-column-last" style="--awb-padding-top:0px;--awb-padding-right:25px;--awb-padding-bottom:0px;--awb-padding-left:25px;--awb-bg-size:cover;--awb-margin-bottom:0px;width:33.333333333333%;width:calc(33.333333333333% - ( ( 4% + 4% ) * 0.33333333333333 ) );">
+                  <div class="fusion-column-wrapper fusion-flex-column-wrapper-legacy">
+                     <div class="fusion-text fusion-text-16">
+                        <p style="font-size: 26px; text-align: center;"><strong>Call to know more</strong><br />
+                           <a href="tel:+918433966645">8433966645</a></p>
+                     </div>
+                     <div class="fusion-text fusion-text-17">
+                        <p style="text-align: center;">OR</p>
+                        <p style="text-align: center;"><strong>email </strong><a href="mailto:info@fabaesthetics.in">info@fabaesthetics.in</a></p>
+                     </div>
+                     <div class="fusion-clearfix"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      </div>
+   </div>
+</section>
+
+<script nitro-exclude>
+   document.cookie = 'nitroCachedPage=' + (!window.NITROPACK_STATE ? '0' : '1') + '; path=/; SameSite=Lax';
+
+</script>
+</div> <!-- fusion-row -->
+</main> <!-- #main -->
 
 
          <div class="fusion-footer">
@@ -1161,9 +1283,9 @@
          /* ]]> */
 
       </script>
-      <script type="text/javascript" src="https://www.thebombayskinclinic.com/wp-content/plugins/click-to-chat-for-whatsapp/new/inc/assets/js/app.js?ver=4.6" id="ht_ctc_app_js-js"></script>
-      <script type="text/javascript" src="https://www.thebombayskinclinic.com/wp-includes/js/dist/hooks.min.js?ver=2810c76e705dd1a53b18" id="wp-hooks-js"></script>
-      <script type="text/javascript" src="https://www.thebombayskinclinic.com/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+      <script type="text/javascript" src="{{ asset('new-assets/js/ht_ctc_app.js') }}" id="ht_ctc_app_js-js"></script>
+      <script type="text/javascript" src="{{ asset('new-assets/js/wp-hooks.js') }}" id="wp-hooks-js"></script>
+      <script type="text/javascript" src="{{ asset('new-assets/js/wp-i18n.js') }}" id="wp-i18n-js"></script>
       <script type="text/javascript" id="wp-i18n-js-after">
          /* <![CDATA[ */
          wp.i18n.setLocaleData({
@@ -1172,7 +1294,7 @@
          /* ]]> */
 
       </script>
-      <script type="text/javascript" src="https://www.thebombayskinclinic.com/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.9.8" id="swv-js"></script>
+      <script type="text/javascript" src="{{ asset('new-assets/js/swv.js') }}" id="swv-js"></script>
       <script type="text/javascript" id="contact-form-7-js-extra">
          /* <![CDATA[ */
          var wpcf7 = {
@@ -1185,12 +1307,12 @@
          /* ]]> */
 
       </script>
-      <script type="text/javascript" src="https://www.thebombayskinclinic.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.9.8" id="contact-form-7-js"></script>
-      <script type="text/javascript" src="https://www.thebombayskinclinic.com/wp-content/plugins/fusion-builder/assets/js/min/general/fusion-column.js?ver=3.11.9" id="fusion-column-js"></script>
-      <script type="text/javascript" src="https://www.thebombayskinclinic.com/wp-content/themes/Avada/includes/lib/assets/min/js/general/awb-tabs-widget.js?ver=3.11.9" id="awb-tabs-widget-js"></script>
-      <script type="text/javascript" src="https://www.thebombayskinclinic.com/wp-content/themes/Avada/includes/lib/assets/min/js/general/awb-vertical-menu-widget.js?ver=3.11.9" id="awb-vertical-menu-widget-js"></script>
-      <script type="text/javascript" src="https://www.thebombayskinclinic.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/cssua.js?ver=2.1.28" id="cssua-js"></script>
-      <script type="text/javascript" src="https://www.thebombayskinclinic.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/modernizr.js?ver=3.3.1" id="modernizr-js"></script>
+      <script type="text/javascript" src="{{ asset('new-assets/js/contact-form-7.js') }}" id="contact-form-7-js"></script>
+      <script type="text/javascript" src="{{ asset('new-assets/js/fusion-column.js') }}"  id="fusion-column-js"></script>
+      <script type="text/javascript" src="{{ asset('new-assets/js/awb-tabs-widget.js') }}" id="awb-tabs-widget-js"></script>
+      <script type="text/javascript" src="{{ asset('new-assets/js/awb-vertical-menu-widget.js') }}" id="awb-vertical-menu-widget-js"></script>
+      <script type="text/javascript" src="{{ asset('new-assets/js/cssua.js') }}" id="cssua-js"></script>
+      <script type="text/javascript" src="{{ asset('new-assets/js/modernizr-js.js') }}" id="modernizr-js"></script>
       <script type="text/javascript" id="fusion-js-extra">
          /* <![CDATA[ */
          var fusionJSVars = {
@@ -1200,14 +1322,14 @@
          /* ]]> */
 
       </script>
-      <script type="text/javascript" src="https://www.thebombayskinclinic.com/wp-content/themes/Avada/includes/lib/assets/min/js/general/fusion.js?ver=3.11.9" id="fusion-js"></script>
-      <script type="text/javascript" src="https://www.thebombayskinclinic.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/swiper.js?ver=11.1.0" id="swiper-js"></script>
-      <script type="text/javascript" src="https://www.thebombayskinclinic.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/bootstrap.transition.js?ver=3.3.6" id="bootstrap-transition-js"></script>
-      <script type="text/javascript" src="https://www.thebombayskinclinic.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/bootstrap.collapse.js?ver=3.1.1" id="bootstrap-collapse-js"></script>
-      <script type="text/javascript" src="https://www.thebombayskinclinic.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/jquery.requestAnimationFrame.js?ver=1" id="jquery-request-animation-frame-js"></script>
-      <script type="text/javascript" src="https://www.thebombayskinclinic.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/jquery.easing.js?ver=1.3" id="jquery-easing-js"></script>
-      <script type="text/javascript" src="https://www.thebombayskinclinic.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/jquery.fitvids.js?ver=1.1" id="jquery-fitvids-js"></script>
-      <script type="text/javascript" src="https://www.thebombayskinclinic.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/jquery.flexslider.js?ver=2.7.2" id="jquery-flexslider-js"></script>
+      <script type="text/javascript" src="{{ asset('new-assets/js/fusion.js') }}" id="fusion-js"></script>
+      <script type="text/javascript" src="{{ asset('new-assets/js/swiper-min.js') }}" id="swiper-js"></script>
+      <script type="text/javascript" src="{{ asset('new-assets/js/bootstrap-transition.js') }}" id="bootstrap-transition-js"></script>
+      <script type="text/javascript" src="{{ asset('new-assets/js/bootstrap-collapse.js') }}" id="bootstrap-collapse-js"></script>
+      <script type="text/javascript" src="{{ asset('new-assets/js/jquery-request-animation-frame.js') }}"  id="jquery-request-animation-frame-js"></script>
+      <script type="text/javascript" src="{{ asset('new-assets/js/jquery-easing.js') }}" id="jquery-easing-js"></script>
+      <script type="text/javascript" src="{{ asset('new-assets/js/jquery-fitvids.js') }}"id="jquery-fitvids-js"></script>
+      <script type="text/javascript" src="{{ asset('new-assets/js/jquery-flexslider.js') }}" id="jquery-flexslider-js"></script>
       <script type="text/javascript" id="jquery-lightbox-js-extra">
          /* <![CDATA[ */
          var fusionLightboxVideoVars = {
@@ -1217,11 +1339,11 @@
          /* ]]> */
 
       </script>
-      <script type="text/javascript" src="https://www.thebombayskinclinic.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/jquery.ilightbox.js?ver=2.2.3" id="jquery-lightbox-js"></script>
-      <script type="text/javascript" src="https://www.thebombayskinclinic.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/jquery.mousewheel.js?ver=3.0.6" id="jquery-mousewheel-js"></script>
-      <script type="text/javascript" src="https://www.thebombayskinclinic.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/jquery.placeholder.js?ver=2.0.7" id="jquery-placeholder-js"></script>
-      <script type="text/javascript" src="https://www.thebombayskinclinic.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/jquery.fade.js?ver=1" id="jquery-fade-js"></script>
-      <script type="text/javascript" src="https://www.thebombayskinclinic.com/wp-content/themes/Avada/includes/lib/assets/min/js/library/imagesLoaded.js?ver=3.1.8" id="images-loaded-js"></script>
+      <script type="text/javascript" src="{{ asset('new-assets/js/jquery.ilightbox.js') }}" id="jquery-lightbox-js"></script>
+      <script type="text/javascript" src="{{ asset('new-assets/js/jquery.mousewheel.js') }}" id="jquery-mousewheel-js"></script>
+      <script type="text/javascript" src="{{ asset('new-assets/js/jquery.placeholder.js') }}" id="jquery-placeholder-js"></script>
+      <script type="text/javascript" src="{{ asset('new-assets/js/jquery.fade.js') }}" id="jquery-fade-js"></script>
+      <script type="text/javascript" src="{{ asset('new-assets/js/imagesLoaded.js') }}" id="images-loaded-js"></script>
       <script type="text/javascript" id="fusion-equal-heights-js-extra">
          /* <![CDATA[ */
          var fusionEqualHeightVars = {
@@ -1471,9 +1593,7 @@
 
       </script>
       <script type="text/javascript" src="https://www.thebombayskinclinic.com/wp-content/plugins/fusion-builder/assets/js/min/general/fusion-video.js?ver=3.11.9" id="fusion-video-js"></script>
-      <!-- NEW Google Tag Manager (noscript) -->
-      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PBSMQPW" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-      <!-- End Google Tag Manager (noscript) -->
+
 
       <div id="footerfixed">
 

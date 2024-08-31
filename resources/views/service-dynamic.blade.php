@@ -7,7 +7,7 @@
 @section('mycontent')
 
 <section id="slider" class="slider-element include-header" style="background: linear-gradient(90deg, rgba(34, 193, 195, 0.06), rgba(253, 187, 45, 0.1));">
-    <div class="container mt-lg-12" style="text-align: center"> 
+    <div class="container mt-lg-12" style="text-align: center">
         <div class="row justify-content-between align-items-center py-lg-6 py-5 service-breadcrumb">
             <h1 class="display-3 color all-ts" style="font-weight: 600">{{ $service->title }}</h1>
         </div>

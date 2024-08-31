@@ -1,0 +1,49 @@
+.service-container{
+   margin-left: 50px;
+   margin-right: 50px;
+}
+
+.form-group {
+   margin-bottom: 1rem;
+ }
+
+
+ textarea {
+   resize: vertical;
+   width: 100%;
+ }
+
+ textarea.form-control {
+   min-height: calc(1.5em + 0.75rem + calc(var(--bs-border-width) * 2));
+ }
+ textarea.form-control-sm {
+   min-height: calc(1.5em + 0.5rem + calc(var(--bs-border-width) * 2));
+ }
+ textarea.form-control-lg {
+   min-height: calc(1.5em + 1rem + calc(var(--bs-border-width) * 2));
+ }
+
+ input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.was-validated textarea.form-control:valid, textarea.form-control.is-valid {
+   padding-right: calc(1.5em + 0.75rem);
+   background-position: top calc(0.375em + 0.1875rem) right calc(0.375em + 0.1875rem);
+ }
+
+
+
+.alert-success{
+   background-color: #1f9e96;
+   color: white;
+   border-radius: 8px;
+   padding: 10px 20px;
+}

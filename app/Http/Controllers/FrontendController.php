@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Contacts;
 use App\Models\Service;
-use Illuminate\Support\Facades\DB;
 
 class FrontendController extends Controller
 {
@@ -77,7 +76,7 @@ class FrontendController extends Controller
         $service = Service::where('category', $category)->where('slug', $slug)->firstOrFail();
 
         // Pass the service details to the view
-        return view('service-dynamic', compact('service','skinServices', 'cosmeticServices', 'hairServices', 'laserServices', 'rejuvenationServices', 'makeoverServices'));
+        return view('service-dynamic-new', compact('service','skinServices', 'cosmeticServices', 'hairServices', 'laserServices', 'rejuvenationServices', 'makeoverServices'));
     }
 
     public function contactsubmit(Request $request)
@@ -96,7 +95,7 @@ class FrontendController extends Controller
             'message' => $request->message,
         ]);
 
-        return redirect('contact-us/#alert')->with('message','Thank You for Contacting Us, we will get back to you soon.');
+        return redirect()->back()->with('message', 'Thank You for Contacting Us, we will get back to you soon.')->withFragment('contactForm');;
 
     }
 
