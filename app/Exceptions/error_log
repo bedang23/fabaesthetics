@@ -1,0 +1,24 @@
+[06-Jul-2024 16:30:16 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Exceptions\Handler" not found in /home/fabaesthetics/public_html/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fabaesthetics/public_html/app/Exceptions/Handler.php on line 8
+[06-Jul-2024 16:30:26 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Exceptions\Handler" not found in /home/fabaesthetics/public_html/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fabaesthetics/public_html/app/Exceptions/Handler.php on line 8
+[06-Jul-2024 16:30:46 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Exceptions\Handler" not found in /home/fabaesthetics/public_html/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fabaesthetics/public_html/app/Exceptions/Handler.php on line 8
+[06-Jul-2024 16:31:16 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Exceptions\Handler" not found in /home/fabaesthetics/public_html/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fabaesthetics/public_html/app/Exceptions/Handler.php on line 8
+[06-Jul-2024 16:31:27 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Exceptions\Handler" not found in /home/fabaesthetics/public_html/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fabaesthetics/public_html/app/Exceptions/Handler.php on line 8
+[06-Jul-2024 16:31:38 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Exceptions\Handler" not found in /home/fabaesthetics/public_html/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/fabaesthetics/public_html/app/Exceptions/Handler.php on line 8

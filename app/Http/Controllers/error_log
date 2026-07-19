@@ -1,0 +1,28 @@
+[06-Jul-2024 16:32:01 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/fabaesthetics/public_html/app/Http/Controllers/AdminController.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/fabaesthetics/public_html/app/Http/Controllers/AdminController.php on line 16
+[06-Jul-2024 16:32:12 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/fabaesthetics/public_html/app/Http/Controllers/AdminController.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/fabaesthetics/public_html/app/Http/Controllers/AdminController.php on line 16
+[06-Jul-2024 16:32:32 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/fabaesthetics/public_html/app/Http/Controllers/AdminController.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/fabaesthetics/public_html/app/Http/Controllers/AdminController.php on line 16
+[06-Jul-2024 16:33:02 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/fabaesthetics/public_html/app/Http/Controllers/AdminController.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/fabaesthetics/public_html/app/Http/Controllers/AdminController.php on line 16
+[06-Jul-2024 16:33:13 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/fabaesthetics/public_html/app/Http/Controllers/AdminController.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/fabaesthetics/public_html/app/Http/Controllers/AdminController.php on line 16
+[06-Jul-2024 16:33:24 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/fabaesthetics/public_html/app/Http/Controllers/AdminController.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/fabaesthetics/public_html/app/Http/Controllers/AdminController.php on line 16
+[06-Jul-2024 16:33:25 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/fabaesthetics/public_html/app/Http/Controllers/CKEditorController.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/fabaesthetics/public_html/app/Http/Controllers/CKEditorController.php on line 6
