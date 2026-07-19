@@ -649,7 +649,7 @@
                      </div>
                      <div class="fusion-text fusion-text-17">
                         <p style="text-align: center;">OR</p>
-                        <p style="text-align: center;"><strong style="font-size: 26px;">Visit Us </strong><br>Flat no.606, Kamdhenu Building no.4,<br> Lokhandwala Market, Andheri West,<br> Mumbai-400053 </p>
+                        <p style="text-align: center;"><strong style="font-size: 26px;">Visit Us </strong><br>Fab Aesthetics - Dr. Samreen Khan,<br> Unit no. 110, 1st floor,<br> Vicino Mega Mall, Off New Link Road,<br> Oshiwara, Andheri West,<br> Mumbai 400102 </p>
                      </div>
                      <div class="fusion-text fusion-text-17">
                         <div class="social-icons">

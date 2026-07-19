@@ -228,9 +228,9 @@
                            </li>
                            <li class="mb-3">
                               <a href="{{ url('') }}" class="d-flex">
-                                 <i class="me-3 bi-geo-alt-fill"></i>Flat no.606, Kamdhenu Building no.4,
-                                 Lokhandwala Market,
-											Andheri West, Mumba-400053
+                                 <i class="me-3 bi-geo-alt-fill"></i>Fab Aesthetics - Dr. Samreen Khan,
+                                 Unit no. 110, 1st floor, Vicino Mega Mall,
+											Off New Link Road, Oshiwara, Andheri West, Mumbai 400102
                               </a>
                            </li>
                            <li class="mb-3 d-flex">

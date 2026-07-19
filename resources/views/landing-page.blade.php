@@ -1046,9 +1046,11 @@
       <div class="row">
          <div class="col-md-6" style="text-align: center; margin-bottom:30px;">
             <h4 class="mb-3">Visit Us</h4>
-            <p>Flat no.606, Kamdhenu Building no.4,<br>
-               Lokhandwala Market, Andheri West,<br>
-               Mumbai-400053 </p>
+            <p>Fab Aesthetics - Dr. Samreen Khan,<br>
+               Unit no. 110, 1st floor,<br>
+               Vicino Mega Mall, Off New Link Road,<br>
+               Oshiwara, Andheri West,<br>
+               Mumbai 400102 </p>
             <div class="fusion-text fusion-text-17">
                <div class="social-icons">
                    <a href="https://www.facebook.com/share/zgPr6E4zjWT5gbgb/?mibextid=JRoKGi" target="_blank"><i class="fab fa-facebook-f"></i></a>
