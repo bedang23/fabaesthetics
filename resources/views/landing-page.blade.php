@@ -436,6 +436,7 @@
             <div class="form-container">
                <form method="post" action="{{ route('landingpageform.submit') }}">
                   @csrf
+                  @include('partials.antispam')
                   <div class="row">
                      <div class="col-lg-12">
                         <div class="form-group app-label">
@@ -1082,6 +1083,7 @@
             <h4 class="text-center">Enquire Now</h4>
             <form method="post" action="{{ route('landingpageform.submit') }}">
                @csrf
+               @include('partials.antispam')
                <div class="form-group">
                   <input required name="name" type="text" class="form-control" placeholder="Enter Name..">
                </div>

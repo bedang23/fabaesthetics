@@ -29,12 +29,13 @@
             <table id="example1" class="table table-hover table-bordered" style="width:100%">
                 <thead>
                     <tr>
-                        <th>#</th>
-                        <th>Date</th>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Phone</th>
+                        <th style="width:50px;">#</th>
+                        <th style="width:110px;">Date</th>
+                        <th style="width:150px;">Name</th>
+                        <th style="width:190px;">Email</th>
+                        <th style="width:120px;">Phone</th>
                         <th>Message</th>
+                        <th class="no-sort text-center" style="width:80px;">View</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -45,12 +46,23 @@
                             {{ isset($contact->created_at) ? \Carbon\Carbon::parse($contact->created_at)->format('M d, Y') : '—' }}
                           </td>
                           <td>{{ $contact->name }}</td>
-                          <td><a href="mailto:{{ $contact->email }}">{{ $contact->email }}</a></td>
-                          <td><a href="tel:{{ $contact->phone }}">{{ $contact->phone }}</a></td>
-                          <td style="max-width:420px;white-space:normal;">{{ $contact->message }}</td>
+                          <td class="fab-cell-muted">{{ $contact->email }}</td>
+                          <td class="fab-cell-muted">{{ $contact->phone }}</td>
+                          <td><div class="fab-msg-preview">{{ Str::limit($contact->message, 90) }}</div></td>
+                          <td class="text-center">
+                            <button type="button" class="btn btn-sm btn-primary fab-view-btn"
+                              data-toggle="modal" data-target="#detailModal"
+                              data-name="{{ e($contact->name) }}"
+                              data-email="{{ e($contact->email) }}"
+                              data-phone="{{ e($contact->phone) }}"
+                              data-date="{{ isset($contact->created_at) ? \Carbon\Carbon::parse($contact->created_at)->format('M d, Y g:i A') : '—' }}"
+                              data-message="{{ e($contact->message) }}">
+                              <i class="fas fa-eye"></i>
+                            </button>
+                          </td>
                       </tr>
                   @empty
-                      <tr><td colspan="6" class="text-center fab-cell-muted py-4">No contact enquiries yet.</td></tr>
+                      <tr><td colspan="7" class="text-center fab-cell-muted py-4">No contact enquiries yet.</td></tr>
                   @endforelse
                 </tbody>
             </table>
@@ -59,5 +71,7 @@
       </div>
     </section>
 </div>
+
+@include('admin.partials.detail-modal')
 
 @endsection

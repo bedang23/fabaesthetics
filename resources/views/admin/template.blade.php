@@ -50,6 +50,9 @@
       border:1px solid #ecdfe2; border-radius:999px; padding:2px 10px; font-size:.76rem; font-weight:600; white-space:nowrap; }
     .fab-excerpt{ max-width:320px; color:#6b5b60; font-size:.85rem;
       display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+    .fab-msg-preview{ max-width:520px; color:#5a4c50; font-size:.88rem;
+      display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+    #detailModal dt{ font-weight:600; } #detailModal dd{ margin-bottom:.5rem; }
     .fab-actions .btn{ margin:2px; }
     .form-text-help{ font-size:.82rem; color:#9a8a8f; }
     .required-star{ color:#b3123a; }
@@ -180,6 +183,7 @@
 <!-- jQuery -->
 <script src="{{asset('admin_assets/plugins/jquery/jquery.min.js')}}"></script>
 <!-- Bootstrap -->
+<script src="{{asset('admin_assets/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 
 
 

@@ -145,14 +145,48 @@ class FrontendController extends Controller
         return view('blog-detail', compact('blog','skinServices', 'cosmeticServices', 'hairServices', 'laserServices', 'rejuvenationServices', 'makeoverServices'));
     }
 
+    /**
+     * Lightweight bot/spam detection: honeypot, submit-timing and link flooding.
+     * Returns true when the submission looks automated.
+     */
+    private function isSpam(Request $request): bool
+    {
+        // 1) Honeypot field must remain empty for real users
+        if (filled($request->input('hp_field'))) {
+            return true;
+        }
+
+        // 2) Timing trap: forms filled in under 3 seconds are almost always bots
+        try {
+            $rendered = (int) decrypt($request->input('_ft'));
+            if ($rendered > 0 && (time() - $rendered) < 3) {
+                return true;
+            }
+        } catch (\Throwable $e) {
+            // Missing/forged token — don't punish legitimate users, just skip this check
+        }
+
+        // 3) Link flooding in the message
+        if (substr_count(strtolower((string) $request->input('message')), 'http') >= 4) {
+            return true;
+        }
+
+        return false;
+    }
+
     public function contactsubmit(Request $request)
     {
         $request->validate([
-            'name' => 'required',
-            'email' => 'required|email',
-            'phone' => 'required',
-            'message' => 'required',
+            'name' => 'required|string|max:120',
+            'email' => 'required|email|max:150',
+            'phone' => 'required|string|max:20',
+            'message' => 'required|string|max:3000',
         ]);
+
+        // Silently drop bot submissions (respond as success so bots get no signal)
+        if ($this->isSpam($request)) {
+            return redirect()->back()->with('message', 'Thank You for Contacting Us, we will get back to you soon.')->withFragment('contactForm');
+        }
 
         Contacts::create([
             'name' => $request->name,
@@ -170,11 +204,16 @@ class FrontendController extends Controller
     public function landingpageformsubmit(Request $request)
     {
         $request->validate([
-            'name' => 'required',
-            'email' => 'required|email',
-            'phone' => 'required',
-            'message' => 'required',
+            'name' => 'required|string|max:120',
+            'email' => 'required|email|max:150',
+            'phone' => 'required|string|max:20',
+            'message' => 'required|string|max:3000',
         ]);
+
+        // Silently drop bot submissions
+        if ($this->isSpam($request)) {
+            return redirect()->route('form.success');
+        }
 
         $formData = $request->only(['name', 'email', 'phone', 'message']);
 
