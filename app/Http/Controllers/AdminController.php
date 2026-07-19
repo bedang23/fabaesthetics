@@ -86,7 +86,7 @@ class AdminController extends Controller
 
     public function enquiryform(){
         if (session::has('user')){
-            $enquiries = DB::table('forms')->get();
+            $enquiries = DB::table('forms')->orderByDesc('id')->get();
             return view('admin/enquiry', compact('enquiries'));
         } else {
             return view('admin/login');
@@ -96,7 +96,7 @@ class AdminController extends Controller
 
     public function contact(){
         if (session::has('user')){
-            $contacts = DB::table('contacts')->get();
+            $contacts = DB::table('contacts')->orderByDesc('id')->get();
             return view('admin/contact', compact('contacts'));
         } else {
             return view('admin/login');
@@ -112,7 +112,7 @@ class AdminController extends Controller
       $value=session()->get('user');
       if(isset($value))
       {
-      $record_details = Service::select('*')->orderBy('id', 'desc')->paginate(100);
+      $record_details = Service::orderByDesc('created_at')->orderByDesc('id')->get();
       return view('admin/service/list', compact('record_details'));
       }
       else{
@@ -141,7 +141,7 @@ class AdminController extends Controller
             $newRecord->title = $request->input('title');
             $newRecord->seo_title = $request->input('seo_title');
             $newRecord->slug = $request->input('slug');
-            $newRecord->featured_image = $request->featured_image->move('images', $imageName);
+            $newRecord->featured_image = str_replace('\\', '/', $request->featured_image->move('images', $imageName));
             $newRecord->seo_description = $request->input('seo_description');
             $newRecord->category = $request->input('category');
             $newRecord->content = $request->input('content');
@@ -190,7 +190,7 @@ class AdminController extends Controller
          // Handle featured image upload
          if ($request->hasFile('featured_image')) {
              $imageName = time().'.'.$request->featured_image->extension();
-             $imagePath = $request->featured_image->move('images', $imageName);
+             $imagePath = str_replace('\\', '/', $request->featured_image->move('images', $imageName));
              $newRecord->featured_image = $imagePath;
          }
 
@@ -217,7 +217,7 @@ class AdminController extends Controller
       $value=session()->get('user');
       if(isset($value))
       {
-      $record_details = Blog::select('*')->orderBy('id', 'desc')->paginate(100);
+      $record_details = Blog::orderByDesc('created_at')->orderByDesc('id')->get();
       return view('admin/blog/list', compact('record_details'));
       }
       else{
@@ -246,7 +246,7 @@ class AdminController extends Controller
             $newRecord->title = $request->input('title');
             $newRecord->seo_title = $request->input('seo_title');
             $newRecord->slug = $request->input('slug');
-            $newRecord->featured_image = $request->featured_image->move('images', $imageName);
+            $newRecord->featured_image = str_replace('\\', '/', $request->featured_image->move('images', $imageName));
             $newRecord->seo_description = $request->input('seo_description');
             $newRecord->category = $request->input('category');
             $newRecord->content = $request->input('content');
@@ -295,7 +295,7 @@ class AdminController extends Controller
          // Handle featured image upload
          if ($request->hasFile('featured_image')) {
              $imageName = time().'.'.$request->featured_image->extension();
-             $imagePath = $request->featured_image->move('images', $imageName);
+             $imagePath = str_replace('\\', '/', $request->featured_image->move('images', $imageName));
              $newRecord->featured_image = $imagePath;
          }
 

@@ -42,6 +42,7 @@
    <link rel="stylesheet" href="{{ asset('assets/css/bs-select.css') }}">
    <link rel="stylesheet" href="{{ asset('assets/css/doctors.css') }}">
    <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
+   <link rel="stylesheet" href="{{ asset('new-assets/css/fab-brand.css') }}?v=2">
 
    <meta name="viewport" content="width=device-width, initial-scale=1">
 

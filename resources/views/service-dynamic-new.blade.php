@@ -19,7 +19,7 @@
       <div class="service-container">
          <!-- Featured Image -->
          <div class="featured-image">
-         <img style="width: 100%;" src="https://www.fabaesthetics.in/{{ $service->featured_image }}" alt="Featured Image">
+         <img style="width: 100%;" src="{{ asset($service->featured_image) }}" alt="{{ $service->title }}">
          </div>
          <!-- Service Content -->
          <div class="service-content" style="text-align:justify;">

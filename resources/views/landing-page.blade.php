@@ -395,7 +395,7 @@
     
       gtag('config', 'AW-660912399');
     </script>
-
+   <link rel="stylesheet" href="{{ asset('new-assets/css/fab-brand.css') }}?v=2">
 </head>
 <body>
 

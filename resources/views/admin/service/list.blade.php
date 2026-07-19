@@ -2,119 +2,92 @@
 
 @section('content')
 
-<!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
     <section class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1>Service List</h1>
-          </div>
+          <div class="col-sm-6"><h1>Services</h1></div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="{{url('/admin/dashboard')}}">Home</a></li>
-              <li class="breadcrumb-item active">Service List</li>
+              <li class="breadcrumb-item active">Services</li>
             </ol>
           </div>
         </div>
-      </div><!-- /.container-fluid -->
+      </div>
     </section>
 
-    <!-- Main content -->
     @if(session()->has('mesg'))
-        <div class="alert alert-success m-3">
-            {{ session()->get('mesg') }}
-        </div>
+        <div class="alert alert-success m-3">{{ session()->get('mesg') }}</div>
     @endif
     @if(session()->has('msg'))
-        <div class="alert alert-danger m-3">
-            {{ session()->get('msg') }}
-        </div>
+        <div class="alert alert-info m-3">{{ session()->get('msg') }}</div>
     @endif
+
     <section class="content">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <div class="card">
-              <div class="card-header">
-                <div class="card-title">
-
-                  </div>
-                  <div class="card-tools">
-                      <a href="{{url('admin/service/create')}}" class="btn btn-primary"><i class="fas fa-plus"></i> Create</a>
-                  </div>
-              </div>
-              <!-- /.card-header -->
-              <div class="card-body">
-                  @if ( !empty($record_details) )
-                <table id="example1" class="table table-bordered table-striped">
-                    <thead>
-                        <tr>
-                            <th width="30">#</th>
-                            <th width="30">Featured Image</th>
-                            <th width="150">Title</th>
-                            <th width="150">URL</th>
-                            <th width="150">Category</th>
-                            <th width="220">Content</th>
-                            <th width="120" class="text-center">Action</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                      @foreach ($record_details as $key => $value)
-                        <tr>
-                            <td width="30">{{ $value['id'] }}</td>
-                            <td><img src="http://127.0.0.1:8000/{{ $value['featured_image'] }}" style="max-width:100px" alt=""></td>
-                            <td>{{ $value['title'] }}</td>
-                            <td>{{ $value['slug'] }}</td>
-                            <td>{{ $value['category'] }}</td>
-                            <td><textarea readonly>{{ $value['content'] }}</textarea></td>
-                            <td width="120" class="text-center">
-                              <a href="{{url('/admin/service/edit')}}/{{$value['id']}}" class="btn btn-sm btn-primary">Edit</a>
-                              <a href="javascript:void(0);"onclick="deleteArticle({{$value['id']}})" class="btn btn-sm btn-danger">Delete</a></td>
-                        </tr>
-                        @endforeach
-                    </tbody>
-
-                    <tfoot>
-                        <tr>
-                          <th width="30">#</th>
-                          <th width="30">Featured Image</th>
-                          <th width="150">Title</th>
-                          <th width="150">URL</th>
-                          <th width="150">Category</th>
-                          <th width="220">Content</th>
-                          <th width="120" class="text-center">Action</th>
-                        </tr>
-                    </tfoot>
-
-                </table>
-                <div class="pt-4">{{ $record_details->links() }}</div>
-                @endif
-              </div>
-              <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
+        <div class="card">
+          <div class="card-header d-flex align-items-center justify-content-between">
+            <h3 class="card-title mb-0"><i class="fas fa-spa mr-2"></i>All Services
+              <span class="badge badge-secondary ml-2">{{ count($record_details) }}</span>
+            </h3>
+            <a href="{{url('admin/service/create')}}" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> New Service</a>
           </div>
-          <!-- /.col -->
+          <div class="card-body table-responsive">
+            <table id="example1" class="table table-hover table-bordered" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th class="no-sort">Image</th>
+                        <th>Title</th>
+                        <th>Category</th>
+                        <th>URL / Slug</th>
+                        <th>SEO Title</th>
+                        <th>Date</th>
+                        <th class="no-sort text-center">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  @forelse ($record_details as $value)
+                    <tr>
+                        <td>{{ $value->id }}</td>
+                        <td>
+                          @if($value->featured_image)
+                            <img src="{{ asset($value->featured_image) }}" class="fab-thumb" alt="">
+                          @else <span class="fab-cell-muted">—</span> @endif
+                        </td>
+                        <td>
+                          <div class="fab-cell-title">{{ $value->title }}</div>
+                          <div class="fab-excerpt">{{ Str::limit(strip_tags($value->content), 90) }}</div>
+                        </td>
+                        <td><span class="fab-badge">{{ ucwords(str_replace('-', ' ', $value->category)) }}</span></td>
+                        <td class="fab-cell-muted">{{ $value->slug }}</td>
+                        <td class="fab-cell-muted">{{ Str::limit($value->seo_title, 45) ?: '—' }}</td>
+                        <td data-order="{{ \Carbon\Carbon::parse($value->created_at)->timestamp }}">
+                          {{ \Carbon\Carbon::parse($value->created_at)->format('M d, Y') }}
+                        </td>
+                        <td class="text-center fab-actions" style="white-space:nowrap;">
+                          <a href="{{ route('service.show', ['category'=>$value->category,'slug'=>$value->slug]) }}" target="_blank" class="btn btn-sm btn-outline-secondary" title="View"><i class="fas fa-eye"></i></a>
+                          <a href="{{url('/admin/service/edit')}}/{{$value->id}}" class="btn btn-sm btn-primary" title="Edit"><i class="fas fa-edit"></i></a>
+                          <a href="javascript:void(0);" onclick="deleteRow({{$value->id}})" class="btn btn-sm btn-danger" title="Delete"><i class="fas fa-trash"></i></a>
+                        </td>
+                    </tr>
+                  @empty
+                    <tr><td colspan="8" class="text-center fab-cell-muted py-4">No services yet. Click “New Service” to add one.</td></tr>
+                  @endforelse
+                </tbody>
+            </table>
+          </div>
         </div>
-        <!-- /.row -->
       </div>
-      <!-- /.container-fluid -->
     </section>
-    <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
-
-@endsection
+</div>
 
 <script type="text/javascript">
-    function deleteArticle(id) {
-
-      if(confirm("Are you sure you want to article")){
-        window.location.href='{{url('/admin/service/delete')}}/'+id;
+    function deleteRow(id) {
+      if (confirm("Are you sure you want to delete this service? This cannot be undone.")) {
+        window.location.href = '{{url("/admin/service/delete")}}/' + id;
       }
-
     }
 </script>
+@endsection

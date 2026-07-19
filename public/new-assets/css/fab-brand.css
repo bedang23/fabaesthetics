@@ -1,0 +1,220 @@
+/* ==========================================================================
+   FAB Aesthetics — brand theme (derived from logo #671b32)
+   Loaded on new-layout, layout and landing-page. Safe, targeted overrides.
+   ========================================================================== */
+:root{
+  --fab-maroon:#671b32;
+  --fab-maroon-dark:#4c1425;
+  --fab-maroon-deep:#390f1c;
+  --fab-maroon-light:#8a2843;
+  --fab-rose:#b76e79;
+  --fab-rose-soft:#e7c9cf;
+  --fab-soft:#faf4f5;
+  --fab-soft-2:#f3e7ea;
+  --fab-ink:#2b2126;
+  --fab-muted:#6b5b60;
+  --fab-shadow:0 10px 30px rgba(103,27,50,.12);
+  --fab-shadow-sm:0 4px 14px rgba(103,27,50,.10);
+}
+
+/* ---- Buttons (Avada fusion + generic) ------------------------------------ */
+.fusion-button.button-default,
+.fusion-button-default,
+.fusion-button{
+  background:var(--fab-maroon)!important;
+  border-color:var(--fab-maroon)!important;
+  color:#fff!important;
+  transition:background .25s ease, transform .2s ease, box-shadow .25s ease;
+}
+.fusion-button.button-default:hover,
+.fusion-button:hover{
+  background:var(--fab-maroon-dark)!important;
+  border-color:var(--fab-maroon-dark)!important;
+  color:#fff!important;
+  transform:translateY(-2px);
+  box-shadow:var(--fab-shadow-sm);
+}
+/* generic bootstrap primary used on frontend forms */
+.btn-primary{
+  background-color:var(--fab-maroon);
+  border-color:var(--fab-maroon);
+}
+.btn-primary:hover,.btn-primary:focus,.btn-primary:active{
+  background-color:var(--fab-maroon-dark)!important;
+  border-color:var(--fab-maroon-dark)!important;
+  box-shadow:0 0 0 .2rem rgba(103,27,50,.25)!important;
+}
+.btn-outline-primary{color:var(--fab-maroon);border-color:var(--fab-maroon);}
+.btn-outline-primary:hover{background:var(--fab-maroon);border-color:var(--fab-maroon);}
+
+/* whatsapp / call floating buttons (landing page) keep whatsapp green,
+   brand the call button */
+.call-float{background:var(--fab-maroon)!important;}
+
+/* links / accents */
+a{color:var(--fab-maroon);}
+a:hover{color:var(--fab-maroon-dark);}
+.color,.all-ts.color{color:var(--fab-maroon)!important;}
+
+/* form focus ring */
+.form-control:focus{
+  border-color:var(--fab-rose);
+  box-shadow:0 0 0 .2rem rgba(103,27,50,.15);
+}
+
+/* ==========================================================================
+   Blog section (home) + Blog list page — modern, equal-height cards
+   ========================================================================== */
+.blog-list{padding:60px 0;}
+.blog-list .container{max-width:1200px;}
+
+.fab-section-head{text-align:center;max-width:640px;margin:0 auto 42px;}
+.fab-section-head .fab-eyebrow{
+  display:inline-block;text-transform:uppercase;letter-spacing:.18em;
+  font-size:.72rem;font-weight:700;color:var(--fab-rose);margin-bottom:10px;
+}
+.fab-section-head h2,.fab-section-head h1{
+  font-weight:700;color:var(--fab-ink);margin:0 0 12px;
+  font-size:clamp(1.7rem,3.2vw,2.4rem);
+}
+.fab-section-head p{color:var(--fab-muted);font-size:1.02rem;margin:0;}
+.fab-section-head .fab-rule{
+  width:64px;height:3px;border-radius:3px;margin:16px auto 0;
+  background:linear-gradient(90deg,var(--fab-maroon),var(--fab-rose));
+}
+
+/* card grid uses bootstrap row; force equal-height columns */
+.fab-blog-grid{display:flex;flex-wrap:wrap;margin-left:-14px;margin-right:-14px;}
+.fab-blog-grid > [class*="col-"]{padding:14px;display:flex;}
+
+.fab-blog-card{
+  display:flex;flex-direction:column;width:100%;
+  background:#fff;border-radius:16px;overflow:hidden;
+  border:1px solid #efe3e6;
+  box-shadow:var(--fab-shadow-sm);
+  transition:transform .28s ease, box-shadow .28s ease;
+}
+.fab-blog-card:hover{transform:translateY(-6px);box-shadow:var(--fab-shadow);}
+
+.fab-blog-thumb{position:relative;display:block;overflow:hidden;aspect-ratio:16/10;background:var(--fab-soft-2);}
+.fab-blog-thumb img{
+  width:100%;height:100%;object-fit:cover;display:block;
+  transition:transform .5s ease;
+}
+.fab-blog-card:hover .fab-blog-thumb img{transform:scale(1.06);}
+.fab-blog-cat{
+  position:absolute;left:12px;top:12px;z-index:2;
+  background:rgba(103,27,50,.92);color:#fff;
+  font-size:.68rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;
+  padding:5px 11px;border-radius:999px;backdrop-filter:blur(2px);
+}
+
+.fab-blog-body{display:flex;flex-direction:column;flex:1 1 auto;padding:20px 20px 22px;}
+.fab-blog-date{
+  display:flex;align-items:center;gap:7px;
+  color:var(--fab-rose);font-size:.8rem;font-weight:600;margin-bottom:9px;
+}
+.fab-blog-title{
+  font-size:1.16rem;line-height:1.35;font-weight:700;margin:0 0 10px;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+  min-height:3.15em;
+}
+.fab-blog-title a{color:var(--fab-ink);text-decoration:none;transition:color .2s ease;}
+.fab-blog-title a:hover{color:var(--fab-maroon);}
+.fab-blog-excerpt{
+  color:var(--fab-muted);font-size:.94rem;line-height:1.6;margin:0 0 18px;
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;
+}
+.fab-blog-readmore{
+  margin-top:auto;align-self:flex-start;
+  display:inline-flex;align-items:center;gap:8px;
+  color:var(--fab-maroon);font-weight:700;font-size:.9rem;text-decoration:none;
+}
+.fab-blog-readmore i{transition:transform .2s ease;}
+.fab-blog-readmore:hover{color:var(--fab-maroon-dark);}
+.fab-blog-readmore:hover i{transform:translateX(4px);}
+
+/* pill / CTA buttons ("View all blogs", back to blog, etc.) */
+.fab-btn{
+  display:inline-flex;align-items:center;gap:10px;
+  background:var(--fab-maroon);color:#fff!important;text-decoration:none;
+  font-weight:600;padding:13px 30px;border-radius:999px;border:1px solid var(--fab-maroon);
+  transition:background .25s ease,transform .2s ease,box-shadow .25s ease;
+}
+.fab-btn:hover{background:var(--fab-maroon-dark);transform:translateY(-2px);box-shadow:var(--fab-shadow-sm);color:#fff!important;}
+.fab-btn-outline{background:transparent;color:var(--fab-maroon)!important;}
+.fab-btn-outline:hover{background:var(--fab-maroon);color:#fff!important;}
+.fab-center{text-align:center;margin-top:34px;}
+
+/* ---- Blog list page hero ------------------------------------------------- */
+.fab-blog-hero{
+  background:linear-gradient(135deg,var(--fab-maroon) 0%,var(--fab-maroon-deep) 100%);
+  color:#fff;text-align:center;padding:64px 20px;margin-bottom:8px;
+}
+.fab-blog-hero .fab-eyebrow{color:var(--fab-rose-soft);}
+.fab-blog-hero h1{color:#fff;font-weight:700;font-size:clamp(2rem,4vw,2.8rem);margin:8px 0 10px;}
+.fab-blog-hero p{color:rgba(255,255,255,.85);max-width:620px;margin:0 auto;font-size:1.05rem;}
+
+/* ---- Pagination (brand) -------------------------------------------------- */
+.fab-pagination{display:flex;justify-content:center;margin-top:44px;}
+.fab-pagination nav{display:block;}
+.fab-pagination .pagination{display:flex;gap:6px;list-style:none;padding:0;flex-wrap:wrap;justify-content:center;}
+.fab-pagination .page-item .page-link{
+  color:var(--fab-maroon);border:1px solid #ecdfe2;border-radius:10px;
+  min-width:42px;text-align:center;padding:9px 12px;transition:all .2s ease;
+}
+.fab-pagination .page-item .page-link:hover{background:var(--fab-soft);border-color:var(--fab-rose);}
+.fab-pagination .page-item.active .page-link{
+  background:var(--fab-maroon);border-color:var(--fab-maroon);color:#fff;
+}
+.fab-pagination .page-item.disabled .page-link{color:#c3b3b7;background:#faf7f8;}
+
+@media (max-width:575px){
+  .blog-list{padding:40px 0;}
+  .fab-blog-hero{padding:48px 18px;}
+}
+
+/* ==========================================================================
+   Service detail page (rendered inside new-layout) + responsive fixes
+   ========================================================================== */
+.service-breadcrumb h1{
+  color:var(--fab-maroon)!important;font-weight:700;margin:0;padding:0 15px;
+  font-size:clamp(1.4rem,4.5vw,2.1rem)!important;line-height:1.25!important;
+}
+#service-details.service-details .service-container,
+.service-details .service-container{
+  max-width:980px;margin:0 auto!important;padding:34px 20px;
+}
+.service-details .featured-image img{
+  border-radius:14px;max-height:460px;object-fit:cover;width:100%;
+  box-shadow:var(--fab-shadow-sm);margin-bottom:26px;
+}
+.service-content{line-height:1.75;color:#3a3035;font-size:1rem;}
+.service-content img{max-width:100%!important;height:auto!important;border-radius:10px;}
+.service-content iframe,.service-content video{max-width:100%!important;}
+.service-content table{max-width:100%;display:block;overflow-x:auto;}
+.service-content h1,.service-content h2,.service-content h3,.service-content h4{
+  color:var(--fab-maroon-dark);
+}
+.service-content a{color:var(--fab-maroon);text-decoration:underline;}
+@media (max-width:768px){
+  .service-details .service-container{padding:24px 16px;}
+}
+
+/* branded, responsive fixed "Book an Appointment" bar */
+#footerfixed{background-color:var(--fab-maroon)!important;}
+#footerfixed div,#footerfixed div a,#footerfixeddiv{
+  font-size:clamp(13px,3.4vw,18px)!important;
+}
+
+/* prevent buttons/CTAs from overflowing on small screens */
+.fusion-button{white-space:normal!important;max-width:100%;}
+@media (max-width:480px){
+  .fab-btn{padding:12px 22px;font-size:.92rem;}
+  .fab-center{margin-top:26px;}
+}
+
+/* stop any accidental horizontal scroll on phones */
+@media (max-width:767px){
+  html,body{overflow-x:hidden;}
+}

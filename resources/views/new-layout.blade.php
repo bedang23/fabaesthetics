@@ -54,6 +54,7 @@
    <link rel='stylesheet' id='rplg-css-css' href='{{ asset('new-assets/css/rplg.css') }}' type='text/css' media='all' />
    <link rel='stylesheet' id='swiper-css-css' href='{{ asset('new-assets/css/swiper.css') }}' type='text/css' media='all' />
    <link rel='stylesheet' id='child-style-css' href='{{ asset('new-assets/css/child.css') }}' type='text/css' media='all' />
+   <link rel='stylesheet' id='fab-brand-css' href='{{ asset('new-assets/css/fab-brand.css') }}?v=2' type='text/css' media='all' />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
    <link rel='stylesheet' id='fusion-dynamic-css-css' href='{{ asset('new-assets/css/fusion-dynamic.css') }}' type='text/css' media='all' />
    <script type="text/javascript" src="{{ asset('new-assets/js/jquery.min.js') }}" id="jquery-core-js"></script>

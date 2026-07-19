@@ -44,6 +44,16 @@ return new class extends Migration
             });
         }
 
+        if (!Schema::hasTable('admin')) {
+            Schema::create('admin', function (Blueprint $table) {
+                $table->id();
+                $table->string('username');
+                $table->string('password');
+                $table->string('role', 30)->default('admin');
+                $table->timestamps();
+            });
+        }
+
         if (!Schema::hasTable('contacts')) {
             Schema::create('contacts', function (Blueprint $table) {
                 $table->id();
@@ -71,6 +81,7 @@ return new class extends Migration
     {
         Schema::dropIfExists('forms');
         Schema::dropIfExists('contacts');
+        Schema::dropIfExists('admin');
         Schema::dropIfExists('blogs');
         Schema::dropIfExists('services');
     }

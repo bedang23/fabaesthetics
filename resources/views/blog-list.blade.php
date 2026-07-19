@@ -5,38 +5,44 @@
 
 @section('mycontent')
 
-<section class="blog-list" style="padding-top:0px;">
-   <div class="row" style="text-align: center; margin-bottom:20px; background:#f6f6f6; padding:40px 20px;">
-      <h1>Our Blogs</h1>
-   </div>
+<div class="fab-blog-hero">
+   <span class="fab-eyebrow">FAB Aesthetics Journal</span>
+   <h1>Our Blogs</h1>
+   <p>Skincare tips, treatment guides and expert advice to keep your skin glowing and healthy year-round.</p>
+</div>
+
+<section class="blog-list" style="padding-top:44px;">
    <div class="container">
-       <div class="row">
+       @if(count($blogs))
+       <div class="row fab-blog-grid">
            @foreach ($blogs as $blog)
-               <div class="col-md-4">
-                   <div class="blog-card">
-                       <a href="{{ route('blog.show', ['category' => $blog->category, 'slug' => $blog->slug]) }}">
-                           <img src="{{ asset($blog->featured_image) }}" alt="{{ $blog->title }}">
+               <div class="col-lg-4 col-md-6">
+                   <article class="fab-blog-card">
+                       <a class="fab-blog-thumb" href="{{ route('blog.show', ['category' => $blog->category, 'slug' => $blog->slug]) }}">
+                           <img src="{{ asset($blog->featured_image) }}" alt="{{ $blog->title }}" loading="lazy">
+                           <span class="fab-blog-cat">{{ ucwords(str_replace('-', ' ', $blog->category)) }}</span>
                        </a>
-                       <div class="blog-content">
-                           <h3>
-                               <a href="{{ route('blog.show', ['category' => $blog->category, 'slug' => $blog->slug]) }}">
-                                   {{ $blog->title }}
-                               </a>
+                       <div class="fab-blog-body">
+                           <div class="fab-blog-date"><i class="far fa-calendar-alt"></i> {{ \Carbon\Carbon::parse($blog->created_at)->format('M d, Y') }}</div>
+                           <h3 class="fab-blog-title">
+                               <a href="{{ route('blog.show', ['category' => $blog->category, 'slug' => $blog->slug]) }}">{{ $blog->title }}</a>
                            </h3>
-                           <p>{{ Str::limit(strip_tags($blog->content), 100) }}</p>
-                           <a href="{{ route('blog.show', ['category' => $blog->category, 'slug' => $blog->slug]) }}" class="read-more">
-                               Read More
+                           <p class="fab-blog-excerpt">{{ Str::limit(strip_tags($blog->content), 130) }}</p>
+                           <a href="{{ route('blog.show', ['category' => $blog->category, 'slug' => $blog->slug]) }}" class="fab-blog-readmore">
+                               Read More <i class="fas fa-arrow-right"></i>
                            </a>
                        </div>
-                   </div>
+                   </article>
                </div>
            @endforeach
        </div>
 
-       <!-- Pagination -->
-       <div class="pagination">
-           {{ $blogs->links() }}
+       <div class="fab-pagination">
+           {{ $blogs->links('pagination::bootstrap-4') }}
        </div>
+       @else
+       <p class="text-center" style="padding:40px 0;color:#6b5b60;">No blog posts yet. Check back soon!</p>
+       @endif
    </div>
 </section>
 

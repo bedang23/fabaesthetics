@@ -2,95 +2,62 @@
 
 @section('content')
 
-<!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
     <section class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1>Enquiry Form Data</h1>
-          </div>
+          <div class="col-sm-6"><h1>Landing Page Enquiries</h1></div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="{{url('/admin/dashboard')}}">Home</a></li>
-              <li class="breadcrumb-item active">Enquiry Form Data</li>
+              <li class="breadcrumb-item active">Landing Page Enquiries</li>
             </ol>
           </div>
         </div>
-      </div><!-- /.container-fluid -->
+      </div>
     </section>
 
-    <!-- Main content -->
-    @if(session()->has('mesg'))
-        <div class="alert alert-success m-3">
-            {{ session()->get('mesg') }}
-        </div>
-    @endif
-    @if(session()->has('msg'))
-        <div class="alert alert-danger m-3">
-            {{ session()->get('msg') }}
-        </div>
-    @endif
     <section class="content">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <div class="card">
-              <div class="card-header">
-
-              </div>
-              <!-- /.card-header -->
-              <div class="card-body">
-                <table id="example1" class="table table-bordered table-striped">
-                    <thead>
-                        <tr>
-                            <th width="30">#</th>
-                            <th>Name</th>
-                            <th>Email</th>
-                            <th>Phone</th>
-                            <th>Message</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                      @if (!empty($enquiries))
-                      @foreach ($enquiries as $enquiry)
-                          <tr>
-                              <td width="30">{{ $enquiry->id }}</td>
-                              <td>{{ $enquiry->name }}</td>
-                              <td>{{ $enquiry->email }}</td>
-                              <td>{{ $enquiry->phone }}</td>
-                              <td>{{ $enquiry->message }}</td>
-                          </tr>
-                      @endforeach
-                  @endif
-                    </tbody>
-
-                    <tfoot>
-                        <tr>
-                            <th width="30">#</th>
-                            <th>Name</th>
-                            <th>Email</th>
-                            <th>Phone</th>
-                            <th>Message</th>
-                        </tr>
-                    </tfoot>
-
-                </table>
-              </div>
-              <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title mb-0"><i class="fas fa-bullhorn mr-2"></i>Landing Page Submissions
+              <span class="badge badge-secondary ml-2">{{ count($enquiries) }}</span>
+            </h3>
           </div>
-          <!-- /.col -->
+          <div class="card-body table-responsive">
+            <table id="example1" class="table table-hover table-bordered" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Date</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Message</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  @forelse ($enquiries as $enquiry)
+                      <tr>
+                          <td>{{ $enquiry->id }}</td>
+                          <td data-order="{{ isset($enquiry->created_at) ? \Carbon\Carbon::parse($enquiry->created_at)->timestamp : 0 }}">
+                            {{ isset($enquiry->created_at) ? \Carbon\Carbon::parse($enquiry->created_at)->format('M d, Y') : '—' }}
+                          </td>
+                          <td>{{ $enquiry->name }}</td>
+                          <td><a href="mailto:{{ $enquiry->email }}">{{ $enquiry->email }}</a></td>
+                          <td><a href="tel:{{ $enquiry->phone }}">{{ $enquiry->phone }}</a></td>
+                          <td style="max-width:420px;white-space:normal;">{{ $enquiry->message }}</td>
+                      </tr>
+                  @empty
+                      <tr><td colspan="6" class="text-center fab-cell-muted py-4">No landing page enquiries yet.</td></tr>
+                  @endforelse
+                </tbody>
+            </table>
+          </div>
         </div>
-        <!-- /.row -->
       </div>
-      <!-- /.container-fluid -->
     </section>
-    <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
+</div>
 
 @endsection

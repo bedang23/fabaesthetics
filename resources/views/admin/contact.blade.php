@@ -2,95 +2,62 @@
 
 @section('content')
 
-<!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
     <section class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1>Contact Us Data</h1>
-          </div>
+          <div class="col-sm-6"><h1>Contact Enquiries</h1></div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="{{url('/admin/dashboard')}}">Home</a></li>
-              <li class="breadcrumb-item active">Contact Us Data</li>
+              <li class="breadcrumb-item active">Contact Enquiries</li>
             </ol>
           </div>
         </div>
-      </div><!-- /.container-fluid -->
+      </div>
     </section>
 
-    <!-- Main content -->
-    @if(session()->has('mesg'))
-        <div class="alert alert-success m-3">
-            {{ session()->get('mesg') }}
-        </div>
-    @endif
-    @if(session()->has('msg'))
-        <div class="alert alert-danger m-3">
-            {{ session()->get('msg') }}
-        </div>
-    @endif
     <section class="content">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <div class="card">
-              <div class="card-header">
-
-              </div>
-              <!-- /.card-header -->
-              <div class="card-body">
-                <table id="example1" class="table table-bordered table-striped">
-                    <thead>
-                        <tr>
-                            <th width="30">#</th>
-                            <th>Name</th>
-                            <th>Email</th>
-                            <th>Phone</th>
-                            <th>Message</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                      @if (!empty($contacts))
-                      @foreach ($contacts as $contact)
-                          <tr>
-                              <td width="30">{{ $contact->id }}</td>
-                              <td>{{ $contact->name }}</td>
-                              <td>{{ $contact->email }}</td>
-                              <td>{{ $contact->phone }}</td>
-                              <td>{{ $contact->message }}</td>
-                          </tr>
-                      @endforeach
-                  @endif
-                    </tbody>
-
-                    <tfoot>
-                        <tr>
-                            <th width="30">#</th>
-                            <th>Name</th>
-                            <th>Email</th>
-                            <th>Phone</th>
-                            <th>Message</th>
-                        </tr>
-                    </tfoot>
-
-                </table>
-              </div>
-              <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title mb-0"><i class="fas fa-address-card mr-2"></i>Contact Form Submissions
+              <span class="badge badge-secondary ml-2">{{ count($contacts) }}</span>
+            </h3>
           </div>
-          <!-- /.col -->
+          <div class="card-body table-responsive">
+            <table id="example1" class="table table-hover table-bordered" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Date</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Message</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  @forelse ($contacts as $contact)
+                      <tr>
+                          <td>{{ $contact->id }}</td>
+                          <td data-order="{{ isset($contact->created_at) ? \Carbon\Carbon::parse($contact->created_at)->timestamp : 0 }}">
+                            {{ isset($contact->created_at) ? \Carbon\Carbon::parse($contact->created_at)->format('M d, Y') : '—' }}
+                          </td>
+                          <td>{{ $contact->name }}</td>
+                          <td><a href="mailto:{{ $contact->email }}">{{ $contact->email }}</a></td>
+                          <td><a href="tel:{{ $contact->phone }}">{{ $contact->phone }}</a></td>
+                          <td style="max-width:420px;white-space:normal;">{{ $contact->message }}</td>
+                      </tr>
+                  @empty
+                      <tr><td colspan="6" class="text-center fab-cell-muted py-4">No contact enquiries yet.</td></tr>
+                  @endforelse
+                </tbody>
+            </table>
+          </div>
         </div>
-        <!-- /.row -->
       </div>
-      <!-- /.container-fluid -->
     </section>
-    <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
+</div>
 
 @endsection

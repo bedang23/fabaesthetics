@@ -311,31 +311,38 @@
                </div>
                <section class="blog-list">
                   <div class="container">
-                     <div class="row" style="text-align: center; margin-bottom:20px;">
-                        <h3 style="font-weight: bold; font-size:2rem;">Our Blogs</h1>
+                     <div class="fab-section-head">
+                        <span class="fab-eyebrow">From our journal</span>
+                        <h2>Our Blogs</h2>
+                        <p>Expert skincare tips, treatment guides and the latest in aesthetic care.</p>
+                        <div class="fab-rule"></div>
                      </div>
 
-                      <div class="row">
+                      <div class="row fab-blog-grid">
                           @foreach ($blogs as $blog)
-                              <div class="col-md-4">
-                                  <div class="blog-card">
-                                      <a href="{{ route('blog.show', ['category' => $blog->category, 'slug' => $blog->slug]) }}">
-                                          <img src="{{ asset($blog->featured_image) }}" alt="{{ $blog->title }}">
+                              <div class="col-lg-4 col-md-6">
+                                  <article class="fab-blog-card">
+                                      <a class="fab-blog-thumb" href="{{ route('blog.show', ['category' => $blog->category, 'slug' => $blog->slug]) }}">
+                                          <img src="{{ asset($blog->featured_image) }}" alt="{{ $blog->title }}" loading="lazy">
+                                          <span class="fab-blog-cat">{{ ucwords(str_replace('-', ' ', $blog->category)) }}</span>
                                       </a>
-                                      <div class="blog-content">
-                                          <h3>
-                                              <a href="{{ route('blog.show', ['category' => $blog->category, 'slug' => $blog->slug]) }}">
-                                                  {{ $blog->title }}
-                                              </a>
+                                      <div class="fab-blog-body">
+                                          <div class="fab-blog-date"><i class="far fa-calendar-alt"></i> {{ \Carbon\Carbon::parse($blog->created_at)->format('M d, Y') }}</div>
+                                          <h3 class="fab-blog-title">
+                                              <a href="{{ route('blog.show', ['category' => $blog->category, 'slug' => $blog->slug]) }}">{{ $blog->title }}</a>
                                           </h3>
-                                          <p style="margin-bottom: 4px;">{{ Str::limit(strip_tags($blog->content), 100) }}</p>
-                                          <a href="{{ route('blog.show', ['category' => $blog->category, 'slug' => $blog->slug]) }}" class="read-more">
-                                              Read More
+                                          <p class="fab-blog-excerpt">{{ Str::limit(strip_tags($blog->content), 120) }}</p>
+                                          <a href="{{ route('blog.show', ['category' => $blog->category, 'slug' => $blog->slug]) }}" class="fab-blog-readmore">
+                                              Read More <i class="fas fa-arrow-right"></i>
                                           </a>
                                       </div>
-                                  </div>
+                                  </article>
                               </div>
                           @endforeach
+                      </div>
+
+                      <div class="fab-center">
+                        <a href="{{ url('blogs') }}" class="fab-btn">View All Blogs <i class="fas fa-arrow-right"></i></a>
                       </div>
                   </div>
                </section>

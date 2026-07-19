@@ -23,6 +23,37 @@
   <link rel="stylesheet" href="{{asset('admin_assets/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css')}}">
   <link rel="stylesheet" href="{{asset('admin_assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css')}}">
   <link rel="stylesheet" href="{{asset('admin_assets/plugins/datatables-buttons/css/buttons.bootstrap4.min.css')}}">
+
+  <!-- FAB Aesthetics admin brand theme -->
+  <style>
+    :root{ --fab:#671b32; --fab-dark:#4c1425; --fab-soft:#faf4f5; }
+    .sidebar-dark-primary{ background:#3a0f1c; }
+    .brand-link{ background:var(--fab-dark); }
+    .brand-link .brand-text{ font-weight:600; letter-spacing:.02em; }
+    .nav-sidebar .nav-link.active,
+    .nav-sidebar>.nav-item>.nav-link.active{
+      background:var(--fab)!important; color:#fff!important;
+      box-shadow:0 3px 10px rgba(0,0,0,.25);
+    }
+    .nav-sidebar .nav-link:hover{ background:rgba(255,255,255,.08); }
+    .btn-primary{ background:var(--fab); border-color:var(--fab); }
+    .btn-primary:hover,.btn-primary:focus{ background:var(--fab-dark); border-color:var(--fab-dark); }
+    a{ color:var(--fab); }
+    .card-primary:not(.card-outline)>.card-header{ background:var(--fab); }
+    .content-header h1{ color:var(--fab); font-weight:600; }
+    .table thead th{ background:var(--fab-soft); color:var(--fab-dark); border-bottom:2px solid #ecdfe2; white-space:nowrap; }
+    .table td{ vertical-align:middle; }
+    .fab-thumb{ width:70px; height:52px; object-fit:cover; border-radius:8px; border:1px solid #eee; }
+    .fab-cell-title{ font-weight:600; color:#33262b; max-width:260px; }
+    .fab-cell-muted{ color:#8a7b80; font-size:.86rem; }
+    .fab-badge{ display:inline-block; background:var(--fab-soft); color:var(--fab-dark);
+      border:1px solid #ecdfe2; border-radius:999px; padding:2px 10px; font-size:.76rem; font-weight:600; white-space:nowrap; }
+    .fab-excerpt{ max-width:320px; color:#6b5b60; font-size:.85rem;
+      display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+    .fab-actions .btn{ margin:2px; }
+    .form-text-help{ font-size:.82rem; color:#9a8a8f; }
+    .required-star{ color:#b3123a; }
+  </style>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
 <div class="wrapper">
@@ -174,10 +205,21 @@
 
 <script type="text/javascript">
     $(document).ready(function () {
+        // Rich text editor only where explicitly requested
         $('.ckeditor').ckeditor();
+
+        // Initialise DataTables on admin list tables (search / sort / paginate)
+        if ($.fn.DataTable && $('#example1').length) {
+            $('#example1').DataTable({
+                "responsive": true,
+                "lengthChange": true,
+                "autoWidth": false,
+                "order": [],            // keep server order (newest first)
+                "pageLength": 25,
+                "columnDefs": [{ "orderable": false, "targets": 'no-sort' }]
+            });
+        }
     });
-    var editor = CKEDITOR.replace( 'ckfinder.image-upload' );
-    CKFinder.setupCKEditor( editor );
 </script>
 
 </body>
